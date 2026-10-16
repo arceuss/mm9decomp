@@ -12,7 +12,7 @@ concurrency:
 jobs:
   build:
     # Private container from arceuss/mm9decomp-build: holds the retail DOL in
-    # /game and the Wii/1.0 CodeWarrior install in /compilers.
+    # /game and the Wii/1.0 and GC/3.0a5 CodeWarrior installs in /compilers.
     container: ghcr.io/arceuss/mm9decomp-build:main
 
     runs-on: ubuntu-latest
