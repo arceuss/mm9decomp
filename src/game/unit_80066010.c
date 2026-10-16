@@ -1,0 +1,27 @@
+#include "types.h"
+typedef struct Unk80066010 {
+    /* 0x00 */ u8 pad00[0x14];
+    /* 0x14 */ u8 unk14;
+    /* 0x15 */ u8 pad15[0x34 - 0x15];
+    /* 0x34 */ void* unk34;
+    /* 0x38 */ u8 pad38[0x60 - 0x38];
+    /* 0x60 */ s32 unk60;
+    /* 0x64 */ s32 unk64;
+    /* 0x68 */ u8 pad68[0xC8 - 0x68];
+    /* 0xC8 */ u8 unkC8;
+} Unk80066010;
+extern void* lbl_804EE738;
+extern Unk80066010* fn_800E8C44(void*);
+extern void fn_80042DA0(Unk80066010*, s32);
+Unk80066010* fn_80066010(void* a, s32 b, s32 c, u8 d, u8 e) {
+    Unk80066010* p = fn_800E8C44(lbl_804EE738);
+    if (p) {
+        fn_80042DA0(p, 0x23);
+        p->unk34 = a;
+        p->unk60 = b;
+        p->unk64 = c;
+        p->unk14 = d;
+        p->unkC8 = e;
+    }
+    return p;
+}

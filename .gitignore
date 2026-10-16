@@ -1,0 +1,42 @@
+# Game files and toolchains are local only, never commit them
+/game/
+/compilers/
+
+# local agent config
+/.opencode/
+
+# IDE folders
+.idea/
+.vs/
+
+# Caches
+__pycache__
+.mypy_cache
+.cache/
+
+# Original files
+orig/*/*
+!orig/*/.gitkeep
+*.dol
+*.rel
+*.elf
+*.o
+*.map
+*.MAP
+
+# Build files
+build/
+.ninja_*
+build.ninja
+
+# decompctx output
+ctx.*
+*.ctx
+
+# Generated configs
+objdiff.json
+compile_commands.json
+
+# Miscellaneous
+/*.txt
+*.exe

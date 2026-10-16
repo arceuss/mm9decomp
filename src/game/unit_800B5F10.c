@@ -1,0 +1,22 @@
+#include "types.h"
+
+typedef struct Unk57 {
+    /* 0x00 */ u8 pad0[0x8];
+    /* 0x08 */ u8 unk8;
+    /* 0x09 */ u8 unk9;
+    /* 0x0A */ u8 padA[0xC8 - 0xA];
+    /* 0xC8 */ s32 unkC8;
+    /* 0xCC */ u8 unkCC;
+    /* 0xCD */ u8 unkCD;
+    /* 0xCE */ u8 padCE[0xD0 - 0xCE];
+    /* 0xD0 */ u8 unkD0;
+    /* 0xD1 */ u8 padD1[0xD4 - 0xD1];
+    /* 0xD4 */ s32 unkD4;
+} Unk57;
+
+s32 fn_800B5F10(Unk57* rec) {
+    if ((s32)rec->unk8 == 3 && rec->unk9 == 0) {
+        rec->unkCD = 1;
+    }
+    return 0;
+}

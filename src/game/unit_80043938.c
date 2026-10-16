@@ -1,0 +1,67 @@
+#include "types.h"
+#include "game/obj.h"
+
+typedef struct Unk43938 {
+    /* 0x00 */ u8 pad00[0xA];
+    /* 0x0A */ u8 unk0A;
+    /* 0x0B */ u8 pad0B[6];
+    /* 0x11 */ u8 unk11;
+    /* 0x12 */ u8 unk12;
+    /* 0x13 */ u8 pad13;
+    /* 0x14 */ u8 unk14;
+    /* 0x15 */ u8 pad15;
+    /* 0x16 */ u8 unk16;
+    /* 0x17 */ u8 pad17[0x54 - 0x17];
+    /* 0x54 */ u32 unk54hi : 21;
+    /* 0x54 */ u32 unk54bit : 1;
+    /* 0x54 */ u32 unk54lo : 10;
+    /* 0x58 */ u8 pad58[8];
+    /* 0x60 */ s32 unk60;
+    /* 0x64 */ s32 unk64;
+    /* 0x68 */ u8 pad68[4];
+    /* 0x6C */ s32 unk6C;
+    /* 0x70 */ u8 pad70[4];
+    /* 0x74 */ s32 unk74;
+    /* 0x78 */ u8 pad78[0xC8 - 0x78];
+    /* 0xC8 */ s32 unkC8;
+    /* 0xCC */ s32 unkCC;
+} Unk43938;
+extern void (*lbl_802651AC[])(Unk43938*);
+void fn_800C7C24(s32, s32, s32);
+void fn_800E9758(Obj*);
+s32 fn_800EB16C(s32, s32);
+
+void fn_80043938(Unk43938* obj) {
+    s32 x, y, length, scale, speed;
+    switch (obj->unk12) {
+    case 0:
+        fn_800E9244((Obj*)obj);
+        obj->unk12++;
+    case 1:
+        x = obj->unkC8 - obj->unk60;
+        y = obj->unkCC - obj->unk64;
+        length = fn_800EB16C(x, y);
+        if (length <= 0x800) {
+            fn_80042CF8((Obj*)obj, 2);
+            obj->unk11 = 0;
+            if (obj->unk14 <= 1) {
+                fn_800C7C24(6, 0, obj->unk14);
+            }
+            lbl_802651AC[obj->unk11](obj);
+        } else {
+            scale = 256 - (length * 256) / 0x2000;
+            if (scale < 0x40) {
+                scale = 0x40;
+            }
+            speed = (scale * 1024) / 256;
+            x = (x * 256) / length;
+            y = (y * 256) / length;
+            x = (x * speed) / 256;
+            y = (y * speed) / 256;
+            obj->unk60 += x;
+            obj->unk64 += y;
+            fn_800E9758((Obj*)obj);
+        }
+        break;
+    }
+}

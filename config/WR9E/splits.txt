@@ -1,0 +1,5312 @@
+Sections:
+	.init       type:code align:4
+	extab       type:rodata align:32
+	extabindex  type:rodata align:16
+	.text       type:code align:4
+	.ctors      type:rodata align:16
+	.dtors      type:rodata align:16
+	.rodata     type:rodata align:64
+	.data       type:data align:4
+	.bss        type:bss align:64
+	.sdata      type:data align:4
+	.sbss       type:bss align:8
+	.sdata2     type:rodata align:32
+	.sbss2      type:bss align:32
+
+game/unit_8000BF80.c:
+	.text       start:0x8000BF80 end:0x8000BF94
+
+game/unit_8000BF94.c:
+	.text       start:0x8000BF94 end:0x8000BFC4
+
+game/unit_8000BFC4.c:
+	.text       start:0x8000BFC4 end:0x8000BFEC
+
+game/unit_8000C1B8.c:
+	.text       start:0x8000C1B8 end:0x8000C238
+
+game/unit_8000D5F4.c:
+	.text       start:0x8000D5F4 end:0x8000D664
+
+game/unit_8000D664.c:
+	.text       start:0x8000D664 end:0x8000D6F0
+
+game/unit_8000D6F0.c:
+	.text       start:0x8000D6F0 end:0x8000D7E4
+
+game/unit_8000D7E4.c:
+	.text       start:0x8000D7E4 end:0x8000D854
+
+game/unit_8000D854.c:
+	.text       start:0x8000D854 end:0x8000D858
+
+game/unit_8000E79C.c:
+	.text       start:0x8000E79C end:0x8000E900
+
+game/unit_8000E900.c:
+	.text       start:0x8000E900 end:0x8000E91C
+
+game/unit_8000EB5C.c:
+	.text       start:0x8000EB5C end:0x8000ECB8
+
+game/unit_8000EE1C.c:
+	.text       start:0x8000EE1C end:0x8000EE80
+
+game/unit_8000EE80.c:
+	.text       start:0x8000EE80 end:0x8000EECC
+
+game/unit_8000EECC.c:
+	.text       start:0x8000EECC end:0x8000EEFC
+
+game/unit_8000EEFC.c:
+	.text       start:0x8000EEFC end:0x8000EF20
+
+game/unit_8000EF20.c:
+	.text       start:0x8000EF20 end:0x8000EF50
+
+game/unit_8000F0C8.c:
+	.text       start:0x8000F0C8 end:0x8000F134
+
+game/unit_8000F19C.c:
+	.text       start:0x8000F19C end:0x8000F1B0
+
+game/unit_8000F324.c:
+	.text       start:0x8000F324 end:0x8000F3AC
+
+game/unit_8000F3AC.c:
+	.text       start:0x8000F3AC end:0x8000F3C8
+
+game/unit_8000F3C8.c:
+	.text       start:0x8000F3C8 end:0x8000F3CC
+
+game/unit_8001039C.c:
+	.text       start:0x8001039C end:0x800103A0
+
+game/unit_800109DC.c:
+	.text       start:0x800109DC end:0x80010A14
+
+game/unit_80010C98.c:
+	.text       start:0x80010C98 end:0x80010D64
+
+game/unit_80010D64.c:
+	.text       start:0x80010D64 end:0x80010D7C
+
+game/unit_80010D7C.c:
+	.text       start:0x80010D7C end:0x80010DC4
+
+game/unit_80010DC4.c:
+	.text       start:0x80010DC4 end:0x80010ED8
+
+game/unit_80010ED8.c:
+	.text       start:0x80010ED8 end:0x80010F6C
+
+game/unit_80010F6C.c:
+	.text       start:0x80010F6C end:0x80011064
+
+game/unit_80011064.c:
+	.text       start:0x80011064 end:0x80011134
+
+game/unit_80011450.c:
+	.text       start:0x80011450 end:0x800114B0
+
+game/unit_800114B0.c:
+	.text       start:0x800114B0 end:0x80011558
+
+game/unit_80011558.c:
+	.text       start:0x80011558 end:0x800115EC
+
+game/unit_80011C44.c:
+	.text       start:0x80011C44 end:0x80011CE4
+
+game/unit_80011E10.c:
+	.text       start:0x80011E10 end:0x80011E14
+
+game/unit_800120D4.c:
+	.text       start:0x800120D4 end:0x800120EC
+
+game/unit_800120EC.c:
+	.text       start:0x800120EC end:0x800120F0
+
+game/unit_80012974.c:
+	.text       start:0x80012974 end:0x80012988
+
+game/unit_80012B54.c:
+	.text       start:0x80012B54 end:0x80012C64
+
+game/unit_80012C64.c:
+	.text       start:0x80012C64 end:0x80012C7C
+
+game/unit_80012C7C.c:
+	.text       start:0x80012C7C end:0x80012C80
+
+game/unit_800131F4.c:
+	.text       start:0x800131F4 end:0x800132EC
+
+game/unit_800132EC.c:
+	.text       start:0x800132EC end:0x80013300
+
+game/unit_80013300.c:
+	.text       start:0x80013300 end:0x800133D0
+
+game/unit_80013520.c:
+	.text       start:0x80013520 end:0x80013538
+
+game/unit_80013538.c:
+	.text       start:0x80013538 end:0x8001353C
+
+game/unit_8001452C.c:
+	.text       start:0x8001452C end:0x80014660
+
+game/unit_80014AC4.c:
+	.text       start:0x80014AC4 end:0x80014AD8
+
+game/unit_80014C5C.c:
+	.text       start:0x80014C5C end:0x80014D54
+
+game/unit_80014D54.c:
+	.text       start:0x80014D54 end:0x80014D6C
+
+game/unit_80014D6C.c:
+	.text       start:0x80014D6C end:0x80014D70
+
+game/unit_80016100.c:
+	.text       start:0x80016100 end:0x800161E8
+
+game/unit_800164C0.c:
+	.text       start:0x800164C0 end:0x800164D4
+
+game/unit_80016684.c:
+	.text       start:0x80016684 end:0x8001677C
+
+game/unit_8001677C.c:
+	.text       start:0x8001677C end:0x80016794
+
+game/unit_80016794.c:
+	.text       start:0x80016794 end:0x80016798
+
+game/unit_80017FF4.c:
+	.text       start:0x80017FF4 end:0x80018008
+
+game/unit_800181A0.c:
+	.text       start:0x800181A0 end:0x80018298
+
+game/unit_80018298.c:
+	.text       start:0x80018298 end:0x800182B0
+
+game/unit_800182B0.c:
+	.text       start:0x800182B0 end:0x800182B4
+
+game/unit_80019760.c:
+	.text       start:0x80019760 end:0x80019764
+
+game/unit_800198FC.c:
+	.text       start:0x800198FC end:0x80019A3C
+
+game/unit_80019A3C.c:
+	.text       start:0x80019A3C end:0x80019A54
+
+game/unit_80019A54.c:
+	.text       start:0x80019A54 end:0x80019A58
+
+game/unit_8001A3D4.c:
+	.text       start:0x8001A3D4 end:0x8001A4B8
+
+game/unit_8001A530.c:
+	.text       start:0x8001A530 end:0x8001A638
+
+game/unit_8001A8CC.c:
+	.text       start:0x8001A8CC end:0x8001A8D0
+
+game/unit_8001C204.c:
+	.text       start:0x8001C204 end:0x8001C340
+
+game/unit_8001C69C.c:
+	.text       start:0x8001C69C end:0x8001C7A0
+
+game/unit_8001C7A0.c:
+	.text       start:0x8001C7A0 end:0x8001C7B8
+
+game/unit_8001C7B8.c:
+	.text       start:0x8001C7B8 end:0x8001C7BC
+
+game/unit_8001D580.c:
+	.text       start:0x8001D580 end:0x8001D590
+
+game/unit_8001E174.c:
+	.text       start:0x8001E174 end:0x8001E188
+
+game/unit_8001E474.c:
+	.text       start:0x8001E474 end:0x8001E48C
+
+game/unit_8001E48C.c:
+	.text       start:0x8001E48C end:0x8001E490
+
+game/unit_8001F04C.c:
+	.text       start:0x8001F04C end:0x8001F060
+
+game/unit_8001F200.c:
+	.text       start:0x8001F200 end:0x8001F2F8
+
+game/unit_8001F2F8.c:
+	.text       start:0x8001F2F8 end:0x8001F310
+
+game/unit_8001F310.c:
+	.text       start:0x8001F310 end:0x8001F314
+
+game/unit_8001FF64.c:
+	.text       start:0x8001FF64 end:0x8001FF78
+
+game/unit_80020190.c:
+	.text       start:0x80020190 end:0x800201AC
+
+game/unit_800201AC.c:
+	.text       start:0x800201AC end:0x800201B0
+
+game/unit_800218F8.c:
+	.text       start:0x800218F8 end:0x80021A14
+
+game/unit_80022058.c:
+	.text       start:0x80022058 end:0x8002206C
+
+game/unit_800221C4.c:
+	.text       start:0x800221C4 end:0x80022278
+
+game/unit_80022278.c:
+	.text       start:0x80022278 end:0x80022290
+
+game/unit_80022290.c:
+	.text       start:0x80022290 end:0x80022294
+
+game/unit_80022914.c:
+	.text       start:0x80022914 end:0x80022A08
+
+game/unit_80022C28.c:
+	.text       start:0x80022C28 end:0x80022D1C
+
+game/unit_80022D1C.c:
+	.text       start:0x80022D1C end:0x80022D34
+
+game/unit_80022D34.c:
+	.text       start:0x80022D34 end:0x80022D38
+
+game/unit_80023E68.c:
+	.text       start:0x80023E68 end:0x80023EF0
+
+game/unit_80023EF0.c:
+	.text       start:0x80023EF0 end:0x80023F08
+
+game/unit_80023F08.c:
+	.text       start:0x80023F08 end:0x80023F64
+
+game/unit_80023F64.c:
+	.text       start:0x80023F64 end:0x80023FCC
+
+game/unit_80023FCC.c:
+	.text       start:0x80023FCC end:0x80024010
+
+game/unit_80024010.c:
+	.text       start:0x80024010 end:0x80024020
+
+game/unit_80024020.c:
+	.text       start:0x80024020 end:0x80024034
+
+game/unit_80024034.c:
+	.text       start:0x80024034 end:0x80024048
+
+game/unit_80024048.c:
+	.text       start:0x80024048 end:0x80024058
+
+game/unit_80024364.c:
+	.text       start:0x80024364 end:0x800243D0
+
+game/unit_800243D0.c:
+	.text       start:0x800243D0 end:0x80024438
+
+game/unit_80024438.c:
+	.text       start:0x80024438 end:0x80024500
+
+game/unit_8002458C.c:
+	.text       start:0x8002458C end:0x800245D4
+
+game/unit_800245D4.c:
+	.text       start:0x800245D4 end:0x800245F4
+
+game/unit_800245F4.c:
+	.text       start:0x800245F4 end:0x80024614
+
+game/unit_80024614.c:
+	.text       start:0x80024614 end:0x8002461C
+
+game/unit_8002461C.c:
+	.text       start:0x8002461C end:0x80024620
+
+game/unit_80024620.c:
+	.text       start:0x80024620 end:0x80024748
+
+game/unit_80024748.c:
+	.text       start:0x80024748 end:0x80024804
+
+game/unit_80024804.c:
+	.text       start:0x80024804 end:0x8002481C
+
+game/unit_8002481C.c:
+	.text       start:0x8002481C end:0x80024854
+
+game/unit_80024854.c:
+	.text       start:0x80024854 end:0x80024974
+
+game/unit_80024B1C.c:
+	.text       start:0x80024B1C end:0x80024B38
+
+game/unit_80024B38.c:
+	.text       start:0x80024B38 end:0x80024B70
+
+game/unit_8002509C.c:
+	.text       start:0x8002509C end:0x800250D8
+
+game/unit_80025270.c:
+	.text       start:0x80025270 end:0x800252F4
+
+game/unit_800252F4.c:
+	.text       start:0x800252F4 end:0x8002533C
+
+game/unit_8002533C.c:
+	.text       start:0x8002533C end:0x80025358
+
+game/unit_80025358.c:
+	.text       start:0x80025358 end:0x800253B0
+
+game/unit_800253B0.c:
+	.text       start:0x800253B0 end:0x8002541C
+
+game/unit_8002541C.c:
+	.text       start:0x8002541C end:0x80025470
+
+game/unit_80025470.c:
+	.text       start:0x80025470 end:0x80025484
+
+game/unit_80025484.c:
+	.text       start:0x80025484 end:0x80025498
+
+game/unit_80025498.c:
+	.text       start:0x80025498 end:0x800254AC
+
+game/unit_80025C34.c:
+	.text       start:0x80025C34 end:0x80025C58
+
+game/unit_80025E10.c:
+	.text       start:0x80025E10 end:0x80025E54
+
+game/unit_80026400.c:
+	.text       start:0x80026400 end:0x80026424
+
+game/unit_80026424.c:
+	.text       start:0x80026424 end:0x80026450
+
+game/unit_80026450.c:
+	.text       start:0x80026450 end:0x800264A0
+
+game/unit_800265C8.c:
+	.text       start:0x800265C8 end:0x800265F4
+
+game/unit_800267F0.c:
+	.text       start:0x800267F0 end:0x80026874
+
+game/unit_80026874.c:
+	.text       start:0x80026874 end:0x80026908
+
+game/unit_80026EDC.c:
+	.text       start:0x80026EDC end:0x8002701C
+
+game/unit_80027090.c:
+	.text       start:0x80027090 end:0x800270E0
+
+game/unit_800270E0.c:
+	.text       start:0x800270E0 end:0x80027130
+
+game/unit_80027130.c:
+	.text       start:0x80027130 end:0x8002713C
+
+game/unit_8002713C.c:
+	.text       start:0x8002713C end:0x80027144
+
+game/unit_80027144.c:
+	.text       start:0x80027144 end:0x80027148
+
+game/unit_80027148.c:
+	.text       start:0x80027148 end:0x8002714C
+
+game/unit_8002714C.c:
+	.text       start:0x8002714C end:0x800271CC
+
+game/unit_800271CC.c:
+	.text       start:0x800271CC end:0x80027234
+
+game/unit_80027F4C.c:
+	.text       start:0x80027F4C end:0x80027FFC
+
+game/unit_80027FFC.c:
+	.text       start:0x80027FFC end:0x80028068
+
+game/unit_80028068.c:
+	.text       start:0x80028068 end:0x80028184
+
+game/unit_80029980.c:
+	.text       start:0x80029980 end:0x800299C0
+
+game/unit_800299C0.c:
+	.text       start:0x800299C0 end:0x800299F0
+
+game/unit_800299F0.c:
+	.text       start:0x800299F0 end:0x80029A08
+
+game/unit_80029A08.c:
+	.text       start:0x80029A08 end:0x80029A0C
+
+game/unit_80029A0C.c:
+	.text       start:0x80029A0C end:0x80029A70
+
+game/unit_80029A70.c:
+	.text       start:0x80029A70 end:0x80029AB8
+
+game/unit_80029AB8.c:
+	.text       start:0x80029AB8 end:0x80029B14
+
+game/unit_80029B14.c:
+	.text       start:0x80029B14 end:0x80029B30
+
+game/unit_80029B30.c:
+	.text       start:0x80029B30 end:0x80029B4C
+
+game/unit_80029B4C.c:
+	.text       start:0x80029B4C end:0x80029BCC
+
+game/unit_80029BCC.c:
+	.text       start:0x80029BCC end:0x80029C78
+
+game/unit_80029C78.c:
+	.text       start:0x80029C78 end:0x80029C98
+
+game/unit_80029C98.c:
+	.text       start:0x80029C98 end:0x80029D5C
+
+game/unit_80029D5C.c:
+	.text       start:0x80029D5C end:0x80029E64
+
+game/unit_80029EA8.c:
+	.text       start:0x80029EA8 end:0x80029EF8
+
+game/unit_80029EF8.c:
+	.text       start:0x80029EF8 end:0x80029F58
+
+game/unit_8002A294.c:
+	.text       start:0x8002A294 end:0x8002A310
+
+game/unit_8002A310.c:
+	.text       start:0x8002A310 end:0x8002A364
+
+game/unit_8002A364.c:
+	.text       start:0x8002A364 end:0x8002A3C4
+
+game/unit_8002A530.c:
+	.text       start:0x8002A530 end:0x8002A610
+
+game/unit_8002A610.c:
+	.text       start:0x8002A610 end:0x8002A630
+
+game/unit_8002A630.c:
+	.text       start:0x8002A630 end:0x8002A70C
+
+game/unit_8002A70C.c:
+	.text       start:0x8002A70C end:0x8002A7E8
+
+game/unit_8002A7E8.c:
+	.text       start:0x8002A7E8 end:0x8002A7F4
+
+game/unit_8002A7F4.c:
+	.text       start:0x8002A7F4 end:0x8002A7FC
+
+game/unit_8002A7FC.c:
+	.text       start:0x8002A7FC end:0x8002A808
+
+game/unit_8002A808.c:
+	.text       start:0x8002A808 end:0x8002A810
+
+game/unit_8002A810.c:
+	.text       start:0x8002A810 end:0x8002A82C
+
+game/unit_8002A82C.c:
+	.text       start:0x8002A82C end:0x8002A850
+
+game/unit_8002A850.c:
+	.text       start:0x8002A850 end:0x8002A874
+
+game/unit_8002A874.c:
+	.text       start:0x8002A874 end:0x8002A898
+
+game/unit_8002A898.c:
+	.text       start:0x8002A898 end:0x8002A9AC
+
+game/unit_8002A9AC.c:
+	.text       start:0x8002A9AC end:0x8002AA5C
+
+game/unit_8002AA5C.c:
+	.text       start:0x8002AA5C end:0x8002AAC8
+
+game/unit_8002AAC8.c:
+	.text       start:0x8002AAC8 end:0x8002ABC4
+
+game/unit_8002ABC4.c:
+	.text       start:0x8002ABC4 end:0x8002AC80
+
+game/unit_8002AC80.c:
+	.text       start:0x8002AC80 end:0x8002ADBC
+
+game/unit_8002ADBC.c:
+	.text       start:0x8002ADBC end:0x8002AEF0
+
+game/unit_8002AFBC.c:
+	.text       start:0x8002AFBC end:0x8002B16C
+
+game/unit_8002B16C.c:
+	.text       start:0x8002B16C end:0x8002B218
+
+game/unit_8002B2F8.c:
+	.text       start:0x8002B2F8 end:0x8002B32C
+
+game/unit_8002B32C.c:
+	.text       start:0x8002B32C end:0x8002B41C
+
+game/unit_8002B41C.c:
+	.text       start:0x8002B41C end:0x8002B434
+
+game/unit_8002BAF4.c:
+	.text       start:0x8002BAF4 end:0x8002BAFC
+
+game/unit_8002BAFC.c:
+	.text       start:0x8002BAFC end:0x8002BB08
+
+game/unit_8002BDA4.c:
+	.text       start:0x8002BDA4 end:0x8002BDC0
+
+game/unit_8002C660.c:
+	.text       start:0x8002C660 end:0x8002C69C
+
+game/unit_8002C89C.c:
+	.text       start:0x8002C89C end:0x8002C954
+
+game/unit_8002CDB0.c:
+	.text       start:0x8002CDB0 end:0x8002CDF4
+
+game/unit_8002CDF4.c:
+	.text       start:0x8002CDF4 end:0x8002CE38
+
+game/unit_8002CE38.c:
+	.text       start:0x8002CE38 end:0x8002CEA8
+
+game/unit_8002D194.c:
+	.text       start:0x8002D194 end:0x8002D198
+
+game/unit_80031044.c:
+	.text       start:0x80031044 end:0x8003107C
+
+game/unit_80031508.c:
+	.text       start:0x80031508 end:0x80031574
+
+game/unit_80031574.c:
+	.text       start:0x80031574 end:0x80031650
+
+game/unit_80031650.c:
+	.text       start:0x80031650 end:0x800316C8
+
+game/unit_800316C8.c:
+	.text       start:0x800316C8 end:0x800316F0
+
+game/unit_800316F0.c:
+	.text       start:0x800316F0 end:0x8003170C
+
+game/unit_80031B00.c:
+	.text       start:0x80031B00 end:0x80031BD8
+
+game/unit_80031BD8.c:
+	.text       start:0x80031BD8 end:0x80031BDC
+
+game/unit_800321A4.c:
+	.text       start:0x800321A4 end:0x800321CC
+
+game/unit_8003248C.c:
+	.text       start:0x8003248C end:0x800324B4
+
+game/unit_800324B4.c:
+	.text       start:0x800324B4 end:0x800324DC
+
+game/unit_800324DC.c:
+	.text       start:0x800324DC end:0x80032538
+
+game/unit_80032538.c:
+	.text       start:0x80032538 end:0x800325A4
+
+game/unit_800325A4.c:
+	.text       start:0x800325A4 end:0x800325F8
+
+game/unit_80032EA0.c:
+	.text       start:0x80032EA0 end:0x80032EAC
+
+game/unit_80032EAC.c:
+	.text       start:0x80032EAC end:0x80032ED8
+
+game/unit_80032ED8.c:
+	.text       start:0x80032ED8 end:0x80032F04
+
+game/unit_80032F04.c:
+	.text       start:0x80032F04 end:0x80032F30
+
+game/unit_80032F30.c:
+	.text       start:0x80032F30 end:0x80032F3C
+
+game/unit_80032F3C.c:
+	.text       start:0x80032F3C end:0x80032F68
+
+game/unit_80032F68.c:
+	.text       start:0x80032F68 end:0x80032F94
+
+game/unit_80032F94.c:
+	.text       start:0x80032F94 end:0x80032FF0
+
+game/unit_80032FF0.c:
+	.text       start:0x80032FF0 end:0x80032FFC
+
+game/unit_80032FFC.c:
+	.text       start:0x80032FFC end:0x80033054
+
+game/unit_80033054.c:
+	.text       start:0x80033054 end:0x80033080
+
+game/unit_80033080.c:
+	.text       start:0x80033080 end:0x800330C4
+
+game/unit_800330C4.c:
+	.text       start:0x800330C4 end:0x800330D0
+
+game/unit_800330D0.c:
+	.text       start:0x800330D0 end:0x80033154
+
+game/unit_80033154.c:
+	.text       start:0x80033154 end:0x800331DC
+
+game/unit_800331DC.c:
+	.text       start:0x800331DC end:0x80033264
+
+game/unit_80033264.c:
+	.text       start:0x80033264 end:0x80033270
+
+game/unit_80033270.c:
+	.text       start:0x80033270 end:0x800332BC
+
+game/unit_800332BC.c:
+	.text       start:0x800332BC end:0x800332F4
+
+game/unit_8003345C.c:
+	.text       start:0x8003345C end:0x8003350C
+
+game/unit_8003350C.c:
+	.text       start:0x8003350C end:0x800335C0
+
+game/unit_800335C0.c:
+	.text       start:0x800335C0 end:0x80033674
+
+game/unit_80033674.c:
+	.text       start:0x80033674 end:0x80033728
+
+game/unit_80033728.c:
+	.text       start:0x80033728 end:0x800337DC
+
+game/unit_800337DC.c:
+	.text       start:0x800337DC end:0x80033890
+
+game/unit_800362F8.c:
+	.text       start:0x800362F8 end:0x80036314
+
+game/unit_800372B4.c:
+	.text       start:0x800372B4 end:0x80037300
+
+game/unit_80037300.c:
+	.text       start:0x80037300 end:0x80037398
+
+game/unit_800388E0.c:
+	.text       start:0x800388E0 end:0x800389DC
+	.data       start:0x8026485C end:0x802648C4
+
+game/unit_8003B4C8.c:
+	.text       start:0x8003B4C8 end:0x8003B4E4
+
+game/unit_8003BD28.c:
+	.text       start:0x8003BD28 end:0x8003BDF8
+
+game/unit_8003BDF8.c:
+	.text       start:0x8003BDF8 end:0x8003BE3C
+
+game/unit_8003BE3C.c:
+	.text       start:0x8003BE3C end:0x8003BE74
+
+game/unit_8003BFCC.c:
+	.text       start:0x8003BFCC end:0x8003C064
+
+game/unit_8003C064.c:
+	.text       start:0x8003C064 end:0x8003C0FC
+
+game/unit_8003C0FC.c:
+	.text       start:0x8003C0FC end:0x8003C1A4
+
+game/unit_8003C1A4.c:
+	.text       start:0x8003C1A4 end:0x8003C1D8
+
+game/unit_8003C1D8.c:
+	.text       start:0x8003C1D8 end:0x8003C268
+
+game/unit_8003C268.c:
+	.text       start:0x8003C268 end:0x8003C2F8
+
+game/unit_8003C2F8.c:
+	.text       start:0x8003C2F8 end:0x8003C388
+
+game/unit_8003C388.c:
+	.text       start:0x8003C388 end:0x8003C418
+
+game/unit_8003C418.c:
+	.text       start:0x8003C418 end:0x8003C4AC
+
+game/unit_8003C4AC.c:
+	.text       start:0x8003C4AC end:0x8003C540
+
+game/unit_8003C540.c:
+	.text       start:0x8003C540 end:0x8003C5D4
+
+game/unit_8003C5D4.c:
+	.text       start:0x8003C5D4 end:0x8003C668
+
+game/unit_8003C668.c:
+	.text       start:0x8003C668 end:0x8003C6E4
+
+game/unit_8003C6E4.c:
+	.text       start:0x8003C6E4 end:0x8003C774
+
+game/unit_8003C964.c:
+	.text       start:0x8003C964 end:0x8003C968
+
+game/unit_8003E3B4.c:
+	.text       start:0x8003E3B4 end:0x8003E494
+
+game/unit_8003EFAC.c:
+	.text       start:0x8003EFAC end:0x8003EFF8
+
+game/unit_8003FDE0.c:
+	.text       start:0x8003FDE0 end:0x8003FE8C
+
+game/unit_8004014C.c:
+	.text       start:0x8004014C end:0x800401AC
+
+game/unit_800401AC.c:
+	.text       start:0x800401AC end:0x80040234
+
+game/unit_80040234.c:
+	.text       start:0x80040234 end:0x8004024C
+
+game/unit_80040394.c:
+	.text       start:0x80040394 end:0x8004044C
+
+game/unit_8004044C.c:
+	.text       start:0x8004044C end:0x800404E4
+
+game/unit_80040810.c:
+	.text       start:0x80040810 end:0x800408F8
+
+game/unit_80040A64.c:
+	.text       start:0x80040A64 end:0x80040AD0
+
+game/unit_80040AD0.c:
+	.text       start:0x80040AD0 end:0x80040BF4
+
+game/unit_80040BF4.c:
+	.text       start:0x80040BF4 end:0x80040C38
+
+game/unit_80040C38.c:
+	.text       start:0x80040C38 end:0x80040D0C
+
+game/unit_80040D0C.c:
+	.text       start:0x80040D0C end:0x80040D50
+
+game/unit_80040D50.c:
+	.text       start:0x80040D50 end:0x80040E80
+
+game/unit_80040E80.c:
+	.text       start:0x80040E80 end:0x80040EC4
+
+game/unit_80040EC4.c:
+	.text       start:0x80040EC4 end:0x80040FE4
+
+game/unit_80040FE4.c:
+	.text       start:0x80040FE4 end:0x80041028
+
+game/unit_80041028.c:
+	.text       start:0x80041028 end:0x80041120
+
+game/unit_80041120.c:
+	.text       start:0x80041120 end:0x800411B4
+
+game/unit_800411B4.c:
+	.text       start:0x800411B4 end:0x800411CC
+
+game/unit_800411CC.c:
+	.text       start:0x800411CC end:0x80041210
+
+game/unit_800415A8.c:
+	.text       start:0x800415A8 end:0x80041668
+
+game/unit_80041668.c:
+	.text       start:0x80041668 end:0x800416EC
+
+game/unit_800416EC.c:
+	.text       start:0x800416EC end:0x800417FC
+
+game/unit_800417FC.c:
+	.text       start:0x800417FC end:0x80041840
+
+game/unit_80041840.c:
+	.text       start:0x80041840 end:0x8004196C
+
+game/unit_8004196C.c:
+	.text       start:0x8004196C end:0x80041A34
+
+game/unit_80041A34.c:
+	.text       start:0x80041A34 end:0x80041A78
+
+game/unit_80041A78.c:
+	.text       start:0x80041A78 end:0x80041C00
+
+game/unit_80041C00.c:
+	.text       start:0x80041C00 end:0x80041C44
+
+game/unit_80041C44.c:
+	.text       start:0x80041C44 end:0x80041D28
+
+game/unit_80041E9C.c:
+	.text       start:0x80041E9C end:0x80041EE0
+
+game/unit_80041EE0.c:
+	.text       start:0x80041EE0 end:0x80041F54
+
+game/unit_80041F54.c:
+	.text       start:0x80041F54 end:0x80042048
+
+game/unit_80042144.c:
+	.text       start:0x80042144 end:0x80042188
+
+game/unit_800422D8.c:
+	.text       start:0x800422D8 end:0x800423A4
+
+game/unit_800423A4.c:
+	.text       start:0x800423A4 end:0x800423BC
+
+game/unit_800423BC.c:
+	.text       start:0x800423BC end:0x800424C0
+
+game/unit_80042608.c:
+	.text       start:0x80042608 end:0x8004264C
+
+game/unit_8004264C.c:
+	.text       start:0x8004264C end:0x80042758
+
+game/unit_80042758.c:
+	.text       start:0x80042758 end:0x8004279C
+
+game/unit_80042A2C.c:
+	.text       start:0x80042A2C end:0x80042A70
+
+game/unit_80042A70.c:
+	.text       start:0x80042A70 end:0x80042B24
+
+game/unit_80042B24.c:
+	.text       start:0x80042B24 end:0x80042B9C
+
+game/unit_80042B9C.c:
+	.text       start:0x80042B9C end:0x80042CB4
+
+game/unit_80042CB4.c:
+	.text       start:0x80042CB4 end:0x80042CF8
+
+game/unit_80042CF8.c:
+	.text       start:0x80042CF8 end:0x80042D30
+
+game/unit_80042D30.c:
+	.text       start:0x80042D30 end:0x80042DA0
+
+game/unit_80042DEC.c:
+	.text       start:0x80042DEC end:0x80042F58
+
+game/unit_80042F58.c:
+	.text       start:0x80042F58 end:0x80042FC4
+
+game/unit_80042FC4.c:
+	.text       start:0x80042FC4 end:0x800430E8
+
+game/unit_800433B0.c:
+	.text       start:0x800433B0 end:0x80043410
+
+game/unit_80043410.c:
+	.text       start:0x80043410 end:0x80043414
+
+game/unit_800436F8.c:
+	.text       start:0x800436F8 end:0x800436FC
+
+game/unit_800436FC.c:
+	.text       start:0x800436FC end:0x80043794
+
+game/unit_80043794.c:
+	.text       start:0x80043794 end:0x80043938
+
+game/unit_80043938.c:
+	.text       start:0x80043938 end:0x80043A84
+
+game/unit_80043A84.c:
+	.text       start:0x80043A84 end:0x80043BE4
+
+game/unit_80043BE4.c:
+	.text       start:0x80043BE4 end:0x80043C5C
+
+game/unit_80043C5C.c:
+	.text       start:0x80043C5C end:0x80043CA0
+
+game/unit_80043CA0.c:
+	.text       start:0x80043CA0 end:0x80043CE4
+
+game/unit_80043CE4.c:
+	.text       start:0x80043CE4 end:0x80043D50
+
+game/unit_80043D50.c:
+	.text       start:0x80043D50 end:0x80043DDC
+
+game/unit_80043DDC.c:
+	.text       start:0x80043DDC end:0x80043F24
+
+game/unit_80043F24.c:
+	.text       start:0x80043F24 end:0x80043FE4
+
+game/unit_80044250.c:
+	.text       start:0x80044250 end:0x800442A8
+
+game/unit_800442A8.c:
+	.text       start:0x800442A8 end:0x800442AC
+
+game/unit_800444B4.c:
+	.text       start:0x800444B4 end:0x800445A4
+
+game/unit_80044840.c:
+	.text       start:0x80044840 end:0x800448B4
+
+game/unit_800448B4.c:
+	.text       start:0x800448B4 end:0x800448F8
+
+game/unit_800448F8.c:
+	.text       start:0x800448F8 end:0x8004493C
+
+game/unit_8004493C.c:
+	.text       start:0x8004493C end:0x800449A4
+
+game/unit_800449A4.c:
+	.text       start:0x800449A4 end:0x80044A2C
+
+game/unit_80044A2C.c:
+	.text       start:0x80044A2C end:0x80044B74
+
+game/unit_80044B74.c:
+	.text       start:0x80044B74 end:0x80044C54
+
+game/unit_80044E90.c:
+	.text       start:0x80044E90 end:0x80044EE8
+
+game/unit_80044EE8.c:
+	.text       start:0x80044EE8 end:0x80044EEC
+
+game/unit_80045378.c:
+	.text       start:0x80045378 end:0x800453DC
+
+game/unit_800453DC.c:
+	.text       start:0x800453DC end:0x80045420
+
+game/unit_80045420.c:
+	.text       start:0x80045420 end:0x80045464
+
+game/unit_80045464.c:
+	.text       start:0x80045464 end:0x800454CC
+
+game/unit_800454CC.c:
+	.text       start:0x800454CC end:0x80045554
+
+game/unit_80045554.c:
+	.text       start:0x80045554 end:0x80045694
+
+game/unit_80045694.c:
+	.text       start:0x80045694 end:0x80045754
+
+game/unit_80045A0C.c:
+	.text       start:0x80045A0C end:0x80045A64
+
+game/unit_80045A64.c:
+	.text       start:0x80045A64 end:0x80045A68
+
+game/unit_80045A68.c:
+	.text       start:0x80045A68 end:0x80045B7C
+
+game/unit_80046018.c:
+	.text       start:0x80046018 end:0x8004608C
+
+game/unit_8004608C.c:
+	.text       start:0x8004608C end:0x800460D0
+
+game/unit_800460D0.c:
+	.text       start:0x800460D0 end:0x80046114
+
+game/unit_80046114.c:
+	.text       start:0x80046114 end:0x8004617C
+
+game/unit_8004617C.c:
+	.text       start:0x8004617C end:0x80046204
+
+game/unit_80046204.c:
+	.text       start:0x80046204 end:0x80046344
+
+game/unit_80046344.c:
+	.text       start:0x80046344 end:0x80046408
+
+game/unit_80046610.c:
+	.text       start:0x80046610 end:0x80046668
+
+game/unit_80046668.c:
+	.text       start:0x80046668 end:0x8004666C
+
+game/unit_8004701C.c:
+	.text       start:0x8004701C end:0x800470A4
+
+game/unit_800470A4.c:
+	.text       start:0x800470A4 end:0x800470E8
+
+game/unit_800470E8.c:
+	.text       start:0x800470E8 end:0x8004712C
+
+game/unit_8004712C.c:
+	.text       start:0x8004712C end:0x800471A8
+
+game/unit_800471A8.c:
+	.text       start:0x800471A8 end:0x80047244
+
+game/unit_80047244.c:
+	.text       start:0x80047244 end:0x80047384
+
+game/unit_80047384.c:
+	.text       start:0x80047384 end:0x80047444
+
+game/unit_80047638.c:
+	.text       start:0x80047638 end:0x80047690
+
+game/unit_80047690.c:
+	.text       start:0x80047690 end:0x80047694
+
+game/unit_80047908.c:
+	.text       start:0x80047908 end:0x800479F4
+
+game/unit_800479F4.c:
+	.text       start:0x800479F4 end:0x80047AA4
+
+game/unit_80047D40.c:
+	.text       start:0x80047D40 end:0x80047DB4
+
+game/unit_80047DB4.c:
+	.text       start:0x80047DB4 end:0x80047DF8
+
+game/unit_80047DF8.c:
+	.text       start:0x80047DF8 end:0x80047E3C
+
+game/unit_80047E3C.c:
+	.text       start:0x80047E3C end:0x80047EA4
+
+game/unit_80047EA4.c:
+	.text       start:0x80047EA4 end:0x80047F2C
+
+game/unit_80047F2C.c:
+	.text       start:0x80047F2C end:0x8004806C
+
+game/unit_8004806C.c:
+	.text       start:0x8004806C end:0x800480A8
+
+game/unit_8004829C.c:
+	.text       start:0x8004829C end:0x800482F4
+
+game/unit_800482F4.c:
+	.text       start:0x800482F4 end:0x800482F8
+
+game/unit_80048AFC.c:
+	.text       start:0x80048AFC end:0x80048B64
+
+game/unit_80048B64.c:
+	.text       start:0x80048B64 end:0x80048BA8
+
+game/unit_80048BA8.c:
+	.text       start:0x80048BA8 end:0x80048BEC
+
+game/unit_80048BEC.c:
+	.text       start:0x80048BEC end:0x80048C74
+
+game/unit_80048C74.c:
+	.text       start:0x80048C74 end:0x80048D6C
+
+game/unit_80048D6C.c:
+	.text       start:0x80048D6C end:0x80048E2C
+
+game/unit_8004913C.c:
+	.text       start:0x8004913C end:0x80049194
+
+game/unit_80049194.c:
+	.text       start:0x80049194 end:0x80049198
+
+game/unit_8004995C.c:
+	.text       start:0x8004995C end:0x800499D0
+
+game/unit_800499D0.c:
+	.text       start:0x800499D0 end:0x80049A14
+
+game/unit_80049A14.c:
+	.text       start:0x80049A14 end:0x80049A58
+
+game/unit_80049A58.c:
+	.text       start:0x80049A58 end:0x80049AC0
+
+game/unit_80049AC0.c:
+	.text       start:0x80049AC0 end:0x80049B48
+
+game/unit_80049B48.c:
+	.text       start:0x80049B48 end:0x80049CB4
+
+game/unit_80049CB4.c:
+	.text       start:0x80049CB4 end:0x80049CF8
+
+game/unit_8004A048.c:
+	.text       start:0x8004A048 end:0x8004A0A0
+
+game/unit_8004A0A0.c:
+	.text       start:0x8004A0A0 end:0x8004A0A4
+
+game/unit_8004AC04.c:
+	.text       start:0x8004AC04 end:0x8004AC84
+
+game/unit_8004AC84.c:
+	.text       start:0x8004AC84 end:0x8004ACC8
+
+game/unit_8004ACC8.c:
+	.text       start:0x8004ACC8 end:0x8004AD0C
+
+game/unit_8004AD0C.c:
+	.text       start:0x8004AD0C end:0x8004AD78
+
+game/unit_8004AD78.c:
+	.text       start:0x8004AD78 end:0x8004AE04
+
+game/unit_8004AE04.c:
+	.text       start:0x8004AE04 end:0x8004AED4
+
+game/unit_8004AED4.c:
+	.text       start:0x8004AED4 end:0x8004AFC8
+
+game/unit_8004B204.c:
+	.text       start:0x8004B204 end:0x8004B270
+
+game/unit_8004B270.c:
+	.text       start:0x8004B270 end:0x8004B274
+
+game/unit_8004B90C.c:
+	.text       start:0x8004B90C end:0x8004B980
+
+game/unit_8004B980.c:
+	.text       start:0x8004B980 end:0x8004B9C4
+
+game/unit_8004B9C4.c:
+	.text       start:0x8004B9C4 end:0x8004BA08
+
+game/unit_8004BA08.c:
+	.text       start:0x8004BA08 end:0x8004BA70
+
+game/unit_8004BA70.c:
+	.text       start:0x8004BA70 end:0x8004BAF8
+
+game/unit_8004BD58.c:
+	.text       start:0x8004BD58 end:0x8004BE24
+
+game/unit_8004C080.c:
+	.text       start:0x8004C080 end:0x8004C0E4
+
+game/unit_8004C0E4.c:
+	.text       start:0x8004C0E4 end:0x8004C0E8
+
+game/unit_8004CB5C.c:
+	.text       start:0x8004CB5C end:0x8004CBA0
+
+game/unit_8004CBA0.c:
+	.text       start:0x8004CBA0 end:0x8004CBE4
+
+game/unit_8004CE98.c:
+	.text       start:0x8004CE98 end:0x8004CF20
+
+game/unit_8004CF20.c:
+	.text       start:0x8004CF20 end:0x8004D060
+
+game/unit_8004D060.c:
+	.text       start:0x8004D060 end:0x8004D124
+
+game/unit_8004D3B4.c:
+	.text       start:0x8004D3B4 end:0x8004D40C
+
+game/unit_8004D40C.c:
+	.text       start:0x8004D40C end:0x8004D410
+
+game/unit_8004D860.c:
+	.text       start:0x8004D860 end:0x8004D960
+
+game/unit_8004DC00.c:
+	.text       start:0x8004DC00 end:0x8004DC78
+
+game/unit_8004DC78.c:
+	.text       start:0x8004DC78 end:0x8004DCBC
+
+game/unit_8004DCBC.c:
+	.text       start:0x8004DCBC end:0x8004DD00
+
+game/unit_8004DD00.c:
+	.text       start:0x8004DD00 end:0x8004DD6C
+
+game/unit_8004DD6C.c:
+	.text       start:0x8004DD6C end:0x8004DDF8
+
+game/unit_8004DDF8.c:
+	.text       start:0x8004DDF8 end:0x8004DF38
+
+game/unit_8004DF38.c:
+	.text       start:0x8004DF38 end:0x8004E00C
+
+game/unit_8004E314.c:
+	.text       start:0x8004E314 end:0x8004E36C
+
+game/unit_8004E36C.c:
+	.text       start:0x8004E36C end:0x8004E370
+
+game/unit_8004EA3C.c:
+	.text       start:0x8004EA3C end:0x8004EAC0
+
+game/unit_8004EAC0.c:
+	.text       start:0x8004EAC0 end:0x8004EB04
+
+game/unit_8004EB04.c:
+	.text       start:0x8004EB04 end:0x8004EB48
+
+game/unit_8004EB48.c:
+	.text       start:0x8004EB48 end:0x8004EBC0
+
+game/unit_8004EBC0.c:
+	.text       start:0x8004EBC0 end:0x8004EC58
+
+game/unit_8004EC58.c:
+	.text       start:0x8004EC58 end:0x8004ED98
+
+game/unit_8004ED98.c:
+	.text       start:0x8004ED98 end:0x8004EE5C
+
+game/unit_8004F0B4.c:
+	.text       start:0x8004F0B4 end:0x8004F118
+
+game/unit_8004F118.c:
+	.text       start:0x8004F118 end:0x8004F11C
+
+game/unit_8004F11C.c:
+	.text       start:0x8004F11C end:0x8004F1CC
+
+game/unit_80050064.c:
+	.text       start:0x80050064 end:0x800500DC
+
+game/unit_800500DC.c:
+	.text       start:0x800500DC end:0x80050120
+
+game/unit_80050120.c:
+	.text       start:0x80050120 end:0x80050164
+
+game/unit_80050164.c:
+	.text       start:0x80050164 end:0x800501D0
+
+game/unit_800501D0.c:
+	.text       start:0x800501D0 end:0x8005025C
+
+game/unit_800503A8.c:
+	.text       start:0x800503A8 end:0x80050484
+
+game/unit_800506D4.c:
+	.text       start:0x800506D4 end:0x8005072C
+
+game/unit_8005072C.c:
+	.text       start:0x8005072C end:0x80050730
+
+game/unit_800513A0.c:
+	.text       start:0x800513A0 end:0x80051430
+
+game/unit_80051430.c:
+	.text       start:0x80051430 end:0x80051474
+
+game/unit_80051474.c:
+	.text       start:0x80051474 end:0x800514B8
+
+game/unit_800514B8.c:
+	.text       start:0x800514B8 end:0x8005153C
+
+game/unit_8005153C.c:
+	.text       start:0x8005153C end:0x800515E0
+
+game/unit_800515E0.c:
+	.text       start:0x800515E0 end:0x80051720
+
+game/unit_80051720.c:
+	.text       start:0x80051720 end:0x800517E0
+
+game/unit_80051A7C.c:
+	.text       start:0x80051A7C end:0x80051AD4
+
+game/unit_80051AD4.c:
+	.text       start:0x80051AD4 end:0x80051AD8
+
+game/unit_80052450.c:
+	.text       start:0x80052450 end:0x800524C4
+
+game/unit_800524C4.c:
+	.text       start:0x800524C4 end:0x80052508
+
+game/unit_80052508.c:
+	.text       start:0x80052508 end:0x8005254C
+
+game/unit_8005254C.c:
+	.text       start:0x8005254C end:0x800525B4
+
+game/unit_800525B4.c:
+	.text       start:0x800525B4 end:0x8005263C
+
+game/unit_8005263C.c:
+	.text       start:0x8005263C end:0x8005278C
+
+game/unit_8005278C.c:
+	.text       start:0x8005278C end:0x80052850
+
+game/unit_80052B10.c:
+	.text       start:0x80052B10 end:0x80052B6C
+
+game/unit_80052B6C.c:
+	.text       start:0x80052B6C end:0x80052B70
+
+game/unit_80052B70.c:
+	.text       start:0x80052B70 end:0x80052C90
+
+game/unit_80052F4C.c:
+	.text       start:0x80052F4C end:0x800530A8
+
+game/unit_800530A8.c:
+	.text       start:0x800530A8 end:0x80053120
+
+game/unit_80053120.c:
+	.text       start:0x80053120 end:0x80053164
+
+game/unit_80053164.c:
+	.text       start:0x80053164 end:0x800531A8
+
+game/unit_800531A8.c:
+	.text       start:0x800531A8 end:0x80053214
+
+game/unit_80053214.c:
+	.text       start:0x80053214 end:0x800532A0
+
+game/unit_800532A0.c:
+	.text       start:0x800532A0 end:0x800533F0
+
+game/unit_800533F0.c:
+	.text       start:0x800533F0 end:0x8005349C
+
+game/unit_8005349C.c:
+	.text       start:0x8005349C end:0x80053560
+
+game/unit_8005379C.c:
+	.text       start:0x8005379C end:0x800537F8
+
+game/unit_800537F8.c:
+	.text       start:0x800537F8 end:0x800537FC
+
+game/unit_800537FC.c:
+	.text       start:0x800537FC end:0x800538EC
+
+game/unit_800538EC.c:
+	.text       start:0x800538EC end:0x80053B74
+	.data       start:0x80266618 end:0x80266638
+
+game/unit_80053CC0.c:
+	.text       start:0x80053CC0 end:0x80053E1C
+
+game/unit_80053E1C.c:
+	.text       start:0x80053E1C end:0x80053E94
+
+game/unit_80053E94.c:
+	.text       start:0x80053E94 end:0x80053ED8
+
+game/unit_80053ED8.c:
+	.text       start:0x80053ED8 end:0x80053F1C
+
+game/unit_80053F1C.c:
+	.text       start:0x80053F1C end:0x80053F88
+
+game/unit_80053F88.c:
+	.text       start:0x80053F88 end:0x80054014
+
+game/unit_80054014.c:
+	.text       start:0x80054014 end:0x80054164
+
+game/unit_80054164.c:
+	.text       start:0x80054164 end:0x80054224
+
+game/unit_800544C0.c:
+	.text       start:0x800544C0 end:0x80054530
+
+game/unit_80054530.c:
+	.text       start:0x80054530 end:0x80054534
+
+game/unit_80054DC8.c:
+	.text       start:0x80054DC8 end:0x80054E50
+
+game/unit_80054FB8.c:
+	.text       start:0x80054FB8 end:0x80055090
+
+game/unit_80055300.c:
+	.text       start:0x80055300 end:0x80055368
+
+game/unit_80055368.c:
+	.text       start:0x80055368 end:0x8005536C
+
+game/unit_80056068.c:
+	.text       start:0x80056068 end:0x8005617C
+
+game/unit_80056438.c:
+	.text       start:0x80056438 end:0x800564CC
+
+game/unit_800564CC.c:
+	.text       start:0x800564CC end:0x80056510
+
+game/unit_80056510.c:
+	.text       start:0x80056510 end:0x80056554
+
+game/unit_80056554.c:
+	.text       start:0x80056554 end:0x800565BC
+
+game/unit_800565BC.c:
+	.text       start:0x800565BC end:0x80056644
+
+game/unit_800567E0.c:
+	.text       start:0x800567E0 end:0x800568A0
+
+game/unit_80056AC0.c:
+	.text       start:0x80056AC0 end:0x80056B1C
+
+game/unit_80056B1C.c:
+	.text       start:0x80056B1C end:0x80056B20
+
+game/unit_80056B20.c:
+	.text       start:0x80056B20 end:0x80056C44
+
+game/unit_8005711C.c:
+	.text       start:0x8005711C end:0x80057190
+
+game/unit_80057190.c:
+	.text       start:0x80057190 end:0x800571D4
+
+game/unit_800571D4.c:
+	.text       start:0x800571D4 end:0x80057218
+
+game/unit_80057218.c:
+	.text       start:0x80057218 end:0x80057280
+
+game/unit_80057280.c:
+	.text       start:0x80057280 end:0x80057308
+
+game/unit_80057308.c:
+	.text       start:0x80057308 end:0x80057448
+
+game/unit_80057448.c:
+	.text       start:0x80057448 end:0x8005750C
+
+game/unit_80057790.c:
+	.text       start:0x80057790 end:0x800577EC
+
+game/unit_800577EC.c:
+	.text       start:0x800577EC end:0x800577F0
+
+game/unit_80057C5C.c:
+	.text       start:0x80057C5C end:0x80057DB8
+
+game/unit_80057DB8.c:
+	.text       start:0x80057DB8 end:0x80057E30
+
+game/unit_80057E30.c:
+	.text       start:0x80057E30 end:0x80057E74
+
+game/unit_80057E74.c:
+	.text       start:0x80057E74 end:0x80057EB8
+
+game/unit_80057EB8.c:
+	.text       start:0x80057EB8 end:0x80057F24
+
+game/unit_80057F24.c:
+	.text       start:0x80057F24 end:0x80057FB0
+
+game/unit_80057FB0.c:
+	.text       start:0x80057FB0 end:0x800580F0
+
+game/unit_800580F0.c:
+	.text       start:0x800580F0 end:0x800581B0
+
+game/unit_80058410.c:
+	.text       start:0x80058410 end:0x8005846C
+
+game/unit_8005846C.c:
+	.text       start:0x8005846C end:0x80058470
+
+game/unit_800586A4.c:
+	.text       start:0x800586A4 end:0x80058910
+	.data       start:0x80266B50 end:0x80266B70
+
+game/unit_80058A58.c:
+	.text       start:0x80058A58 end:0x80058BB4
+
+game/unit_80058BB4.c:
+	.text       start:0x80058BB4 end:0x80058C28
+
+game/unit_80058C28.c:
+	.text       start:0x80058C28 end:0x80058C6C
+
+game/unit_80058C6C.c:
+	.text       start:0x80058C6C end:0x80058CB0
+
+game/unit_80058CB0.c:
+	.text       start:0x80058CB0 end:0x80058D18
+
+game/unit_80058D18.c:
+	.text       start:0x80058D18 end:0x80058DA0
+
+game/unit_80058DA0.c:
+	.text       start:0x80058DA0 end:0x80058EE0
+
+game/unit_80058EE0.c:
+	.text       start:0x80058EE0 end:0x80058FA4
+
+game/unit_80059280.c:
+	.text       start:0x80059280 end:0x800592DC
+
+game/unit_800592DC.c:
+	.text       start:0x800592DC end:0x800592E0
+
+game/unit_800598C0.c:
+	.text       start:0x800598C0 end:0x800599E8
+
+game/unit_800599E8.c:
+	.text       start:0x800599E8 end:0x80059A2C
+
+game/unit_80059A2C.c:
+	.text       start:0x80059A2C end:0x80059A70
+
+game/unit_80059A70.c:
+	.text       start:0x80059A70 end:0x80059ADC
+
+game/unit_80059ADC.c:
+	.text       start:0x80059ADC end:0x80059B68
+
+game/unit_80059CD0.c:
+	.text       start:0x80059CD0 end:0x80059DB8
+
+game/unit_8005A060.c:
+	.text       start:0x8005A060 end:0x8005A0C8
+
+game/unit_8005A0C8.c:
+	.text       start:0x8005A0C8 end:0x8005A0CC
+
+game/unit_8005AC50.c:
+	.text       start:0x8005AC50 end:0x8005ACEC
+
+game/unit_8005ACEC.c:
+	.text       start:0x8005ACEC end:0x8005AD30
+
+game/unit_8005AD30.c:
+	.text       start:0x8005AD30 end:0x8005AD74
+
+game/unit_8005AD74.c:
+	.text       start:0x8005AD74 end:0x8005AE04
+
+game/unit_8005AE04.c:
+	.text       start:0x8005AE04 end:0x8005AEB4
+
+game/unit_8005AEB4.c:
+	.text       start:0x8005AEB4 end:0x8005B00C
+
+game/unit_8005B00C.c:
+	.text       start:0x8005B00C end:0x8005B0D0
+
+game/unit_8005B31C.c:
+	.text       start:0x8005B31C end:0x8005B378
+
+game/unit_8005B378.c:
+	.text       start:0x8005B378 end:0x8005B37C
+
+game/unit_8005B7B4.c:
+	.text       start:0x8005B7B4 end:0x8005B910
+
+game/unit_8005B910.c:
+	.text       start:0x8005B910 end:0x8005B988
+
+game/unit_8005B988.c:
+	.text       start:0x8005B988 end:0x8005B9CC
+
+game/unit_8005B9CC.c:
+	.text       start:0x8005B9CC end:0x8005BA10
+
+game/unit_8005BA10.c:
+	.text       start:0x8005BA10 end:0x8005BA7C
+
+game/unit_8005BA7C.c:
+	.text       start:0x8005BA7C end:0x8005BB08
+
+game/unit_8005BB08.c:
+	.text       start:0x8005BB08 end:0x8005BC48
+
+game/unit_8005BC48.c:
+	.text       start:0x8005BC48 end:0x8005BD1C
+
+game/unit_8005BF98.c:
+	.text       start:0x8005BF98 end:0x8005C000
+
+game/unit_8005C000.c:
+	.text       start:0x8005C000 end:0x8005C004
+
+game/unit_8005C004.c:
+	.text       start:0x8005C004 end:0x8005C2E0
+	.data       start:0x80266F90 end:0x80266FB0
+
+game/unit_8005CB98.c:
+	.text       start:0x8005CB98 end:0x8005CC20
+
+game/unit_8005CC20.c:
+	.text       start:0x8005CC20 end:0x8005CC64
+
+game/unit_8005CC64.c:
+	.text       start:0x8005CC64 end:0x8005CCA8
+
+game/unit_8005CCA8.c:
+	.text       start:0x8005CCA8 end:0x8005CD24
+
+game/unit_8005CD24.c:
+	.text       start:0x8005CD24 end:0x8005CDC0
+
+game/unit_8005CDC0.c:
+	.text       start:0x8005CDC0 end:0x8005CF00
+
+game/unit_8005CF00.c:
+	.text       start:0x8005CF00 end:0x8005CF64
+
+game/unit_8005D1F8.c:
+	.text       start:0x8005D1F8 end:0x8005D254
+
+game/unit_8005D254.c:
+	.text       start:0x8005D254 end:0x8005D258
+
+game/unit_8005DA84.c:
+	.text       start:0x8005DA84 end:0x8005DB48
+
+game/unit_8005DDF0.c:
+	.text       start:0x8005DDF0 end:0x8005DE70
+
+game/unit_8005DE70.c:
+	.text       start:0x8005DE70 end:0x8005DEB4
+
+game/unit_8005DEB4.c:
+	.text       start:0x8005DEB4 end:0x8005DEF8
+
+game/unit_8005DEF8.c:
+	.text       start:0x8005DEF8 end:0x8005DF6C
+
+game/unit_8005DF6C.c:
+	.text       start:0x8005DF6C end:0x8005DFF8
+
+game/unit_8005DFF8.c:
+	.text       start:0x8005DFF8 end:0x8005E0B4
+
+game/unit_8005E0B4.c:
+	.text       start:0x8005E0B4 end:0x8005E128
+
+game/unit_8005E128.c:
+	.text       start:0x8005E128 end:0x8005E1F4
+
+game/unit_8005E414.c:
+	.text       start:0x8005E414 end:0x8005E47C
+
+game/unit_8005E47C.c:
+	.text       start:0x8005E47C end:0x8005E480
+
+game/unit_8005E9DC.c:
+	.text       start:0x8005E9DC end:0x8005EADC
+
+game/unit_8005ED98.c:
+	.text       start:0x8005ED98 end:0x8005EE24
+
+game/unit_8005EE24.c:
+	.text       start:0x8005EE24 end:0x8005EE68
+
+game/unit_8005EE68.c:
+	.text       start:0x8005EE68 end:0x8005EEAC
+
+game/unit_8005EEAC.c:
+	.text       start:0x8005EEAC end:0x8005EF14
+
+game/unit_8005EF14.c:
+	.text       start:0x8005EF14 end:0x8005EF9C
+
+game/unit_8005EF9C.c:
+	.text       start:0x8005EF9C end:0x8005F124
+
+game/unit_8005F124.c:
+	.text       start:0x8005F124 end:0x8005F1E4
+
+game/unit_8005F3E8.c:
+	.text       start:0x8005F3E8 end:0x8005F444
+
+game/unit_8005F444.c:
+	.text       start:0x8005F444 end:0x8005F448
+
+game/unit_8005F720.c:
+	.text       start:0x8005F720 end:0x8005F87C
+
+game/unit_8005F87C.c:
+	.text       start:0x8005F87C end:0x8005F8F0
+
+game/unit_8005F8F0.c:
+	.text       start:0x8005F8F0 end:0x8005F934
+
+game/unit_8005F934.c:
+	.text       start:0x8005F934 end:0x8005F978
+
+game/unit_8005F978.c:
+	.text       start:0x8005F978 end:0x8005F9E0
+
+game/unit_8005F9E0.c:
+	.text       start:0x8005F9E0 end:0x8005FA68
+
+game/unit_8005FA68.c:
+	.text       start:0x8005FA68 end:0x8005FBA8
+
+game/unit_8005FC14.c:
+	.text       start:0x8005FC14 end:0x8005FCF8
+
+game/unit_80060020.c:
+	.text       start:0x80060020 end:0x8006003C
+
+game/unit_8006003C.c:
+	.text       start:0x8006003C end:0x80060040
+
+game/unit_80060DD4.c:
+	.text       start:0x80060DD4 end:0x80060E88
+
+game/unit_80061650.c:
+	.text       start:0x80061650 end:0x8006181C
+	.data       start:0x8026788C end:0x802678AC
+
+game/unit_8006181C.c:
+	.text       start:0x8006181C end:0x800618F8
+
+game/unit_800618F8.c:
+	.text       start:0x800618F8 end:0x80061960
+
+game/unit_80061960.c:
+	.text       start:0x80061960 end:0x800619A4
+
+game/unit_800619A4.c:
+	.text       start:0x800619A4 end:0x800619E8
+
+game/unit_800619E8.c:
+	.text       start:0x800619E8 end:0x80061B24
+
+game/unit_80061C78.c:
+	.text       start:0x80061C78 end:0x80061D30
+
+game/unit_80061D30.c:
+	.text       start:0x80061D30 end:0x80061E18
+
+game/unit_800620A4.c:
+	.text       start:0x800620A4 end:0x800620C0
+
+game/unit_800620C0.c:
+	.text       start:0x800620C0 end:0x800620FC
+
+game/unit_800620FC.c:
+	.text       start:0x800620FC end:0x800621B0
+
+game/unit_800621B0.c:
+	.text       start:0x800621B0 end:0x800622A0
+
+game/unit_800623D4.c:
+	.text       start:0x800623D4 end:0x80062520
+
+game/unit_80062520.c:
+	.text       start:0x80062520 end:0x80062524
+
+game/unit_80062524.c:
+	.text       start:0x80062524 end:0x800625AC
+
+game/unit_800625AC.c:
+	.text       start:0x800625AC end:0x80062604
+
+game/unit_80062604.c:
+	.text       start:0x80062604 end:0x8006265C
+
+game/unit_8006265C.c:
+	.text       start:0x8006265C end:0x800626D8
+
+game/unit_800626D8.c:
+	.text       start:0x800626D8 end:0x80062774
+
+game/unit_80062CD0.c:
+	.text       start:0x80062CD0 end:0x80062D88
+
+game/unit_80062D88.c:
+	.text       start:0x80062D88 end:0x80062DC4
+
+game/unit_80062F84.c:
+	.text       start:0x80062F84 end:0x800630AC
+
+game/unit_800630AC.c:
+	.text       start:0x800630AC end:0x800630C4
+
+game/unit_800630C4.c:
+	.text       start:0x800630C4 end:0x800630C8
+
+game/unit_80063E10.c:
+	.text       start:0x80063E10 end:0x80063F38
+
+game/unit_80063F38.c:
+	.text       start:0x80063F38 end:0x80063FA0
+
+game/unit_80063FA0.c:
+	.text       start:0x80063FA0 end:0x80064014
+
+game/unit_80064014.c:
+	.text       start:0x80064014 end:0x8006406C
+
+game/unit_80064234.c:
+	.text       start:0x80064234 end:0x800642FC
+
+game/unit_800642FC.c:
+	.text       start:0x800642FC end:0x80064314
+
+game/unit_80064314.c:
+	.text       start:0x80064314 end:0x80064318
+
+game/unit_80064318.c:
+	.text       start:0x80064318 end:0x80064374
+
+game/unit_80064374.c:
+	.text       start:0x80064374 end:0x800644B4
+
+game/unit_80064EC4.c:
+	.text       start:0x80064EC4 end:0x80064F70
+
+game/unit_800652F8.c:
+	.text       start:0x800652F8 end:0x80065414
+
+game/unit_80065414.c:
+	.text       start:0x80065414 end:0x80065488
+
+game/unit_8006566C.c:
+	.text       start:0x8006566C end:0x800656A8
+
+game/unit_80065A8C.c:
+	.text       start:0x80065A8C end:0x80065B38
+
+game/unit_80065DD0.c:
+	.text       start:0x80065DD0 end:0x80065F10
+
+game/unit_80065F10.c:
+	.text       start:0x80065F10 end:0x80065F54
+
+game/unit_80065F54.c:
+	.text       start:0x80065F54 end:0x80066010
+
+game/unit_80066010.c:
+	.text       start:0x80066010 end:0x8006607C
+
+game/unit_8006607C.c:
+	.text       start:0x8006607C end:0x800660B8
+
+game/unit_800660B8.c:
+	.text       start:0x800660B8 end:0x8006615C
+
+game/unit_8006615C.c:
+	.text       start:0x8006615C end:0x80066270
+
+game/unit_80066270.c:
+	.text       start:0x80066270 end:0x80066390
+
+game/unit_80066C60.c:
+	.text       start:0x80066C60 end:0x80066D88
+
+game/unit_80066D88.c:
+	.text       start:0x80066D88 end:0x80066DFC
+
+game/unit_80066DFC.c:
+	.text       start:0x80066DFC end:0x80066EF0
+
+game/unit_80066EF0.c:
+	.text       start:0x80066EF0 end:0x80066F6C
+
+game/unit_800671D0.c:
+	.text       start:0x800671D0 end:0x800671EC
+
+game/unit_800671EC.c:
+	.text       start:0x800671EC end:0x800671F0
+
+game/unit_800671F0.c:
+	.text       start:0x800671F0 end:0x800673C8
+	.data       start:0x80267E58 end:0x80267E78
+
+game/unit_80067764.c:
+	.text       start:0x80067764 end:0x800678A4
+
+game/unit_800678A4.c:
+	.text       start:0x800678A4 end:0x8006790C
+
+game/unit_8006790C.c:
+	.text       start:0x8006790C end:0x80067950
+
+game/unit_80067950.c:
+	.text       start:0x80067950 end:0x80067994
+
+game/unit_80067994.c:
+	.text       start:0x80067994 end:0x800679FC
+
+game/unit_800679FC.c:
+	.text       start:0x800679FC end:0x80067A84
+
+game/unit_80067A84.c:
+	.text       start:0x80067A84 end:0x80067B90
+
+game/unit_80067B90.c:
+	.text       start:0x80067B90 end:0x80067C04
+
+game/unit_80067C04.c:
+	.text       start:0x80067C04 end:0x80067C40
+
+game/unit_80067DE0.c:
+	.text       start:0x80067DE0 end:0x80067EE4
+
+game/unit_8006860C.c:
+	.text       start:0x8006860C end:0x8006874C
+
+game/unit_80068A00.c:
+	.text       start:0x80068A00 end:0x80068A6C
+
+game/unit_80068A6C.c:
+	.text       start:0x80068A6C end:0x80068A70
+
+game/unit_80068C7C.c:
+	.text       start:0x80068C7C end:0x80068D68
+
+game/unit_80068D68.c:
+	.text       start:0x80068D68 end:0x80068D80
+
+game/unit_80068D80.c:
+	.text       start:0x80068D80 end:0x80068D84
+
+game/unit_80068F7C.c:
+	.text       start:0x80068F7C end:0x80069168
+	.data       start:0x802680A8 end:0x802680C8
+
+game/unit_8006973C.c:
+	.text       start:0x8006973C end:0x8006985C
+
+game/unit_8006985C.c:
+	.text       start:0x8006985C end:0x800698C8
+
+game/unit_800698C8.c:
+	.text       start:0x800698C8 end:0x80069954
+
+game/unit_80069AC0.c:
+	.text       start:0x80069AC0 end:0x80069BD8
+
+game/unit_8006A1FC.c:
+	.text       start:0x8006A1FC end:0x8006A318
+
+game/unit_8006A318.c:
+	.text       start:0x8006A318 end:0x8006A384
+
+game/unit_8006A384.c:
+	.text       start:0x8006A384 end:0x8006A46C
+
+game/unit_8006A46C.c:
+	.text       start:0x8006A46C end:0x8006A4E8
+
+game/unit_8006A4E8.c:
+	.text       start:0x8006A4E8 end:0x8006A610
+
+game/unit_8006AA14.c:
+	.text       start:0x8006AA14 end:0x8006AA2C
+
+game/unit_8006AA2C.c:
+	.text       start:0x8006AA2C end:0x8006AA30
+
+game/unit_8006AA30.c:
+	.text       start:0x8006AA30 end:0x8006AB84
+
+game/unit_8006AE48.c:
+	.text       start:0x8006AE48 end:0x8006AF4C
+
+game/unit_8006C8B4.c:
+	.text       start:0x8006C8B4 end:0x8006C9D0
+
+game/unit_8006C9D0.c:
+	.text       start:0x8006C9D0 end:0x8006CA38
+
+game/unit_8006CA38.c:
+	.text       start:0x8006CA38 end:0x8006CAAC
+
+game/unit_8006CAAC.c:
+	.text       start:0x8006CAAC end:0x8006CB04
+
+game/unit_8006CCA4.c:
+	.text       start:0x8006CCA4 end:0x8006CD9C
+
+game/unit_8006CD9C.c:
+	.text       start:0x8006CD9C end:0x8006CED8
+
+game/unit_8006D9BC.c:
+	.text       start:0x8006D9BC end:0x8006DAD8
+
+game/unit_8006DAD8.c:
+	.text       start:0x8006DAD8 end:0x8006DB44
+
+game/unit_8006DB44.c:
+	.text       start:0x8006DB44 end:0x8006DC74
+
+game/unit_8006DC74.c:
+	.text       start:0x8006DC74 end:0x8006DD48
+
+game/unit_8006DD48.c:
+	.text       start:0x8006DD48 end:0x8006DE4C
+
+game/unit_8006DE4C.c:
+	.text       start:0x8006DE4C end:0x8006DECC
+
+game/unit_8006DECC.c:
+	.text       start:0x8006DECC end:0x8006DF48
+
+game/unit_8006DF48.c:
+	.text       start:0x8006DF48 end:0x8006DF4C
+
+game/unit_8006DF4C.c:
+	.text       start:0x8006DF4C end:0x8006DFC8
+
+game/unit_8006E8BC.c:
+	.text       start:0x8006E8BC end:0x8006E940
+
+game/unit_8006E940.c:
+	.text       start:0x8006E940 end:0x8006E984
+
+game/unit_8006E984.c:
+	.text       start:0x8006E984 end:0x8006E9C8
+
+game/unit_8006E9C8.c:
+	.text       start:0x8006E9C8 end:0x8006EA30
+
+game/unit_8006EA30.c:
+	.text       start:0x8006EA30 end:0x8006EAC4
+
+game/unit_8006ED68.c:
+	.text       start:0x8006ED68 end:0x8006EE30
+
+game/unit_8006EFD0.c:
+	.text       start:0x8006EFD0 end:0x8006F044
+
+game/unit_8006F044.c:
+	.text       start:0x8006F044 end:0x8006F0B8
+
+game/unit_8006F0B8.c:
+	.text       start:0x8006F0B8 end:0x8006F0BC
+
+game/unit_8006FA04.c:
+	.text       start:0x8006FA04 end:0x8006FA7C
+
+game/unit_8006FA7C.c:
+	.text       start:0x8006FA7C end:0x8006FAC0
+
+game/unit_8006FAC0.c:
+	.text       start:0x8006FAC0 end:0x8006FB04
+
+game/unit_8006FB04.c:
+	.text       start:0x8006FB04 end:0x8006FB70
+
+game/unit_8006FB70.c:
+	.text       start:0x8006FB70 end:0x8006FBEC
+
+game/unit_8006FDF4.c:
+	.text       start:0x8006FDF4 end:0x8006FEC0
+
+game/unit_8006FEC0.c:
+	.text       start:0x8006FEC0 end:0x8006FFA0
+
+game/unit_8006FFA0.c:
+	.text       start:0x8006FFA0 end:0x80070014
+
+game/unit_80070014.c:
+	.text       start:0x80070014 end:0x80070088
+
+game/unit_80070088.c:
+	.text       start:0x80070088 end:0x8007008C
+
+game/unit_8007008C.c:
+	.text       start:0x8007008C end:0x800701A4
+
+game/unit_800701A4.c:
+	.text       start:0x800701A4 end:0x8007026C
+
+game/unit_80070524.c:
+	.text       start:0x80070524 end:0x800705E8
+
+game/unit_800708DC.c:
+	.text       start:0x800708DC end:0x80070958
+
+game/unit_80070958.c:
+	.text       start:0x80070958 end:0x8007099C
+
+game/unit_8007099C.c:
+	.text       start:0x8007099C end:0x800709E0
+
+game/unit_800709E0.c:
+	.text       start:0x800709E0 end:0x80070A50
+
+game/unit_80070A50.c:
+	.text       start:0x80070A50 end:0x80070AD0
+
+game/unit_80070C84.c:
+	.text       start:0x80070C84 end:0x80070CF8
+
+game/unit_80070CF8.c:
+	.text       start:0x80070CF8 end:0x80070D90
+
+game/unit_80070D90.c:
+	.text       start:0x80070D90 end:0x80070E58
+
+game/unit_80070E58.c:
+	.text       start:0x80070E58 end:0x80070E8C
+
+game/unit_800716B8.c:
+	.text       start:0x800716B8 end:0x800717F0
+
+game/unit_800717F0.c:
+	.text       start:0x800717F0 end:0x800717F8
+
+game/unit_80071C58.c:
+	.text       start:0x80071C58 end:0x80071CF8
+
+game/unit_80071CF8.c:
+	.text       start:0x80071CF8 end:0x80071DC8
+
+game/unit_80071DC8.c:
+	.text       start:0x80071DC8 end:0x80071E94
+
+game/unit_800728B4.c:
+	.text       start:0x800728B4 end:0x80072A20
+
+game/unit_80072A20.c:
+	.text       start:0x80072A20 end:0x80072A90
+
+game/unit_80072A90.c:
+	.text       start:0x80072A90 end:0x80072AFC
+
+game/unit_80072AFC.c:
+	.text       start:0x80072AFC end:0x80072BDC
+
+game/unit_80072BDC.c:
+	.text       start:0x80072BDC end:0x80072CB4
+
+game/unit_80072CB4.c:
+	.text       start:0x80072CB4 end:0x80072D04
+
+game/unit_80072D04.c:
+	.text       start:0x80072D04 end:0x80072DCC
+
+game/unit_80072DCC.c:
+	.text       start:0x80072DCC end:0x80072ECC
+
+game/unit_800732AC.c:
+	.text       start:0x800732AC end:0x80073318
+
+game/unit_80073508.c:
+	.text       start:0x80073508 end:0x800735CC
+
+game/unit_800735CC.c:
+	.text       start:0x800735CC end:0x80073608
+
+game/unit_80073608.c:
+	.text       start:0x80073608 end:0x800736B0
+
+game/unit_800736B0.c:
+	.text       start:0x800736B0 end:0x80073770
+
+game/unit_80073770.c:
+	.text       start:0x80073770 end:0x80073898
+
+game/unit_80073B24.c:
+	.text       start:0x80073B24 end:0x80073BE0
+
+game/unit_80073D54.c:
+	.text       start:0x80073D54 end:0x80073E3C
+
+game/unit_80073E3C.c:
+	.text       start:0x80073E3C end:0x80073E78
+
+game/unit_80073E78.c:
+	.text       start:0x80073E78 end:0x80073F20
+
+game/unit_80073F20.c:
+	.text       start:0x80073F20 end:0x80074020
+
+game/unit_80074574.c:
+	.text       start:0x80074574 end:0x8007460C
+
+game/unit_80074910.c:
+	.text       start:0x80074910 end:0x8007497C
+
+game/unit_80074AE4.c:
+	.text       start:0x80074AE4 end:0x80074BAC
+
+game/unit_80074BAC.c:
+	.text       start:0x80074BAC end:0x80074BE8
+
+game/unit_80074BE8.c:
+	.text       start:0x80074BE8 end:0x80074C90
+
+game/unit_80074C90.c:
+	.text       start:0x80074C90 end:0x80074D90
+
+game/unit_8007524C.c:
+	.text       start:0x8007524C end:0x800752B8
+
+game/unit_800752B8.c:
+	.text       start:0x800752B8 end:0x800753BC
+
+game/unit_800753BC.c:
+	.text       start:0x800753BC end:0x800753F8
+
+game/unit_800753F8.c:
+	.text       start:0x800753F8 end:0x800754A8
+
+game/unit_800754A8.c:
+	.text       start:0x800754A8 end:0x800755A8
+
+game/unit_80075B88.c:
+	.text       start:0x80075B88 end:0x80075BF4
+
+game/unit_80075BF4.c:
+	.text       start:0x80075BF4 end:0x80075CF8
+
+game/unit_80075CF8.c:
+	.text       start:0x80075CF8 end:0x80075DD0
+
+game/unit_80075DD0.c:
+	.text       start:0x80075DD0 end:0x80075E50
+
+game/unit_80075E50.c:
+	.text       start:0x80075E50 end:0x80075EFC
+
+game/unit_80076664.c:
+	.text       start:0x80076664 end:0x80076714
+
+game/unit_800768B4.c:
+	.text       start:0x800768B4 end:0x8007698C
+
+game/unit_8007698C.c:
+	.text       start:0x8007698C end:0x80076A0C
+
+game/unit_80076A0C.c:
+	.text       start:0x80076A0C end:0x80076ABC
+
+game/unit_80076ABC.c:
+	.text       start:0x80076ABC end:0x80076BFC
+
+game/unit_800772F8.c:
+	.text       start:0x800772F8 end:0x800773A4
+
+game/unit_80077510.c:
+	.text       start:0x80077510 end:0x800775A4
+
+game/unit_800775A4.c:
+	.text       start:0x800775A4 end:0x800775A8
+
+game/unit_800775A8.c:
+	.text       start:0x800775A8 end:0x80077664
+
+game/unit_80077664.c:
+	.text       start:0x80077664 end:0x8007767C
+
+game/unit_8007767C.c:
+	.text       start:0x8007767C end:0x800776DC
+
+game/unit_800778A4.c:
+	.text       start:0x800778A4 end:0x80077934
+
+game/unit_80077934.c:
+	.text       start:0x80077934 end:0x80077970
+
+game/unit_80077970.c:
+	.text       start:0x80077970 end:0x80077A18
+
+game/unit_80077A18.c:
+	.text       start:0x80077A18 end:0x80077B18
+
+game/unit_80077B18.c:
+	.text       start:0x80077B18 end:0x80077C44
+
+game/unit_80077F48.c:
+	.text       start:0x80077F48 end:0x80077FB4
+
+game/unit_80077FB4.c:
+	.text       start:0x80077FB4 end:0x800780B4
+
+game/unit_800780B4.c:
+	.text       start:0x800780B4 end:0x8007819C
+
+game/unit_8007819C.c:
+	.text       start:0x8007819C end:0x800781D8
+
+game/unit_800781D8.c:
+	.text       start:0x800781D8 end:0x80078288
+
+game/unit_80078288.c:
+	.text       start:0x80078288 end:0x800783BC
+
+game/unit_80079094.c:
+	.text       start:0x80079094 end:0x80079134
+
+game/unit_80079134.c:
+	.text       start:0x80079134 end:0x8007921C
+
+game/unit_8007921C.c:
+	.text       start:0x8007921C end:0x8007929C
+
+game/unit_8007929C.c:
+	.text       start:0x8007929C end:0x800792D8
+
+game/unit_800792D8.c:
+	.text       start:0x800792D8 end:0x80079388
+
+game/unit_80079388.c:
+	.text       start:0x80079388 end:0x800794BC
+
+game/unit_800799BC.c:
+	.text       start:0x800799BC end:0x80079A5C
+
+game/unit_80079A5C.c:
+	.text       start:0x80079A5C end:0x80079B44
+
+game/unit_80079B44.c:
+	.text       start:0x80079B44 end:0x80079BE4
+
+game/unit_80079BE4.c:
+	.text       start:0x80079BE4 end:0x80079C20
+
+game/unit_80079C20.c:
+	.text       start:0x80079C20 end:0x80079D28
+
+game/unit_8007A5D4.c:
+	.text       start:0x8007A5D4 end:0x8007A6DC
+
+game/unit_8007A870.c:
+	.text       start:0x8007A870 end:0x8007A8DC
+
+game/unit_8007A8DC.c:
+	.text       start:0x8007A8DC end:0x8007A98C
+
+game/unit_8007A98C.c:
+	.text       start:0x8007A98C end:0x8007AA2C
+
+game/unit_8007AA2C.c:
+	.text       start:0x8007AA2C end:0x8007AA30
+
+game/unit_8007AA30.c:
+	.text       start:0x8007AA30 end:0x8007AAFC
+
+game/unit_8007ADB4.c:
+	.text       start:0x8007ADB4 end:0x8007AEB4
+
+game/unit_8007B184.c:
+	.text       start:0x8007B184 end:0x8007B1F0
+
+game/unit_8007B1F0.c:
+	.text       start:0x8007B1F0 end:0x8007B2DC
+
+game/unit_8007B2DC.c:
+	.text       start:0x8007B2DC end:0x8007B318
+
+game/unit_8007B318.c:
+	.text       start:0x8007B318 end:0x8007B3C0
+
+game/unit_8007B9E0.c:
+	.text       start:0x8007B9E0 end:0x8007BA4C
+
+game/unit_8007BA4C.c:
+	.text       start:0x8007BA4C end:0x8007BB50
+
+game/unit_8007BB50.c:
+	.text       start:0x8007BB50 end:0x8007BBFC
+
+game/unit_8007BBFC.c:
+	.text       start:0x8007BBFC end:0x8007BD28
+
+game/unit_8007BD28.c:
+	.text       start:0x8007BD28 end:0x8007BDDC
+
+game/unit_8007BDDC.c:
+	.text       start:0x8007BDDC end:0x8007BDF4
+
+game/unit_8007BDF4.c:
+	.text       start:0x8007BDF4 end:0x8007BE30
+
+game/unit_8007BE30.c:
+	.text       start:0x8007BE30 end:0x8007BEE4
+
+game/unit_8007C600.c:
+	.text       start:0x8007C600 end:0x8007C6A8
+
+game/unit_8007C6A8.c:
+	.text       start:0x8007C6A8 end:0x8007C754
+
+game/unit_8007C754.c:
+	.text       start:0x8007C754 end:0x8007C7A4
+
+game/unit_8007C894.c:
+	.text       start:0x8007C894 end:0x8007C908
+
+game/unit_8007C908.c:
+	.text       start:0x8007C908 end:0x8007C920
+
+game/unit_8007C920.c:
+	.text       start:0x8007C920 end:0x8007C924
+
+game/unit_8007CDC4.c:
+	.text       start:0x8007CDC4 end:0x8007CE30
+
+game/unit_8007D080.c:
+	.text       start:0x8007D080 end:0x8007D130
+
+game/unit_8007D130.c:
+	.text       start:0x8007D130 end:0x8007D180
+
+game/unit_8007D270.c:
+	.text       start:0x8007D270 end:0x8007D2E4
+
+game/unit_8007D2E4.c:
+	.text       start:0x8007D2E4 end:0x8007D2FC
+
+game/unit_8007D2FC.c:
+	.text       start:0x8007D2FC end:0x8007D300
+
+game/unit_8007D300.c:
+	.text       start:0x8007D300 end:0x8007D3AC
+
+game/unit_8007D660.c:
+	.text       start:0x8007D660 end:0x8007D6CC
+
+game/unit_8007D914.c:
+	.text       start:0x8007D914 end:0x8007D924
+
+game/unit_8007D924.c:
+	.text       start:0x8007D924 end:0x8007D93C
+
+game/unit_8007D93C.c:
+	.text       start:0x8007D93C end:0x8007D99C
+
+game/unit_8007D99C.c:
+	.text       start:0x8007D99C end:0x8007D9F4
+
+game/unit_8007D9F4.c:
+	.text       start:0x8007D9F4 end:0x8007DA00
+
+game/unit_8007DA00.c:
+	.text       start:0x8007DA00 end:0x8007DAD4
+
+game/unit_8007DAD4.c:
+	.text       start:0x8007DAD4 end:0x8007DC04
+
+game/unit_8007DC04.c:
+	.text       start:0x8007DC04 end:0x8007DC1C
+
+game/unit_8007DC1C.c:
+	.text       start:0x8007DC1C end:0x8007DC78
+
+game/unit_8007DC78.c:
+	.text       start:0x8007DC78 end:0x8007DCF4
+
+game/unit_8007DCF4.c:
+	.text       start:0x8007DCF4 end:0x8007DE08
+
+game/unit_8007DE08.c:
+	.text       start:0x8007DE08 end:0x8007DE10
+
+game/unit_8007EB34.c:
+	.text       start:0x8007EB34 end:0x8007ED0C
+	.data       start:0x80271648 end:0x80271668
+
+game/unit_8007ED0C.c:
+	.text       start:0x8007ED0C end:0x8007EE50
+
+game/unit_80080020.c:
+	.text       start:0x80080020 end:0x800800AC
+
+game/unit_800800AC.c:
+	.text       start:0x800800AC end:0x800800B8
+
+game/unit_800800B8.c:
+	.text       start:0x800800B8 end:0x800800F8
+
+game/unit_800800F8.c:
+	.text       start:0x800800F8 end:0x80080168
+
+game/unit_80080168.c:
+	.text       start:0x80080168 end:0x80080194
+
+game/unit_80080194.c:
+	.text       start:0x80080194 end:0x80080280
+
+game/unit_80080484.c:
+	.text       start:0x80080484 end:0x8008053C
+
+game/unit_8008053C.c:
+	.text       start:0x8008053C end:0x80080540
+
+game/unit_80080540.c:
+	.text       start:0x80080540 end:0x80080584
+
+game/unit_80080584.c:
+	.text       start:0x80080584 end:0x800805EC
+
+game/unit_80080BA4.c:
+	.text       start:0x80080BA4 end:0x80080BDC
+
+game/unit_80080BDC.c:
+	.text       start:0x80080BDC end:0x80080BFC
+
+game/unit_80080FE0.c:
+	.text       start:0x80080FE0 end:0x800810FC
+
+game/unit_800810FC.c:
+	.text       start:0x800810FC end:0x8008123C
+
+game/unit_8008123C.c:
+	.text       start:0x8008123C end:0x80081260
+
+game/unit_80081470.c:
+	.text       start:0x80081470 end:0x800814EC
+
+game/unit_800814EC.c:
+	.text       start:0x800814EC end:0x800815CC
+
+game/unit_800815CC.c:
+	.text       start:0x800815CC end:0x800816F0
+
+game/unit_800816F0.c:
+	.text       start:0x800816F0 end:0x800817D0
+
+game/unit_800817D0.c:
+	.text       start:0x800817D0 end:0x800818A0
+
+game/unit_80081C40.c:
+	.text       start:0x80081C40 end:0x80081CC0
+
+game/unit_80081CC0.c:
+	.text       start:0x80081CC0 end:0x80081CD4
+
+game/unit_80081CD4.c:
+	.text       start:0x80081CD4 end:0x80081DD8
+
+game/unit_80081DD8.c:
+	.text       start:0x80081DD8 end:0x80081EA8
+
+game/unit_80082050.c:
+	.text       start:0x80082050 end:0x8008212C
+
+game/unit_8008212C.c:
+	.text       start:0x8008212C end:0x80082188
+
+game/unit_80082188.c:
+	.text       start:0x80082188 end:0x800821DC
+
+game/unit_800821DC.c:
+	.text       start:0x800821DC end:0x80082238
+
+game/unit_80082238.c:
+	.text       start:0x80082238 end:0x80082278
+
+game/unit_80082708.c:
+	.text       start:0x80082708 end:0x80082748
+
+game/unit_80082748.c:
+	.text       start:0x80082748 end:0x800827EC
+
+game/unit_800827EC.c:
+	.text       start:0x800827EC end:0x80082950
+
+game/unit_80082950.c:
+	.text       start:0x80082950 end:0x80082AE4
+
+game/unit_80082AE4.c:
+	.text       start:0x80082AE4 end:0x80082B68
+
+game/unit_80083024.c:
+	.text       start:0x80083024 end:0x800830E4
+
+game/unit_800830E4.c:
+	.text       start:0x800830E4 end:0x80083124
+
+game/unit_80083124.c:
+	.text       start:0x80083124 end:0x80083198
+
+game/unit_80083310.c:
+	.text       start:0x80083310 end:0x8008334C
+
+game/unit_8008334C.c:
+	.text       start:0x8008334C end:0x80083398
+
+game/unit_80083398.c:
+	.text       start:0x80083398 end:0x800833D8
+
+game/unit_800833D8.c:
+	.text       start:0x800833D8 end:0x800833EC
+
+game/unit_800833EC.c:
+	.text       start:0x800833EC end:0x80083524
+
+game/unit_80083570.c:
+	.text       start:0x80083570 end:0x80083608
+
+game/unit_80083608.c:
+	.text       start:0x80083608 end:0x80083620
+
+game/unit_80083620.c:
+	.text       start:0x80083620 end:0x800836B0
+
+game/unit_800836B0.c:
+	.text       start:0x800836B0 end:0x800836D8
+
+game/unit_800836D8.c:
+	.text       start:0x800836D8 end:0x80083714
+
+game/unit_80083714.c:
+	.text       start:0x80083714 end:0x80083730
+
+game/unit_80083730.c:
+	.text       start:0x80083730 end:0x80083828
+
+game/unit_80083828.c:
+	.text       start:0x80083828 end:0x80083844
+
+game/unit_800841DC.c:
+	.text       start:0x800841DC end:0x800841F8
+
+game/unit_80084880.c:
+	.text       start:0x80084880 end:0x8008489C
+
+game/unit_800852A0.c:
+	.text       start:0x800852A0 end:0x800852B4
+
+game/unit_800854B4.c:
+	.text       start:0x800854B4 end:0x80085594
+
+game/unit_8008587C.c:
+	.text       start:0x8008587C end:0x800858C0
+
+game/unit_800858C0.c:
+	.text       start:0x800858C0 end:0x80085904
+
+game/unit_80085904.c:
+	.text       start:0x80085904 end:0x80085920
+
+game/unit_80085A08.c:
+	.text       start:0x80085A08 end:0x80085B30
+
+game/unit_80085B30.c:
+	.text       start:0x80085B30 end:0x80085C34
+
+game/unit_80089370.c:
+	.text       start:0x80089370 end:0x8008938C
+
+game/unit_8008938C.c:
+	.text       start:0x8008938C end:0x80089464
+
+game/unit_80089600.c:
+	.text       start:0x80089600 end:0x80089604
+
+game/unit_80089604.c:
+	.text       start:0x80089604 end:0x800896F8
+
+game/unit_800896F8.c:
+	.text       start:0x800896F8 end:0x800897D8
+
+game/unit_80089904.c:
+	.text       start:0x80089904 end:0x80089A00
+
+game/unit_80089C3C.c:
+	.text       start:0x80089C3C end:0x80089D2C
+
+game/unit_8008A9CC.c:
+	.text       start:0x8008A9CC end:0x8008AAE8
+
+game/unit_8008B05C.c:
+	.text       start:0x8008B05C end:0x8008B12C
+
+game/unit_8008B12C.c:
+	.text       start:0x8008B12C end:0x8008B144
+
+game/unit_8008C004.c:
+	.text       start:0x8008C004 end:0x8008C07C
+
+game/unit_8008C07C.c:
+	.text       start:0x8008C07C end:0x8008C0A8
+
+game/unit_8008C1CC.c:
+	.text       start:0x8008C1CC end:0x8008C1E8
+
+game/unit_8008D2F4.c:
+	.text       start:0x8008D2F4 end:0x8008D32C
+
+game/unit_8008D32C.c:
+	.text       start:0x8008D32C end:0x8008D368
+
+game/unit_8008DEF0.c:
+	.text       start:0x8008DEF0 end:0x8008DF4C
+
+game/unit_80090764.c:
+	.text       start:0x80090764 end:0x80090840
+
+game/unit_80091208.c:
+	.text       start:0x80091208 end:0x80091224
+
+game/unit_80091A70.c:
+	.text       start:0x80091A70 end:0x80091A8C
+
+game/unit_80091E44.c:
+	.text       start:0x80091E44 end:0x80091EE4
+
+game/unit_80091EE4.c:
+	.text       start:0x80091EE4 end:0x80091F30
+
+game/unit_80091F30.c:
+	.text       start:0x80091F30 end:0x80091F7C
+
+game/unit_80091F7C.c:
+	.text       start:0x80091F7C end:0x80091FF4
+
+game/unit_80092508.c:
+	.text       start:0x80092508 end:0x80092580
+
+game/unit_80092580.c:
+	.text       start:0x80092580 end:0x800925D4
+
+game/unit_80092720.c:
+	.text       start:0x80092720 end:0x80092834
+
+game/unit_80092D98.c:
+	.text       start:0x80092D98 end:0x80092E8C
+	.data       start:0x80273FEC end:0x80274014
+
+game/unit_80092E8C.c:
+	.text       start:0x80092E8C end:0x80092EA4
+
+game/unit_800944B8.c:
+	.text       start:0x800944B8 end:0x800944D0
+
+game/unit_8009484C.c:
+	.text       start:0x8009484C end:0x800948EC
+
+game/unit_800948EC.c:
+	.text       start:0x800948EC end:0x80094964
+
+game/unit_80094964.c:
+	.text       start:0x80094964 end:0x800949AC
+
+game/unit_800949AC.c:
+	.text       start:0x800949AC end:0x80094B0C
+
+game/unit_80097C94.c:
+	.text       start:0x80097C94 end:0x80097CAC
+
+game/unit_800995F0.c:
+	.text       start:0x800995F0 end:0x8009964C
+
+game/unit_8009964C.c:
+	.text       start:0x8009964C end:0x80099650
+
+game/unit_80099784.c:
+	.text       start:0x80099784 end:0x800997E4
+
+game/unit_800997E4.c:
+	.text       start:0x800997E4 end:0x80099804
+
+game/unit_80099804.c:
+	.text       start:0x80099804 end:0x80099918
+
+game/unit_80099918.c:
+	.text       start:0x80099918 end:0x8009996C
+
+game/unit_8009996C.c:
+	.text       start:0x8009996C end:0x80099998
+
+game/unit_80099998.c:
+	.text       start:0x80099998 end:0x800999E8
+
+game/unit_800999E8.c:
+	.text       start:0x800999E8 end:0x800999FC
+
+game/unit_8009A8BC.c:
+	.text       start:0x8009A8BC end:0x8009A954
+
+game/unit_8009A954.c:
+	.text       start:0x8009A954 end:0x8009AA24
+
+game/unit_8009AA24.c:
+	.text       start:0x8009AA24 end:0x8009AAF4
+
+game/unit_8009B6FC.c:
+	.text       start:0x8009B6FC end:0x8009B7B4
+
+game/unit_8009B7B4.c:
+	.text       start:0x8009B7B4 end:0x8009B7B8
+
+game/unit_8009BE6C.c:
+	.text       start:0x8009BE6C end:0x8009BECC
+
+game/unit_8009BECC.c:
+	.text       start:0x8009BECC end:0x8009BF14
+
+game/unit_8009BF14.c:
+	.text       start:0x8009BF14 end:0x8009BF98
+
+game/unit_8009BF98.c:
+	.text       start:0x8009BF98 end:0x8009C04C
+
+game/unit_8009C04C.c:
+	.text       start:0x8009C04C end:0x8009C100
+
+game/unit_8009C100.c:
+	.text       start:0x8009C100 end:0x8009C110
+
+game/unit_8009C110.c:
+	.text       start:0x8009C110 end:0x8009C120
+
+game/unit_8009C120.c:
+	.text       start:0x8009C120 end:0x8009C130
+
+game/unit_8009C130.c:
+	.text       start:0x8009C130 end:0x8009C29C
+
+game/unit_8009C29C.c:
+	.text       start:0x8009C29C end:0x8009C308
+
+game/unit_8009C308.c:
+	.text       start:0x8009C308 end:0x8009C408
+
+game/unit_8009C408.c:
+	.text       start:0x8009C408 end:0x8009C4E4
+
+game/unit_8009CE40.c:
+	.text       start:0x8009CE40 end:0x8009CEAC
+
+game/unit_8009CEAC.c:
+	.text       start:0x8009CEAC end:0x8009CED8
+
+game/unit_8009CED8.c:
+	.text       start:0x8009CED8 end:0x8009CF58
+
+game/unit_8009CF58.c:
+	.text       start:0x8009CF58 end:0x8009CFF8
+
+game/unit_8009CFF8.c:
+	.text       start:0x8009CFF8 end:0x8009D0B8
+
+game/unit_8009D3FC.c:
+	.text       start:0x8009D3FC end:0x8009D468
+
+game/unit_8009D468.c:
+	.text       start:0x8009D468 end:0x8009D494
+
+game/unit_8009D494.c:
+	.text       start:0x8009D494 end:0x8009D4A8
+
+game/unit_8009D4A8.c:
+	.text       start:0x8009D4A8 end:0x8009D4DC
+
+game/unit_8009D780.c:
+	.text       start:0x8009D780 end:0x8009D83C
+
+game/unit_8009DC28.c:
+	.text       start:0x8009DC28 end:0x8009DCB8
+
+game/unit_8009DE40.c:
+	.text       start:0x8009DE40 end:0x8009DE4C
+
+game/unit_8009DE4C.c:
+	.text       start:0x8009DE4C end:0x8009DE58
+
+game/unit_8009E06C.c:
+	.text       start:0x8009E06C end:0x8009E1A4
+
+game/unit_8009E1A4.c:
+	.text       start:0x8009E1A4 end:0x8009E1B0
+
+game/unit_8009E1B0.c:
+	.text       start:0x8009E1B0 end:0x8009E1F4
+
+game/unit_8009E75C.c:
+	.text       start:0x8009E75C end:0x8009E850
+
+game/unit_8009E850.c:
+	.text       start:0x8009E850 end:0x8009E894
+
+game/unit_8009E894.c:
+	.text       start:0x8009E894 end:0x8009E8E4
+
+game/unit_8009E8E4.c:
+	.text       start:0x8009E8E4 end:0x8009E974
+
+game/unit_8009EF24.c:
+	.text       start:0x8009EF24 end:0x8009EFD8
+
+game/unit_8009F0A0.c:
+	.text       start:0x8009F0A0 end:0x8009F1A8
+
+game/unit_8009F3C8.c:
+	.text       start:0x8009F3C8 end:0x8009F428
+
+game/unit_8009FEF8.c:
+	.text       start:0x8009FEF8 end:0x8009FFC4
+
+game/unit_8009FFC4.c:
+	.text       start:0x8009FFC4 end:0x8009FFC8
+
+game/unit_8009FFC8.c:
+	.text       start:0x8009FFC8 end:0x8009FFCC
+
+game/unit_8009FFCC.c:
+	.text       start:0x8009FFCC end:0x8009FFD0
+
+game/unit_8009FFD0.c:
+	.text       start:0x8009FFD0 end:0x800A0060
+
+game/unit_800A0264.c:
+	.text       start:0x800A0264 end:0x800A0268
+
+game/unit_800A0268.c:
+	.text       start:0x800A0268 end:0x800A02A0
+
+game/unit_800A02A0.c:
+	.text       start:0x800A02A0 end:0x800A0320
+
+game/unit_800A0320.c:
+	.text       start:0x800A0320 end:0x800A0324
+
+game/unit_800A0324.c:
+	.text       start:0x800A0324 end:0x800A0328
+
+game/unit_800A0328.c:
+	.text       start:0x800A0328 end:0x800A032C
+
+game/unit_800A032C.c:
+	.text       start:0x800A032C end:0x800A03BC
+
+game/unit_800A06B0.c:
+	.text       start:0x800A06B0 end:0x800A06B4
+
+game/unit_800A06B4.c:
+	.text       start:0x800A06B4 end:0x800A06F4
+
+game/unit_800A06F4.c:
+	.text       start:0x800A06F4 end:0x800A078C
+
+game/unit_800A0B84.c:
+	.text       start:0x800A0B84 end:0x800A0B88
+
+game/unit_800A0B88.c:
+	.text       start:0x800A0B88 end:0x800A0BE0
+
+game/unit_800A0BE0.c:
+	.text       start:0x800A0BE0 end:0x800A0C14
+
+game/unit_800A0C14.c:
+	.text       start:0x800A0C14 end:0x800A0C4C
+
+game/unit_800A0C4C.c:
+	.text       start:0x800A0C4C end:0x800A0CD0
+
+game/unit_800A0CD0.c:
+	.text       start:0x800A0CD0 end:0x800A0D08
+
+game/unit_800A0D08.c:
+	.text       start:0x800A0D08 end:0x800A0DA0
+
+game/unit_800A0DA0.c:
+	.text       start:0x800A0DA0 end:0x800A0E8C
+
+game/unit_800A0E8C.c:
+	.text       start:0x800A0E8C end:0x800A0ECC
+
+game/unit_800A0ECC.c:
+	.text       start:0x800A0ECC end:0x800A0F5C
+
+game/unit_800A1160.c:
+	.text       start:0x800A1160 end:0x800A1164
+
+game/unit_800A1164.c:
+	.text       start:0x800A1164 end:0x800A119C
+
+game/unit_800A119C.c:
+	.text       start:0x800A119C end:0x800A1230
+
+game/unit_800A1430.c:
+	.text       start:0x800A1430 end:0x800A1484
+
+game/unit_800A1484.c:
+	.text       start:0x800A1484 end:0x800A1490
+
+game/unit_800A1A80.c:
+	.text       start:0x800A1A80 end:0x800A1A84
+
+game/unit_800A1A84.c:
+	.text       start:0x800A1A84 end:0x800A1AE4
+
+game/unit_800A1AE4.c:
+	.text       start:0x800A1AE4 end:0x800A1B74
+
+game/unit_800A1D78.c:
+	.text       start:0x800A1D78 end:0x800A1D7C
+
+game/unit_800A1D7C.c:
+	.text       start:0x800A1D7C end:0x800A1DB4
+
+game/unit_800A1DB4.c:
+	.text       start:0x800A1DB4 end:0x800A1DE0
+
+game/unit_800A2250.c:
+	.text       start:0x800A2250 end:0x800A2254
+
+game/unit_800A2254.c:
+	.text       start:0x800A2254 end:0x800A2294
+
+game/unit_800A2294.c:
+	.text       start:0x800A2294 end:0x800A22AC
+
+game/unit_800A22AC.c:
+	.text       start:0x800A22AC end:0x800A22F8
+
+game/unit_800A25A0.c:
+	.text       start:0x800A25A0 end:0x800A25A4
+
+game/unit_800A25A4.c:
+	.text       start:0x800A25A4 end:0x800A25DC
+
+game/unit_800A25DC.c:
+	.text       start:0x800A25DC end:0x800A2600
+
+game/unit_800A291C.c:
+	.text       start:0x800A291C end:0x800A2920
+
+game/unit_800A2920.c:
+	.text       start:0x800A2920 end:0x800A2960
+
+game/unit_800A2960.c:
+	.text       start:0x800A2960 end:0x800A2984
+
+game/unit_800A2EE4.c:
+	.text       start:0x800A2EE4 end:0x800A2EE8
+
+game/unit_800A2EE8.c:
+	.text       start:0x800A2EE8 end:0x800A2F38
+
+game/unit_800A2F38.c:
+	.text       start:0x800A2F38 end:0x800A2F50
+
+game/unit_800A2F50.c:
+	.text       start:0x800A2F50 end:0x800A2F74
+
+game/unit_800A3178.c:
+	.text       start:0x800A3178 end:0x800A317C
+
+game/unit_800A317C.c:
+	.text       start:0x800A317C end:0x800A31B4
+
+game/unit_800A31B4.c:
+	.text       start:0x800A31B4 end:0x800A31D8
+
+game/unit_800A32EC.c:
+	.text       start:0x800A32EC end:0x800A32F0
+
+game/unit_800A32F0.c:
+	.text       start:0x800A32F0 end:0x800A32FC
+
+game/unit_800A3458.c:
+	.text       start:0x800A3458 end:0x800A3500
+
+game/unit_800A36F8.c:
+	.text       start:0x800A36F8 end:0x800A37F4
+
+game/unit_800A39F0.c:
+	.text       start:0x800A39F0 end:0x800A3AE0
+
+game/unit_800A3CD4.c:
+	.text       start:0x800A3CD4 end:0x800A3DBC
+
+game/unit_800A3FAC.c:
+	.text       start:0x800A3FAC end:0x800A4098
+
+game/unit_800A43B4.c:
+	.text       start:0x800A43B4 end:0x800A44BC
+
+game/unit_800A502C.c:
+	.text       start:0x800A502C end:0x800A507C
+
+game/unit_800A507C.c:
+	.text       start:0x800A507C end:0x800A5148
+
+game/unit_800A5238.c:
+	.text       start:0x800A5238 end:0x800A5240
+
+game/unit_800A5240.c:
+	.text       start:0x800A5240 end:0x800A5248
+
+game/unit_800A5668.c:
+	.text       start:0x800A5668 end:0x800A5678
+
+game/unit_800A576C.c:
+	.text       start:0x800A576C end:0x800A5784
+
+game/unit_800A5784.c:
+	.text       start:0x800A5784 end:0x800A5788
+
+game/unit_800A5B2C.c:
+	.text       start:0x800A5B2C end:0x800A5BE0
+
+game/unit_800A5BE0.c:
+	.text       start:0x800A5BE0 end:0x800A5C08
+
+game/unit_800A5C08.c:
+	.text       start:0x800A5C08 end:0x800A5C2C
+
+game/unit_800A5C2C.c:
+	.text       start:0x800A5C2C end:0x800A5C88
+
+game/unit_800A5C88.c:
+	.text       start:0x800A5C88 end:0x800A5D34
+
+game/unit_800A5D34.c:
+	.text       start:0x800A5D34 end:0x800A5DE0
+
+game/unit_800A5DE0.c:
+	.text       start:0x800A5DE0 end:0x800A5E0C
+
+game/unit_800A5ED4.c:
+	.text       start:0x800A5ED4 end:0x800A5F40
+
+game/unit_800A5F40.c:
+	.text       start:0x800A5F40 end:0x800A5FA8
+
+game/unit_800A5FA8.c:
+	.text       start:0x800A5FA8 end:0x800A60C0
+
+game/unit_800A60C0.c:
+	.text       start:0x800A60C0 end:0x800A62B8
+
+game/unit_800A67CC.c:
+	.text       start:0x800A67CC end:0x800A67E8
+
+game/unit_800A67E8.c:
+	.text       start:0x800A67E8 end:0x800A67EC
+
+game/unit_800A67EC.c:
+	.text       start:0x800A67EC end:0x800A687C
+
+game/unit_800A687C.c:
+	.text       start:0x800A687C end:0x800A6880
+
+game/unit_800A6880.c:
+	.text       start:0x800A6880 end:0x800A6884
+
+game/unit_800A6884.c:
+	.text       start:0x800A6884 end:0x800A6888
+
+game/unit_800A6888.c:
+	.text       start:0x800A6888 end:0x800A68B8
+
+game/unit_800A68B8.c:
+	.text       start:0x800A68B8 end:0x800A6914
+
+game/unit_800A69C8.c:
+	.text       start:0x800A69C8 end:0x800A6A28
+
+game/unit_800A7084.c:
+	.text       start:0x800A7084 end:0x800A70D0
+
+game/unit_800A70D0.c:
+	.text       start:0x800A70D0 end:0x800A70F8
+
+game/unit_800A76C8.c:
+	.text       start:0x800A76C8 end:0x800A7764
+
+game/unit_800A77C4.c:
+	.text       start:0x800A77C4 end:0x800A77E4
+
+game/unit_800A77E4.c:
+	.text       start:0x800A77E4 end:0x800A7860
+
+game/unit_800A7860.c:
+	.text       start:0x800A7860 end:0x800A78AC
+
+game/unit_800A78AC.c:
+	.text       start:0x800A78AC end:0x800A78BC
+
+game/unit_800A78BC.c:
+	.text       start:0x800A78BC end:0x800A78C0
+
+game/unit_800A78C0.c:
+	.text       start:0x800A78C0 end:0x800A78C4
+
+game/unit_800A78C4.c:
+	.text       start:0x800A78C4 end:0x800A78C8
+
+game/unit_800A78C8.c:
+	.text       start:0x800A78C8 end:0x800A78CC
+
+game/unit_800A7C30.c:
+	.text       start:0x800A7C30 end:0x800A7C78
+
+game/unit_800A7D8C.c:
+	.text       start:0x800A7D8C end:0x800A7E88
+
+game/unit_800A7F64.c:
+	.text       start:0x800A7F64 end:0x800A7F94
+
+game/unit_800A8020.c:
+	.text       start:0x800A8020 end:0x800A80C0
+
+game/unit_800A8A7C.c:
+	.text       start:0x800A8A7C end:0x800A8B28
+
+game/unit_800A9090.c:
+	.text       start:0x800A9090 end:0x800A9120
+
+game/unit_800AA050.c:
+	.text       start:0x800AA050 end:0x800AA0E4
+
+game/unit_800AA2BC.c:
+	.text       start:0x800AA2BC end:0x800AA38C
+
+game/unit_800AA38C.c:
+	.text       start:0x800AA38C end:0x800AA3D8
+
+game/unit_800AA3D8.c:
+	.text       start:0x800AA3D8 end:0x800AA4BC
+
+game/unit_800AA4BC.c:
+	.text       start:0x800AA4BC end:0x800AA508
+
+game/unit_800AA508.c:
+	.text       start:0x800AA508 end:0x800AA554
+
+game/unit_800AA9A4.c:
+	.text       start:0x800AA9A4 end:0x800AA9A8
+
+game/unit_800AA9A8.c:
+	.text       start:0x800AA9A8 end:0x800AA9AC
+
+game/unit_800AA9AC.c:
+	.text       start:0x800AA9AC end:0x800AAA88
+
+game/unit_800AAA88.c:
+	.text       start:0x800AAA88 end:0x800AAB38
+
+game/unit_800AAB38.c:
+	.text       start:0x800AAB38 end:0x800AAB84
+
+game/unit_800AAB84.c:
+	.text       start:0x800AAB84 end:0x800AABB8
+
+game/unit_800AABB8.c:
+	.text       start:0x800AABB8 end:0x800AAC38
+
+game/unit_800AB4AC.c:
+	.text       start:0x800AB4AC end:0x800AB518
+
+game/unit_800AB518.c:
+	.text       start:0x800AB518 end:0x800AB5A0
+
+game/unit_800AB87C.c:
+	.text       start:0x800AB87C end:0x800AB8CC
+
+game/unit_800AB8CC.c:
+	.text       start:0x800AB8CC end:0x800AB904
+
+game/unit_800ABB58.c:
+	.text       start:0x800ABB58 end:0x800ABB70
+
+game/unit_800ABC44.c:
+	.text       start:0x800ABC44 end:0x800ABC5C
+
+game/unit_800AC5B8.c:
+	.text       start:0x800AC5B8 end:0x800AC68C
+
+game/unit_800AC8E4.c:
+	.text       start:0x800AC8E4 end:0x800AC92C
+
+game/unit_800AC92C.c:
+	.text       start:0x800AC92C end:0x800AC97C
+
+game/unit_800AC97C.c:
+	.text       start:0x800AC97C end:0x800AC9B0
+
+game/unit_800AC9B0.c:
+	.text       start:0x800AC9B0 end:0x800AC9B8
+
+game/unit_800AC9B8.c:
+	.text       start:0x800AC9B8 end:0x800AC9C0
+
+game/unit_800AC9C0.c:
+	.text       start:0x800AC9C0 end:0x800AC9C8
+
+game/unit_800AC9C8.c:
+	.text       start:0x800AC9C8 end:0x800AC9D0
+
+game/unit_800ACB8C.c:
+	.text       start:0x800ACB8C end:0x800ACC88
+
+game/unit_800ACC88.c:
+	.text       start:0x800ACC88 end:0x800ACCBC
+
+game/unit_800AF468.c:
+	.text       start:0x800AF468 end:0x800AF4D0
+
+game/unit_800B0278.c:
+	.text       start:0x800B0278 end:0x800B027C
+
+game/unit_800B027C.c:
+	.text       start:0x800B027C end:0x800B02F0
+
+game/unit_800B02F0.c:
+	.text       start:0x800B02F0 end:0x800B02F4
+
+game/unit_800B0570.c:
+	.text       start:0x800B0570 end:0x800B0758
+
+game/unit_800B0758.c:
+	.text       start:0x800B0758 end:0x800B0940
+
+game/unit_800B0940.c:
+	.text       start:0x800B0940 end:0x800B0B28
+
+game/unit_800B0B28.c:
+	.text       start:0x800B0B28 end:0x800B0D10
+
+game/unit_800B0D10.c:
+	.text       start:0x800B0D10 end:0x800B0EF8
+
+game/unit_800B0EF8.c:
+	.text       start:0x800B0EF8 end:0x800B10F4
+
+game/unit_800B10F4.c:
+	.text       start:0x800B10F4 end:0x800B12DC
+
+game/unit_800B12DC.c:
+	.text       start:0x800B12DC end:0x800B14C4
+
+game/unit_800B14C4.c:
+	.text       start:0x800B14C4 end:0x800B16F4
+
+game/unit_800B16F4.c:
+	.text       start:0x800B16F4 end:0x800B1924
+
+game/unit_800B1924.c:
+	.text       start:0x800B1924 end:0x800B1930
+
+game/unit_800B1930.c:
+	.text       start:0x800B1930 end:0x800B193C
+
+game/unit_800B193C.c:
+	.text       start:0x800B193C end:0x800B1970
+
+game/unit_800B1970.c:
+	.text       start:0x800B1970 end:0x800B197C
+
+game/unit_800B197C.c:
+	.text       start:0x800B197C end:0x800B1988
+
+game/unit_800B1988.c:
+	.text       start:0x800B1988 end:0x800B1994
+
+game/unit_800B1994.c:
+	.text       start:0x800B1994 end:0x800B19A4
+
+game/unit_800B19A4.c:
+	.text       start:0x800B19A4 end:0x800B19B0
+
+game/unit_800B19B0.c:
+	.text       start:0x800B19B0 end:0x800B19BC
+
+game/unit_800B19BC.c:
+	.text       start:0x800B19BC end:0x800B19CC
+
+game/unit_800B19CC.c:
+	.text       start:0x800B19CC end:0x800B19DC
+
+game/unit_800B19DC.c:
+	.text       start:0x800B19DC end:0x800B19E8
+
+game/unit_800B1AEC.c:
+	.text       start:0x800B1AEC end:0x800B1BC8
+
+game/unit_800B1BC8.c:
+	.text       start:0x800B1BC8 end:0x800B1C9C
+
+game/unit_800B1DA4.c:
+	.text       start:0x800B1DA4 end:0x800B1E08
+
+game/unit_800B1E08.c:
+	.text       start:0x800B1E08 end:0x800B1E14
+
+game/unit_800B1EF8.c:
+	.text       start:0x800B1EF8 end:0x800B1FEC
+
+game/unit_800B20C0.c:
+	.text       start:0x800B20C0 end:0x800B2194
+
+game/unit_800B2194.c:
+	.text       start:0x800B2194 end:0x800B2270
+
+game/unit_800B2270.c:
+	.text       start:0x800B2270 end:0x800B229C
+
+game/unit_800B229C.c:
+	.text       start:0x800B229C end:0x800B22A4
+
+game/unit_800B22A4.c:
+	.text       start:0x800B22A4 end:0x800B2390
+
+game/unit_800B2390.c:
+	.text       start:0x800B2390 end:0x800B2470
+
+game/unit_800B2470.c:
+	.text       start:0x800B2470 end:0x800B2544
+
+game/unit_800B2544.c:
+	.text       start:0x800B2544 end:0x800B254C
+
+game/unit_800B254C.c:
+	.text       start:0x800B254C end:0x800B2554
+
+game/unit_800B2554.c:
+	.text       start:0x800B2554 end:0x800B2640
+
+game/unit_800B26DC.c:
+	.text       start:0x800B26DC end:0x800B27B0
+
+game/unit_800B27B0.c:
+	.text       start:0x800B27B0 end:0x800B27B8
+
+game/unit_800B27B8.c:
+	.text       start:0x800B27B8 end:0x800B27C0
+
+game/unit_800B27C0.c:
+	.text       start:0x800B27C0 end:0x800B28AC
+
+game/unit_800B28AC.c:
+	.text       start:0x800B28AC end:0x800B2948
+
+game/unit_800B2948.c:
+	.text       start:0x800B2948 end:0x800B2A1C
+
+game/unit_800B2A1C.c:
+	.text       start:0x800B2A1C end:0x800B2A24
+
+game/unit_800B2A24.c:
+	.text       start:0x800B2A24 end:0x800B2A2C
+
+game/unit_800B2A2C.c:
+	.text       start:0x800B2A2C end:0x800B2B18
+
+game/unit_800B2B18.c:
+	.text       start:0x800B2B18 end:0x800B2BB4
+
+game/unit_800B2BB4.c:
+	.text       start:0x800B2BB4 end:0x800B2C88
+
+game/unit_800B2C88.c:
+	.text       start:0x800B2C88 end:0x800B2C90
+
+game/unit_800B2C90.c:
+	.text       start:0x800B2C90 end:0x800B2C98
+
+game/unit_800B2C98.c:
+	.text       start:0x800B2C98 end:0x800B2D84
+
+game/unit_800B2D84.c:
+	.text       start:0x800B2D84 end:0x800B2E20
+
+game/unit_800B2E20.c:
+	.text       start:0x800B2E20 end:0x800B2EF4
+
+game/unit_800B2EF4.c:
+	.text       start:0x800B2EF4 end:0x800B2EFC
+
+game/unit_800B2EFC.c:
+	.text       start:0x800B2EFC end:0x800B2F04
+
+game/unit_800B2F04.c:
+	.text       start:0x800B2F04 end:0x800B2FF0
+
+game/unit_800B2FF0.c:
+	.text       start:0x800B2FF0 end:0x800B308C
+
+game/unit_800B308C.c:
+	.text       start:0x800B308C end:0x800B3160
+
+game/unit_800B3160.c:
+	.text       start:0x800B3160 end:0x800B3168
+
+game/unit_800B3168.c:
+	.text       start:0x800B3168 end:0x800B3170
+
+game/unit_800B3170.c:
+	.text       start:0x800B3170 end:0x800B325C
+
+game/unit_800B325C.c:
+	.text       start:0x800B325C end:0x800B32F8
+
+game/unit_800B32F8.c:
+	.text       start:0x800B32F8 end:0x800B33CC
+
+game/unit_800B33CC.c:
+	.text       start:0x800B33CC end:0x800B33D4
+
+game/unit_800B33D4.c:
+	.text       start:0x800B33D4 end:0x800B33DC
+
+game/unit_800B33DC.c:
+	.text       start:0x800B33DC end:0x800B34FC
+
+game/unit_800B34FC.c:
+	.text       start:0x800B34FC end:0x800B35C4
+
+game/unit_800B35C4.c:
+	.text       start:0x800B35C4 end:0x800B3698
+
+game/unit_800B3698.c:
+	.text       start:0x800B3698 end:0x800B36A0
+
+game/unit_800B36A0.c:
+	.text       start:0x800B36A0 end:0x800B36A8
+
+game/unit_800B36A8.c:
+	.text       start:0x800B36A8 end:0x800B37C8
+
+game/unit_800B37C8.c:
+	.text       start:0x800B37C8 end:0x800B3890
+
+game/unit_800B3890.c:
+	.text       start:0x800B3890 end:0x800B3964
+
+game/unit_800B3964.c:
+	.text       start:0x800B3964 end:0x800B396C
+
+game/unit_800B396C.c:
+	.text       start:0x800B396C end:0x800B3970
+
+game/unit_800B3B3C.c:
+	.text       start:0x800B3B3C end:0x800B3C04
+
+game/unit_800B3C04.c:
+	.text       start:0x800B3C04 end:0x800B3C6C
+
+game/unit_800B3D74.c:
+	.text       start:0x800B3D74 end:0x800B3D78
+
+game/unit_800B4450.c:
+	.text       start:0x800B4450 end:0x800B4478
+
+game/unit_800B4478.c:
+	.text       start:0x800B4478 end:0x800B44D0
+
+game/unit_800B44D0.c:
+	.text       start:0x800B44D0 end:0x800B45D0
+
+game/unit_800B45D0.c:
+	.text       start:0x800B45D0 end:0x800B462C
+
+game/unit_800B462C.c:
+	.text       start:0x800B462C end:0x800B4754
+
+game/unit_800B4754.c:
+	.text       start:0x800B4754 end:0x800B4814
+
+game/unit_800B4814.c:
+	.text       start:0x800B4814 end:0x800B4890
+
+game/unit_800B4890.c:
+	.text       start:0x800B4890 end:0x800B490C
+
+game/unit_800B490C.c:
+	.text       start:0x800B490C end:0x800B4938
+
+game/unit_800B4B24.c:
+	.text       start:0x800B4B24 end:0x800B4C40
+
+game/unit_800B4C40.c:
+	.text       start:0x800B4C40 end:0x800B4D8C
+
+game/unit_800B5024.c:
+	.text       start:0x800B5024 end:0x800B5064
+
+game/unit_800B5064.c:
+	.text       start:0x800B5064 end:0x800B50A8
+
+game/unit_800B5684.c:
+	.text       start:0x800B5684 end:0x800B56A4
+
+game/unit_800B56A4.c:
+	.text       start:0x800B56A4 end:0x800B56C8
+
+game/unit_800B56C8.c:
+	.text       start:0x800B56C8 end:0x800B56EC
+
+game/unit_800B56EC.c:
+	.text       start:0x800B56EC end:0x800B5710
+
+game/unit_800B5710.c:
+	.text       start:0x800B5710 end:0x800B5828
+
+game/unit_800B5828.c:
+	.text       start:0x800B5828 end:0x800B5894
+
+game/unit_800B5894.c:
+	.text       start:0x800B5894 end:0x800B58F8
+
+game/unit_800B58F8.c:
+	.text       start:0x800B58F8 end:0x800B590C
+
+game/unit_800B590C.c:
+	.text       start:0x800B590C end:0x800B5918
+
+game/unit_800B5918.c:
+	.text       start:0x800B5918 end:0x800B592C
+
+game/unit_800B592C.c:
+	.text       start:0x800B592C end:0x800B5934
+
+game/unit_800B5934.c:
+	.text       start:0x800B5934 end:0x800B593C
+
+game/unit_800B593C.c:
+	.text       start:0x800B593C end:0x800B5990
+
+game/unit_800B5990.c:
+	.text       start:0x800B5990 end:0x800B59A4
+
+game/unit_800B59A4.c:
+	.text       start:0x800B59A4 end:0x800B59B4
+
+game/unit_800B59B4.c:
+	.text       start:0x800B59B4 end:0x800B59BC
+
+game/unit_800B59BC.c:
+	.text       start:0x800B59BC end:0x800B59C4
+
+game/unit_800B59C4.c:
+	.text       start:0x800B59C4 end:0x800B5A38
+
+game/unit_800B5AA4.c:
+	.text       start:0x800B5AA4 end:0x800B5AB8
+
+game/unit_800B5AB8.c:
+	.text       start:0x800B5AB8 end:0x800B5AC0
+
+game/unit_800B5AC0.c:
+	.text       start:0x800B5AC0 end:0x800B5AF4
+
+game/unit_800B5AF4.c:
+	.text       start:0x800B5AF4 end:0x800B5B50
+
+game/unit_800B5B50.c:
+	.text       start:0x800B5B50 end:0x800B5B6C
+
+game/unit_800B5B6C.c:
+	.text       start:0x800B5B6C end:0x800B5B74
+
+game/unit_800B5B74.c:
+	.text       start:0x800B5B74 end:0x800B5B84
+
+game/unit_800B5B84.c:
+	.text       start:0x800B5B84 end:0x800B5BE4
+
+game/unit_800B5BE4.c:
+	.text       start:0x800B5BE4 end:0x800B5BF4
+
+game/unit_800B5BF4.c:
+	.text       start:0x800B5BF4 end:0x800B5C54
+
+game/unit_800B5C54.c:
+	.text       start:0x800B5C54 end:0x800B5CB4
+
+game/unit_800B5CB4.c:
+	.text       start:0x800B5CB4 end:0x800B5DD4
+
+game/unit_800B5DD4.c:
+	.text       start:0x800B5DD4 end:0x800B5ECC
+
+game/unit_800B5ECC.c:
+	.text       start:0x800B5ECC end:0x800B5F10
+
+game/unit_800B5F10.c:
+	.text       start:0x800B5F10 end:0x800B5F38
+
+game/unit_800B5F38.c:
+	.text       start:0x800B5F38 end:0x800B5F68
+
+game/unit_800B5F68.c:
+	.text       start:0x800B5F68 end:0x800B5F90
+
+game/unit_800B608C.c:
+	.text       start:0x800B608C end:0x800B60CC
+
+game/unit_800B60CC.c:
+	.text       start:0x800B60CC end:0x800B60D4
+
+game/unit_800B60D4.c:
+	.text       start:0x800B60D4 end:0x800B60DC
+
+game/unit_800B6130.c:
+	.text       start:0x800B6130 end:0x800B6228
+
+game/unit_800B63B0.c:
+	.text       start:0x800B63B0 end:0x800B63C4
+
+game/unit_800B63C4.c:
+	.text       start:0x800B63C4 end:0x800B6430
+
+game/unit_800B6430.c:
+	.text       start:0x800B6430 end:0x800B6440
+
+game/unit_800B6440.c:
+	.text       start:0x800B6440 end:0x800B6448
+
+game/unit_800B6448.c:
+	.text       start:0x800B6448 end:0x800B6450
+
+game/unit_800B6450.c:
+	.text       start:0x800B6450 end:0x800B6464
+
+game/unit_800B6464.c:
+	.text       start:0x800B6464 end:0x800B6474
+
+game/unit_800B64F8.c:
+	.text       start:0x800B64F8 end:0x800B6500
+
+game/unit_800B6500.c:
+	.text       start:0x800B6500 end:0x800B6534
+
+game/unit_800B6534.c:
+	.text       start:0x800B6534 end:0x800B653C
+
+game/unit_800B653C.c:
+	.text       start:0x800B653C end:0x800B6594
+
+game/unit_800B6600.c:
+	.text       start:0x800B6600 end:0x800B6608
+
+game/unit_800B66B0.c:
+	.text       start:0x800B66B0 end:0x800B66BC
+
+game/unit_800B66BC.c:
+	.text       start:0x800B66BC end:0x800B672C
+
+game/unit_800B672C.c:
+	.text       start:0x800B672C end:0x800B673C
+
+game/unit_800B673C.c:
+	.text       start:0x800B673C end:0x800B6750
+
+game/unit_800B6750.c:
+	.text       start:0x800B6750 end:0x800B6770
+
+game/unit_800B6770.c:
+	.text       start:0x800B6770 end:0x800B6790
+
+game/unit_800B6790.c:
+	.text       start:0x800B6790 end:0x800B67F8
+
+game/unit_800B67F8.c:
+	.text       start:0x800B67F8 end:0x800B68A8
+
+game/unit_800B68FC.c:
+	.text       start:0x800B68FC end:0x800B6984
+
+game/unit_800B730C.c:
+	.text       start:0x800B730C end:0x800B7388
+
+game/unit_800B7388.c:
+	.text       start:0x800B7388 end:0x800B73B8
+
+game/unit_800B7844.c:
+	.text       start:0x800B7844 end:0x800B789C
+
+game/unit_800B7914.c:
+	.text       start:0x800B7914 end:0x800B7950
+
+game/unit_800B7950.c:
+	.text       start:0x800B7950 end:0x800B7978
+
+game/unit_800B7978.c:
+	.text       start:0x800B7978 end:0x800B7980
+
+game/unit_800B7980.c:
+	.text       start:0x800B7980 end:0x800B79D4
+
+game/unit_800B79D4.c:
+	.text       start:0x800B79D4 end:0x800B7A28
+
+game/unit_800B7CFC.c:
+	.text       start:0x800B7CFC end:0x800B7D90
+
+game/unit_800B7D90.c:
+	.text       start:0x800B7D90 end:0x800B7E24
+
+game/unit_800B7E24.c:
+	.text       start:0x800B7E24 end:0x800B7E2C
+
+game/unit_800B7E2C.c:
+	.text       start:0x800B7E2C end:0x800B7E34
+
+game/unit_800B80FC.c:
+	.text       start:0x800B80FC end:0x800B8104
+
+game/unit_800B8104.c:
+	.text       start:0x800B8104 end:0x800B810C
+
+game/unit_800B8F08.c:
+	.text       start:0x800B8F08 end:0x800B8FB4
+
+game/unit_800B8FB4.c:
+	.text       start:0x800B8FB4 end:0x800B9094
+
+game/unit_800B9094.c:
+	.text       start:0x800B9094 end:0x800B911C
+
+game/unit_800B911C.c:
+	.text       start:0x800B911C end:0x800B916C
+
+game/unit_800B916C.c:
+	.text       start:0x800B916C end:0x800B91E0
+
+game/unit_800B93AC.c:
+	.text       start:0x800B93AC end:0x800B93B8
+
+game/unit_800B93B8.c:
+	.text       start:0x800B93B8 end:0x800B9458
+
+game/unit_800B9658.c:
+	.text       start:0x800B9658 end:0x800B96E0
+
+game/unit_800B9840.c:
+	.text       start:0x800B9840 end:0x800B98BC
+
+game/unit_800BA084.c:
+	.text       start:0x800BA084 end:0x800BA124
+
+game/unit_800BA124.c:
+	.text       start:0x800BA124 end:0x800BA1A8
+
+game/unit_800BA4D4.c:
+	.text       start:0x800BA4D4 end:0x800BA51C
+
+game/unit_800BA51C.c:
+	.text       start:0x800BA51C end:0x800BA550
+
+game/unit_800BA550.c:
+	.text       start:0x800BA550 end:0x800BA56C
+
+game/unit_800BA56C.c:
+	.text       start:0x800BA56C end:0x800BA570
+
+game/unit_800BAE64.c:
+	.text       start:0x800BAE64 end:0x800BAE68
+
+game/unit_800BAE68.c:
+	.text       start:0x800BAE68 end:0x800BAEE0
+
+game/unit_800BAEE0.c:
+	.text       start:0x800BAEE0 end:0x800BAF48
+
+game/unit_800BAF48.c:
+	.text       start:0x800BAF48 end:0x800BAFDC
+
+game/unit_800BAFDC.c:
+	.text       start:0x800BAFDC end:0x800BB024
+
+game/unit_800BB024.c:
+	.text       start:0x800BB024 end:0x800BB068
+
+game/unit_800BB068.c:
+	.text       start:0x800BB068 end:0x800BB0B0
+
+game/unit_800BB244.c:
+	.text       start:0x800BB244 end:0x800BB2B0
+
+game/unit_800BB378.c:
+	.text       start:0x800BB378 end:0x800BB428
+
+game/unit_800BB428.c:
+	.text       start:0x800BB428 end:0x800BB4E8
+
+game/unit_800BB6C8.c:
+	.text       start:0x800BB6C8 end:0x800BB7B8
+
+game/unit_800BB994.c:
+	.text       start:0x800BB994 end:0x800BB998
+
+game/unit_800BB998.c:
+	.text       start:0x800BB998 end:0x800BB99C
+
+game/unit_800BB99C.c:
+	.text       start:0x800BB99C end:0x800BB9A0
+
+game/unit_800BB9A0.c:
+	.text       start:0x800BB9A0 end:0x800BB9A4
+
+game/unit_800BB9A4.c:
+	.text       start:0x800BB9A4 end:0x800BB9A8
+
+game/unit_800BB9A8.c:
+	.text       start:0x800BB9A8 end:0x800BB9AC
+
+game/unit_800BB9AC.c:
+	.text       start:0x800BB9AC end:0x800BBB18
+
+game/unit_800BBB18.c:
+	.text       start:0x800BBB18 end:0x800BBB90
+
+game/unit_800BBB90.c:
+	.text       start:0x800BBB90 end:0x800BBBFC
+
+game/unit_800BBBFC.c:
+	.text       start:0x800BBBFC end:0x800BBC28
+
+game/unit_800BBC28.c:
+	.text       start:0x800BBC28 end:0x800BBD10
+
+game/unit_800BBE60.c:
+	.text       start:0x800BBE60 end:0x800BBECC
+
+game/unit_800BBECC.c:
+	.text       start:0x800BBECC end:0x800BBF48
+
+game/unit_800BC0A8.c:
+	.text       start:0x800BC0A8 end:0x800BC0AC
+
+game/unit_800BC1F4.c:
+	.text       start:0x800BC1F4 end:0x800BC214
+
+game/unit_800BC640.c:
+	.text       start:0x800BC640 end:0x800BC68C
+
+game/unit_800BC9D8.c:
+	.text       start:0x800BC9D8 end:0x800BCA44
+
+game/unit_800BCA44.c:
+	.text       start:0x800BCA44 end:0x800BCACC
+
+game/unit_800BCACC.c:
+	.text       start:0x800BCACC end:0x800BCAD0
+
+game/unit_800BCAD0.c:
+	.text       start:0x800BCAD0 end:0x800BCB88
+
+game/unit_800BCE84.c:
+	.text       start:0x800BCE84 end:0x800BCEB0
+
+game/unit_800BD1D0.c:
+	.text       start:0x800BD1D0 end:0x800BD23C
+
+game/unit_800BD2EC.c:
+	.text       start:0x800BD2EC end:0x800BD2F0
+
+game/unit_800BD968.c:
+	.text       start:0x800BD968 end:0x800BD9B0
+
+game/unit_800BDD9C.c:
+	.text       start:0x800BDD9C end:0x800BDEB4
+
+game/unit_800BE0F0.c:
+	.text       start:0x800BE0F0 end:0x800BE1BC
+
+game/unit_800BE3A8.c:
+	.text       start:0x800BE3A8 end:0x800BE414
+
+game/unit_800BE414.c:
+	.text       start:0x800BE414 end:0x800BE49C
+
+game/unit_800BE49C.c:
+	.text       start:0x800BE49C end:0x800BE4A0
+
+game/unit_800BEA78.c:
+	.text       start:0x800BEA78 end:0x800BEA7C
+
+game/unit_800BEB40.c:
+	.text       start:0x800BEB40 end:0x800BEC0C
+
+game/unit_800BEC0C.c:
+	.text       start:0x800BEC0C end:0x800BECF0
+
+game/unit_800BECF0.c:
+	.text       start:0x800BECF0 end:0x800BED5C
+
+game/unit_800BED5C.c:
+	.text       start:0x800BED5C end:0x800BEDEC
+
+game/unit_800BEDEC.c:
+	.text       start:0x800BEDEC end:0x800BEE90
+
+game/unit_800BEE90.c:
+	.text       start:0x800BEE90 end:0x800BEEF8
+
+game/unit_800BEEF8.c:
+	.text       start:0x800BEEF8 end:0x800BEEFC
+
+game/unit_800BF470.c:
+	.text       start:0x800BF470 end:0x800BF490
+
+game/unit_800BF490.c:
+	.text       start:0x800BF490 end:0x800BF494
+
+game/unit_800BF8A4.c:
+	.text       start:0x800BF8A4 end:0x800BF8E4
+
+game/unit_800BF8E4.c:
+	.text       start:0x800BF8E4 end:0x800BF9A8
+
+game/unit_800BF9A8.c:
+	.text       start:0x800BF9A8 end:0x800BFA80
+
+game/unit_800BFA80.c:
+	.text       start:0x800BFA80 end:0x800BFB58
+
+game/unit_800BFB58.c:
+	.text       start:0x800BFB58 end:0x800BFBC4
+
+game/unit_800BFBC4.c:
+	.text       start:0x800BFBC4 end:0x800BFC54
+
+game/unit_800BFC54.c:
+	.text       start:0x800BFC54 end:0x800BFCDC
+
+game/unit_800BFCDC.c:
+	.text       start:0x800BFCDC end:0x800BFD44
+
+game/unit_800BFD44.c:
+	.text       start:0x800BFD44 end:0x800BFD48
+
+game/unit_800BFEB4.c:
+	.text       start:0x800BFEB4 end:0x800BFFC4
+
+game/unit_800BFFC4.c:
+	.text       start:0x800BFFC4 end:0x800BFFE4
+
+game/unit_800BFFE4.c:
+	.text       start:0x800BFFE4 end:0x800BFFE8
+
+game/unit_800BFFE8.c:
+	.text       start:0x800BFFE8 end:0x800C011C
+
+game/unit_800C011C.c:
+	.text       start:0x800C011C end:0x800C0120
+
+game/unit_800C03EC.c:
+	.text       start:0x800C03EC end:0x800C0458
+
+game/unit_800C0458.c:
+	.text       start:0x800C0458 end:0x800C04E0
+
+game/unit_800C04E0.c:
+	.text       start:0x800C04E0 end:0x800C04E4
+
+game/unit_800C04E4.c:
+	.text       start:0x800C04E4 end:0x800C05AC
+
+game/unit_800C0784.c:
+	.text       start:0x800C0784 end:0x800C0788
+
+game/unit_800C0788.c:
+	.text       start:0x800C0788 end:0x800C0854
+
+game/unit_800C0B24.c:
+	.text       start:0x800C0B24 end:0x800C0B90
+
+game/unit_800C0B90.c:
+	.text       start:0x800C0B90 end:0x800C0C18
+
+game/unit_800C0C18.c:
+	.text       start:0x800C0C18 end:0x800C0C1C
+
+game/unit_800C0C1C.c:
+	.text       start:0x800C0C1C end:0x800C0C74
+
+game/unit_800C12D4.c:
+	.text       start:0x800C12D4 end:0x800C1300
+
+game/unit_800C1300.c:
+	.text       start:0x800C1300 end:0x800C139C
+
+game/unit_800C15A4.c:
+	.text       start:0x800C15A4 end:0x800C1618
+
+game/unit_800C1618.c:
+	.text       start:0x800C1618 end:0x800C16A8
+
+game/unit_800C16A8.c:
+	.text       start:0x800C16A8 end:0x800C16AC
+
+game/unit_800C24C0.c:
+	.text       start:0x800C24C0 end:0x800C2660
+
+game/unit_800C2660.c:
+	.text       start:0x800C2660 end:0x800C2700
+
+game/unit_800C2700.c:
+	.text       start:0x800C2700 end:0x800C283C
+
+game/unit_800C283C.c:
+	.text       start:0x800C283C end:0x800C28A8
+
+game/unit_800C28A8.c:
+	.text       start:0x800C28A8 end:0x800C2914
+
+game/unit_800C2914.c:
+	.text       start:0x800C2914 end:0x800C2918
+
+game/unit_800C2918.c:
+	.text       start:0x800C2918 end:0x800C2A14
+
+game/unit_800C2A14.c:
+	.text       start:0x800C2A14 end:0x800C2B8C
+
+game/unit_800C2B8C.c:
+	.text       start:0x800C2B8C end:0x800C2D34
+
+game/unit_800C2D34.c:
+	.text       start:0x800C2D34 end:0x800C2EA0
+
+game/unit_800C2EA0.c:
+	.text       start:0x800C2EA0 end:0x800C2F20
+
+game/unit_800C2F20.c:
+	.text       start:0x800C2F20 end:0x800C2F8C
+
+game/unit_800C2F8C.c:
+	.text       start:0x800C2F8C end:0x800C2FD8
+
+game/unit_800C2FD8.c:
+	.text       start:0x800C2FD8 end:0x800C3060
+
+game/unit_800C32E0.c:
+	.text       start:0x800C32E0 end:0x800C3354
+
+game/unit_800C3354.c:
+	.text       start:0x800C3354 end:0x800C33E8
+
+game/unit_800C33E8.c:
+	.text       start:0x800C33E8 end:0x800C33EC
+
+game/unit_800C33EC.c:
+	.text       start:0x800C33EC end:0x800C341C
+
+game/unit_800C3610.c:
+	.text       start:0x800C3610 end:0x800C36E0
+
+game/unit_800C3B24.c:
+	.text       start:0x800C3B24 end:0x800C3D14
+
+game/unit_800C3D14.c:
+	.text       start:0x800C3D14 end:0x800C3D38
+
+game/unit_800C3D38.c:
+	.text       start:0x800C3D38 end:0x800C3E4C
+
+game/unit_800C3E4C.c:
+	.text       start:0x800C3E4C end:0x800C3F60
+
+game/unit_800C3F60.c:
+	.text       start:0x800C3F60 end:0x800C3FC8
+
+game/unit_800C4160.c:
+	.text       start:0x800C4160 end:0x800C41D4
+
+game/unit_800C41D4.c:
+	.text       start:0x800C41D4 end:0x800C425C
+
+game/unit_800C425C.c:
+	.text       start:0x800C425C end:0x800C4260
+
+game/unit_800C5108.c:
+	.text       start:0x800C5108 end:0x800C5170
+
+game/unit_800C5304.c:
+	.text       start:0x800C5304 end:0x800C5378
+
+game/unit_800C5378.c:
+	.text       start:0x800C5378 end:0x800C5400
+
+game/unit_800C5400.c:
+	.text       start:0x800C5400 end:0x800C5404
+
+game/unit_800C65E4.c:
+	.text       start:0x800C65E4 end:0x800C664C
+
+game/unit_800C664C.c:
+	.text       start:0x800C664C end:0x800C6660
+
+game/unit_800C6660.c:
+	.text       start:0x800C6660 end:0x800C66D8
+
+game/unit_800C66D8.c:
+	.text       start:0x800C66D8 end:0x800C66DC
+
+game/unit_800C66DC.c:
+	.text       start:0x800C66DC end:0x800C6744
+
+game/unit_800C6744.c:
+	.text       start:0x800C6744 end:0x800C675C
+
+game/unit_800C675C.c:
+	.text       start:0x800C675C end:0x800C688C
+
+game/unit_800C6ED4.c:
+	.text       start:0x800C6ED4 end:0x800C6F8C
+
+game/unit_800C7594.c:
+	.text       start:0x800C7594 end:0x800C75D0
+
+game/unit_800C75D0.c:
+	.text       start:0x800C75D0 end:0x800C7608
+
+game/unit_800C798C.c:
+	.text       start:0x800C798C end:0x800C7994
+
+game/unit_800C7994.c:
+	.text       start:0x800C7994 end:0x800C7A4C
+
+game/unit_800C7A4C.c:
+	.text       start:0x800C7A4C end:0x800C7A84
+
+game/unit_800C7A84.c:
+	.text       start:0x800C7A84 end:0x800C7AA0
+
+game/unit_800C7C24.c:
+	.text       start:0x800C7C24 end:0x800C7CDC
+
+game/unit_800C7CDC.c:
+	.text       start:0x800C7CDC end:0x800C7D00
+
+game/unit_800C7D00.c:
+	.text       start:0x800C7D00 end:0x800C7D54
+
+game/unit_800C7D54.c:
+	.text       start:0x800C7D54 end:0x800C7D80
+
+game/unit_800C7D80.c:
+	.text       start:0x800C7D80 end:0x800C7DAC
+
+game/unit_800C7DAC.c:
+	.text       start:0x800C7DAC end:0x800C7DD8
+
+game/unit_800C7DD8.c:
+	.text       start:0x800C7DD8 end:0x800C7DF0
+
+game/unit_800C7DF0.c:
+	.text       start:0x800C7DF0 end:0x800C7EB8
+
+game/unit_800C7EB8.c:
+	.text       start:0x800C7EB8 end:0x800C7EE0
+
+game/unit_800C7EE0.c:
+	.text       start:0x800C7EE0 end:0x800C7F08
+
+game/unit_800C7F08.c:
+	.text       start:0x800C7F08 end:0x800C7FB8
+
+game/unit_800C7FB8.c:
+	.text       start:0x800C7FB8 end:0x800C7FD0
+
+game/unit_800C7FD0.c:
+	.text       start:0x800C7FD0 end:0x800C7FE8
+
+game/unit_800C7FE8.c:
+	.text       start:0x800C7FE8 end:0x800C8000
+
+game/unit_800C8000.c:
+	.text       start:0x800C8000 end:0x800C8018
+
+game/unit_800C8018.c:
+	.text       start:0x800C8018 end:0x800C8030
+
+game/unit_800C8030.c:
+	.text       start:0x800C8030 end:0x800C8048
+
+game/unit_800C8048.c:
+	.text       start:0x800C8048 end:0x800C8160
+
+game/unit_800C8160.c:
+	.text       start:0x800C8160 end:0x800C81D0
+
+game/unit_800C81D0.c:
+	.text       start:0x800C81D0 end:0x800C82D4
+
+game/unit_800C82D4.c:
+	.text       start:0x800C82D4 end:0x800C83EC
+
+game/unit_800C83EC.c:
+	.text       start:0x800C83EC end:0x800C8414
+
+game/unit_800C8414.c:
+	.text       start:0x800C8414 end:0x800C843C
+
+game/unit_800C843C.c:
+	.text       start:0x800C843C end:0x800C8464
+
+game/unit_800C8464.c:
+	.text       start:0x800C8464 end:0x800C848C
+
+game/unit_800C848C.c:
+	.text       start:0x800C848C end:0x800C84B4
+
+game/unit_800C84B4.c:
+	.text       start:0x800C84B4 end:0x800C84DC
+
+game/unit_800C84DC.c:
+	.text       start:0x800C84DC end:0x800C8504
+
+game/unit_800C8504.c:
+	.text       start:0x800C8504 end:0x800C852C
+
+game/unit_800C852C.c:
+	.text       start:0x800C852C end:0x800C857C
+
+game/unit_800C857C.c:
+	.text       start:0x800C857C end:0x800C8644
+
+game/unit_800C8644.c:
+	.text       start:0x800C8644 end:0x800C8658
+
+game/unit_800C8658.c:
+	.text       start:0x800C8658 end:0x800C86A8
+
+game/unit_800C86A8.c:
+	.text       start:0x800C86A8 end:0x800C86D0
+
+game/unit_800C86D0.c:
+	.text       start:0x800C86D0 end:0x800C8770
+
+game/unit_800C8770.c:
+	.text       start:0x800C8770 end:0x800C8810
+
+game/unit_800C8810.c:
+	.text       start:0x800C8810 end:0x800C8828
+
+game/unit_800C8828.c:
+	.text       start:0x800C8828 end:0x800C8840
+
+game/unit_800C8840.c:
+	.text       start:0x800C8840 end:0x800C8858
+
+game/unit_800C8858.c:
+	.text       start:0x800C8858 end:0x800C886C
+
+game/unit_800C886C.c:
+	.text       start:0x800C886C end:0x800C8934
+
+game/unit_800C8934.c:
+	.text       start:0x800C8934 end:0x800C894C
+
+game/unit_800C894C.c:
+	.text       start:0x800C894C end:0x800C8964
+
+game/unit_800C8964.c:
+	.text       start:0x800C8964 end:0x800C8994
+
+game/unit_800C8994.c:
+	.text       start:0x800C8994 end:0x800C89C4
+
+game/unit_800C89C4.c:
+	.text       start:0x800C89C4 end:0x800C89F4
+
+game/unit_800C89F4.c:
+	.text       start:0x800C89F4 end:0x800C8A24
+
+game/unit_800C8A24.c:
+	.text       start:0x800C8A24 end:0x800C8A54
+
+game/unit_800C8A54.c:
+	.text       start:0x800C8A54 end:0x800C8A84
+
+game/unit_800C8A84.c:
+	.text       start:0x800C8A84 end:0x800C8AB4
+
+game/unit_800C8AB4.c:
+	.text       start:0x800C8AB4 end:0x800C8AE4
+
+game/unit_800C8AE4.c:
+	.text       start:0x800C8AE4 end:0x800C8B14
+
+game/unit_800C8B14.c:
+	.text       start:0x800C8B14 end:0x800C8B44
+
+game/unit_800C8B44.c:
+	.text       start:0x800C8B44 end:0x800C8B7C
+
+game/unit_800C9EA8.c:
+	.text       start:0x800C9EA8 end:0x800C9EBC
+
+game/unit_800C9EBC.c:
+	.text       start:0x800C9EBC end:0x800C9EEC
+
+game/unit_800CA19C.c:
+	.text       start:0x800CA19C end:0x800CA26C
+
+game/unit_800CA26C.c:
+	.text       start:0x800CA26C end:0x800CA3D8
+
+game/unit_800CA3D8.c:
+	.text       start:0x800CA3D8 end:0x800CA458
+
+game/unit_800CA598.c:
+	.text       start:0x800CA598 end:0x800CA5B4
+
+game/unit_800CA5B4.c:
+	.text       start:0x800CA5B4 end:0x800CA614
+
+game/unit_800CA858.c:
+	.text       start:0x800CA858 end:0x800CA8EC
+
+game/unit_800CB044.c:
+	.text       start:0x800CB044 end:0x800CB048
+
+game/unit_800CB048.c:
+	.text       start:0x800CB048 end:0x800CB0F8
+
+game/unit_800CB0F8.c:
+	.text       start:0x800CB0F8 end:0x800CB110
+
+game/unit_800CB110.c:
+	.text       start:0x800CB110 end:0x800CB170
+
+game/unit_800CB304.c:
+	.text       start:0x800CB304 end:0x800CB308
+
+game/unit_800CB308.c:
+	.text       start:0x800CB308 end:0x800CB3B8
+
+game/unit_800CB3B8.c:
+	.text       start:0x800CB3B8 end:0x800CB3D0
+
+game/unit_800CB3D0.c:
+	.text       start:0x800CB3D0 end:0x800CB430
+
+game/unit_800CB5BC.c:
+	.text       start:0x800CB5BC end:0x800CB5C0
+
+game/unit_800CB728.c:
+	.text       start:0x800CB728 end:0x800CB7C8
+
+game/unit_800CB7C8.c:
+	.text       start:0x800CB7C8 end:0x800CB828
+
+game/unit_800CB828.c:
+	.text       start:0x800CB828 end:0x800CB900
+
+game/unit_800CBA68.c:
+	.text       start:0x800CBA68 end:0x800CBA6C
+
+game/unit_800CBBB8.c:
+	.text       start:0x800CBBB8 end:0x800CBC58
+
+game/unit_800CBC58.c:
+	.text       start:0x800CBC58 end:0x800CBCB8
+
+game/unit_800CC050.c:
+	.text       start:0x800CC050 end:0x800CC120
+
+game/unit_800CC120.c:
+	.text       start:0x800CC120 end:0x800CC1CC
+
+game/unit_800CC1CC.c:
+	.text       start:0x800CC1CC end:0x800CC1D0
+
+game/unit_800CC374.c:
+	.text       start:0x800CC374 end:0x800CC414
+
+game/unit_800CC414.c:
+	.text       start:0x800CC414 end:0x800CC474
+
+game/unit_800CCB04.c:
+	.text       start:0x800CCB04 end:0x800CCBB4
+
+game/unit_800CCEC4.c:
+	.text       start:0x800CCEC4 end:0x800CCF68
+
+game/unit_800CCF68.c:
+	.text       start:0x800CCF68 end:0x800CCFDC
+
+game/unit_800CE930.c:
+	.text       start:0x800CE930 end:0x800CE9FC
+
+game/unit_800CE9FC.c:
+	.text       start:0x800CE9FC end:0x800CEA5C
+
+game/unit_800CEA5C.c:
+	.text       start:0x800CEA5C end:0x800CEAD8
+
+game/unit_800CEC10.c:
+	.text       start:0x800CEC10 end:0x800CED0C
+
+game/unit_800CED0C.c:
+	.text       start:0x800CED0C end:0x800CED38
+
+game/unit_800CED38.c:
+	.text       start:0x800CED38 end:0x800CEE00
+
+game/unit_800CEE00.c:
+	.text       start:0x800CEE00 end:0x800CEE18
+
+game/unit_800CEE18.c:
+	.text       start:0x800CEE18 end:0x800CEE78
+
+game/unit_800CF494.c:
+	.text       start:0x800CF494 end:0x800CF4AC
+
+game/unit_800CF4AC.c:
+	.text       start:0x800CF4AC end:0x800CF50C
+
+game/unit_800CF710.c:
+	.text       start:0x800CF710 end:0x800CF814
+
+game/unit_800CF814.c:
+	.text       start:0x800CF814 end:0x800CF830
+
+game/unit_800CF830.c:
+	.text       start:0x800CF830 end:0x800CF890
+
+game/unit_800D044C.c:
+	.text       start:0x800D044C end:0x800D04EC
+
+game/unit_800D04EC.c:
+	.text       start:0x800D04EC end:0x800D0564
+
+game/unit_800D0564.c:
+	.text       start:0x800D0564 end:0x800D066C
+
+game/unit_800D066C.c:
+	.text       start:0x800D066C end:0x800D07B0
+
+game/unit_800D09C4.c:
+	.text       start:0x800D09C4 end:0x800D0A68
+
+game/unit_800D0A68.c:
+	.text       start:0x800D0A68 end:0x800D0AE0
+
+game/unit_800D0BEC.c:
+	.text       start:0x800D0BEC end:0x800D0C50
+
+game/unit_800D0C50.c:
+	.text       start:0x800D0C50 end:0x800D0C8C
+
+game/unit_800D0E70.c:
+	.text       start:0x800D0E70 end:0x800D0F30
+
+game/unit_800D18F0.c:
+	.text       start:0x800D18F0 end:0x800D1994
+
+game/unit_800D1994.c:
+	.text       start:0x800D1994 end:0x800D1A8C
+
+game/unit_800D1A8C.c:
+	.text       start:0x800D1A8C end:0x800D1B58
+
+game/unit_800D23D8.c:
+	.text       start:0x800D23D8 end:0x800D24BC
+
+game/unit_800D24BC.c:
+	.text       start:0x800D24BC end:0x800D24C0
+
+game/unit_800D24C0.c:
+	.text       start:0x800D24C0 end:0x800D2528
+
+game/unit_800D2528.c:
+	.text       start:0x800D2528 end:0x800D2600
+
+game/unit_800D2768.c:
+	.text       start:0x800D2768 end:0x800D280C
+
+game/unit_800D280C.c:
+	.text       start:0x800D280C end:0x800D2884
+
+game/unit_800D2884.c:
+	.text       start:0x800D2884 end:0x800D28B8
+
+game/unit_800D28B8.c:
+	.text       start:0x800D28B8 end:0x800D2928
+
+game/unit_800D2AA4.c:
+	.text       start:0x800D2AA4 end:0x800D2B20
+
+game/unit_800D2B20.c:
+	.text       start:0x800D2B20 end:0x800D2C38
+
+game/unit_800D2C38.c:
+	.text       start:0x800D2C38 end:0x800D2D28
+
+game/unit_800D2D28.c:
+	.text       start:0x800D2D28 end:0x800D2DF4
+
+game/unit_800D2DF4.c:
+	.text       start:0x800D2DF4 end:0x800D2E8C
+
+game/unit_800D2FF4.c:
+	.text       start:0x800D2FF4 end:0x800D3030
+
+game/unit_800D3030.c:
+	.text       start:0x800D3030 end:0x800D3124
+
+game/unit_800D3124.c:
+	.text       start:0x800D3124 end:0x800D31C8
+
+game/unit_800D31C8.c:
+	.text       start:0x800D31C8 end:0x800D3260
+
+game/unit_800D3260.c:
+	.text       start:0x800D3260 end:0x800D3434
+
+game/unit_800D3434.c:
+	.text       start:0x800D3434 end:0x800D3598
+
+game/unit_800D3598.c:
+	.text       start:0x800D3598 end:0x800D36D0
+
+game/unit_800D36D0.c:
+	.text       start:0x800D36D0 end:0x800D372C
+
+game/unit_800D372C.c:
+	.text       start:0x800D372C end:0x800D37D8
+
+game/unit_800D37D8.c:
+	.text       start:0x800D37D8 end:0x800D3A3C
+
+game/unit_800D3A3C.c:
+	.text       start:0x800D3A3C end:0x800D3B0C
+
+game/unit_800D3B0C.c:
+	.text       start:0x800D3B0C end:0x800D3B44
+
+game/unit_800D3C80.c:
+	.text       start:0x800D3C80 end:0x800D3D2C
+
+game/unit_800D3D2C.c:
+	.text       start:0x800D3D2C end:0x800D3E1C
+
+game/unit_800D3E1C.c:
+	.text       start:0x800D3E1C end:0x800D3E34
+
+game/unit_800D3E34.c:
+	.text       start:0x800D3E34 end:0x800D3E6C
+
+game/unit_800D42E8.c:
+	.text       start:0x800D42E8 end:0x800D432C
+
+game/unit_800D432C.c:
+	.text       start:0x800D432C end:0x800D43B4
+
+game/unit_800D43B4.c:
+	.text       start:0x800D43B4 end:0x800D443C
+
+game/unit_800D455C.c:
+	.text       start:0x800D455C end:0x800D4568
+
+game/unit_800D4568.c:
+	.text       start:0x800D4568 end:0x800D45BC
+
+game/unit_800D45BC.c:
+	.text       start:0x800D45BC end:0x800D4624
+
+game/unit_800D486C.c:
+	.text       start:0x800D486C end:0x800D48DC
+
+game/unit_800D49F8.c:
+	.text       start:0x800D49F8 end:0x800D4A60
+
+game/unit_800D4E0C.c:
+	.text       start:0x800D4E0C end:0x800D4E98
+
+game/unit_800D4E98.c:
+	.text       start:0x800D4E98 end:0x800D4F24
+
+game/unit_800D4FB8.c:
+	.text       start:0x800D4FB8 end:0x800D5050
+
+game/unit_800D5050.c:
+	.text       start:0x800D5050 end:0x800D5088
+
+game/unit_800D5088.c:
+	.text       start:0x800D5088 end:0x800D50C0
+
+game/unit_800D5458.c:
+	.text       start:0x800D5458 end:0x800D5478
+
+game/unit_800D5520.c:
+	.text       start:0x800D5520 end:0x800D5544
+
+game/unit_800D5544.c:
+	.text       start:0x800D5544 end:0x800D5564
+
+game/unit_800D5798.c:
+	.text       start:0x800D5798 end:0x800D57BC
+
+game/unit_800D57BC.c:
+	.text       start:0x800D57BC end:0x800D5838
+
+game/unit_800D5838.c:
+	.text       start:0x800D5838 end:0x800D58B0
+
+game/unit_800D58B0.c:
+	.text       start:0x800D58B0 end:0x800D5918
+
+game/unit_800D5918.c:
+	.text       start:0x800D5918 end:0x800D5970
+
+game/unit_800D5970.c:
+	.text       start:0x800D5970 end:0x800D5990
+
+game/unit_800D5B90.c:
+	.text       start:0x800D5B90 end:0x800D5C38
+
+game/unit_800D5C38.c:
+	.text       start:0x800D5C38 end:0x800D5CD0
+
+game/unit_800D5D08.c:
+	.text       start:0x800D5D08 end:0x800D5D8C
+
+game/unit_800D5D8C.c:
+	.text       start:0x800D5D8C end:0x800D5E50
+
+game/unit_800D6184.c:
+	.text       start:0x800D6184 end:0x800D61C8
+
+game/unit_800D61C8.c:
+	.text       start:0x800D61C8 end:0x800D6254
+
+game/unit_800D6254.c:
+	.text       start:0x800D6254 end:0x800D630C
+
+game/unit_800D630C.c:
+	.text       start:0x800D630C end:0x800D6328
+
+game/unit_800D6328.c:
+	.text       start:0x800D6328 end:0x800D6360
+
+game/unit_800D6780.c:
+	.text       start:0x800D6780 end:0x800D6848
+
+game/unit_800D6C24.c:
+	.text       start:0x800D6C24 end:0x800D6CA0
+
+game/unit_800D6CA0.c:
+	.text       start:0x800D6CA0 end:0x800D6CE4
+
+game/unit_800D6F3C.c:
+	.text       start:0x800D6F3C end:0x800D7034
+
+game/unit_800D7034.c:
+	.text       start:0x800D7034 end:0x800D70D0
+
+game/unit_800D70D0.c:
+	.text       start:0x800D70D0 end:0x800D7138
+
+game/unit_800D7138.c:
+	.text       start:0x800D7138 end:0x800D71A0
+
+game/unit_800D71A0.c:
+	.text       start:0x800D71A0 end:0x800D7208
+
+game/unit_800D7208.c:
+	.text       start:0x800D7208 end:0x800D7298
+
+game/unit_800D73D4.c:
+	.text       start:0x800D73D4 end:0x800D7450
+
+game/unit_800D7450.c:
+	.text       start:0x800D7450 end:0x800D7494
+
+game/unit_800D7B04.c:
+	.text       start:0x800D7B04 end:0x800D7BF8
+
+game/unit_800D7CC8.c:
+	.text       start:0x800D7CC8 end:0x800D7D58
+
+game/unit_800D7E98.c:
+	.text       start:0x800D7E98 end:0x800D7F14
+
+game/unit_800D7F14.c:
+	.text       start:0x800D7F14 end:0x800D7F58
+
+game/unit_800D8C2C.c:
+	.text       start:0x800D8C2C end:0x800D8CBC
+
+game/unit_800D8CBC.c:
+	.text       start:0x800D8CBC end:0x800D8D70
+
+game/unit_800D8D70.c:
+	.text       start:0x800D8D70 end:0x800D8D88
+
+game/unit_800D8D88.c:
+	.text       start:0x800D8D88 end:0x800D8DE8
+
+game/unit_800D8F5C.c:
+	.text       start:0x800D8F5C end:0x800D8FEC
+
+game/unit_800D9114.c:
+	.text       start:0x800D9114 end:0x800D9198
+
+game/unit_800D9198.c:
+	.text       start:0x800D9198 end:0x800D91D0
+
+game/unit_800D91D0.c:
+	.text       start:0x800D91D0 end:0x800D9228
+
+game/unit_800D9228.c:
+	.text       start:0x800D9228 end:0x800D92CC
+
+game/unit_800D92CC.c:
+	.text       start:0x800D92CC end:0x800D9364
+
+game/unit_800D9364.c:
+	.text       start:0x800D9364 end:0x800D9430
+
+game/unit_800D9430.c:
+	.text       start:0x800D9430 end:0x800D9474
+
+game/unit_800D968C.c:
+	.text       start:0x800D968C end:0x800D973C
+
+game/unit_800D973C.c:
+	.text       start:0x800D973C end:0x800D97F0
+
+game/unit_800D97F0.c:
+	.text       start:0x800D97F0 end:0x800D98A4
+
+game/unit_800D98A4.c:
+	.text       start:0x800D98A4 end:0x800D9948
+
+game/unit_800D9948.c:
+	.text       start:0x800D9948 end:0x800D99EC
+
+game/unit_800D9BE0.c:
+	.text       start:0x800D9BE0 end:0x800D9BFC
+
+game/unit_800DA244.c:
+	.text       start:0x800DA244 end:0x800DA258
+
+game/unit_800DABD4.c:
+	.text       start:0x800DABD4 end:0x800DAC18
+
+game/unit_800DAC18.c:
+	.text       start:0x800DAC18 end:0x800DACCC
+
+game/unit_800DACCC.c:
+	.text       start:0x800DACCC end:0x800DADB8
+
+game/unit_800DADB8.c:
+	.text       start:0x800DADB8 end:0x800DAE54
+
+game/unit_800DAE54.c:
+	.text       start:0x800DAE54 end:0x800DAE6C
+
+game/unit_800DB14C.c:
+	.text       start:0x800DB14C end:0x800DB238
+
+game/unit_800DB238.c:
+	.text       start:0x800DB238 end:0x800DB280
+
+game/unit_800DB280.c:
+	.text       start:0x800DB280 end:0x800DB310
+
+game/unit_800DB310.c:
+	.text       start:0x800DB310 end:0x800DB378
+
+game/unit_800DB378.c:
+	.text       start:0x800DB378 end:0x800DB394
+
+game/unit_800DB394.c:
+	.text       start:0x800DB394 end:0x800DB3CC
+
+game/unit_800DBCE0.c:
+	.text       start:0x800DBCE0 end:0x800DBD70
+
+game/unit_800DBE6C.c:
+	.text       start:0x800DBE6C end:0x800DBEE8
+
+game/unit_800DBEE8.c:
+	.text       start:0x800DBEE8 end:0x800DBF2C
+
+game/unit_800DBF2C.c:
+	.text       start:0x800DBF2C end:0x800DBF48
+
+game/unit_800DBF48.c:
+	.text       start:0x800DBF48 end:0x800DBF64
+
+game/unit_800DBF64.c:
+	.text       start:0x800DBF64 end:0x800DBF80
+
+game/unit_800DBF80.c:
+	.text       start:0x800DBF80 end:0x800DBF9C
+
+game/unit_800DBF9C.c:
+	.text       start:0x800DBF9C end:0x800DBFB8
+
+game/unit_800DBFB8.c:
+	.text       start:0x800DBFB8 end:0x800DBFD4
+
+game/unit_800DBFD4.c:
+	.text       start:0x800DBFD4 end:0x800DBFF0
+
+game/unit_800DBFF0.c:
+	.text       start:0x800DBFF0 end:0x800DC00C
+
+game/unit_800DC00C.c:
+	.text       start:0x800DC00C end:0x800DC028
+
+game/unit_800DC028.c:
+	.text       start:0x800DC028 end:0x800DC044
+
+game/unit_800DC044.c:
+	.text       start:0x800DC044 end:0x800DC060
+
+game/unit_800E191C.c:
+	.text       start:0x800E191C end:0x800E1A00
+
+game/unit_800E2210.c:
+	.text       start:0x800E2210 end:0x800E222C
+
+game/unit_800E222C.c:
+	.text       start:0x800E222C end:0x800E2264
+
+game/unit_800E3A98.c:
+	.text       start:0x800E3A98 end:0x800E3B30
+
+game/unit_800E3B30.c:
+	.text       start:0x800E3B30 end:0x800E3BD8
+
+game/unit_800E3BD8.c:
+	.text       start:0x800E3BD8 end:0x800E3BF0
+
+game/unit_800E3BF0.c:
+	.text       start:0x800E3BF0 end:0x800E3C28
+
+game/unit_800E3E7C.c:
+	.text       start:0x800E3E7C end:0x800E3F30
+
+game/unit_800E405C.c:
+	.text       start:0x800E405C end:0x800E40F8
+
+game/unit_800E40F8.c:
+	.text       start:0x800E40F8 end:0x800E4110
+
+game/unit_800E4110.c:
+	.text       start:0x800E4110 end:0x800E418C
+
+game/unit_800E4668.c:
+	.text       start:0x800E4668 end:0x800E46F8
+
+game/unit_800E46F8.c:
+	.text       start:0x800E46F8 end:0x800E4760
+
+game/unit_800E4760.c:
+	.text       start:0x800E4760 end:0x800E477C
+
+game/unit_800E477C.c:
+	.text       start:0x800E477C end:0x800E47B4
+
+game/unit_800E4F6C.c:
+	.text       start:0x800E4F6C end:0x800E504C
+
+game/unit_800E504C.c:
+	.text       start:0x800E504C end:0x800E518C
+
+game/unit_800E518C.c:
+	.text       start:0x800E518C end:0x800E5204
+
+game/unit_800E5204.c:
+	.text       start:0x800E5204 end:0x800E5274
+
+game/unit_800E5274.c:
+	.text       start:0x800E5274 end:0x800E534C
+
+game/unit_800E534C.c:
+	.text       start:0x800E534C end:0x800E5424
+
+game/unit_800E5424.c:
+	.text       start:0x800E5424 end:0x800E54E4
+
+game/unit_800E5598.c:
+	.text       start:0x800E5598 end:0x800E5654
+
+game/unit_800E5798.c:
+	.text       start:0x800E5798 end:0x800E57E4
+
+game/unit_800E57E4.c:
+	.text       start:0x800E57E4 end:0x800E5814
+
+game/unit_800E5910.c:
+	.text       start:0x800E5910 end:0x800E59F8
+
+game/unit_800E59F8.c:
+	.text       start:0x800E59F8 end:0x800E5AEC
+
+game/unit_800E5CD0.c:
+	.text       start:0x800E5CD0 end:0x800E5CDC
+
+game/unit_800E6534.c:
+	.text       start:0x800E6534 end:0x800E6578
+
+game/unit_800E6578.c:
+	.text       start:0x800E6578 end:0x800E65B0
+
+game/unit_800E65B0.c:
+	.text       start:0x800E65B0 end:0x800E65E8
+
+game/unit_800E65E8.c:
+	.text       start:0x800E65E8 end:0x800E65FC
+
+game/unit_800E65FC.c:
+	.text       start:0x800E65FC end:0x800E6610
+
+game/unit_800E6610.c:
+	.text       start:0x800E6610 end:0x800E6654
+
+game/unit_800E6654.c:
+	.text       start:0x800E6654 end:0x800E666C
+
+game/unit_800E666C.c:
+	.text       start:0x800E666C end:0x800E66A8
+
+game/unit_800E66A8.c:
+	.text       start:0x800E66A8 end:0x800E66E0
+
+game/unit_800E6764.c:
+	.text       start:0x800E6764 end:0x800E67A8
+
+game/unit_800E67A8.c:
+	.text       start:0x800E67A8 end:0x800E6878
+
+game/unit_800E6878.c:
+	.text       start:0x800E6878 end:0x800E689C
+
+game/unit_800E689C.c:
+	.text       start:0x800E689C end:0x800E695C
+
+game/unit_800E695C.c:
+	.text       start:0x800E695C end:0x800E69A4
+
+game/unit_800E69A4.c:
+	.text       start:0x800E69A4 end:0x800E69AC
+
+game/unit_800E69AC.c:
+	.text       start:0x800E69AC end:0x800E69C4
+
+game/unit_800E69C4.c:
+	.text       start:0x800E69C4 end:0x800E69E8
+
+game/unit_800E69E8.c:
+	.text       start:0x800E69E8 end:0x800E6A78
+
+game/unit_800E6A78.c:
+	.text       start:0x800E6A78 end:0x800E6AC8
+
+game/unit_800E7244.c:
+	.text       start:0x800E7244 end:0x800E72B4
+
+game/unit_800E72B4.c:
+	.text       start:0x800E72B4 end:0x800E7308
+
+game/unit_800E7500.c:
+	.text       start:0x800E7500 end:0x800E753C
+
+game/unit_800E75D8.c:
+	.text       start:0x800E75D8 end:0x800E766C
+
+game/unit_800E766C.c:
+	.text       start:0x800E766C end:0x800E76EC
+
+game/unit_800E7960.c:
+	.text       start:0x800E7960 end:0x800E7968
+
+game/unit_800E7968.c:
+	.text       start:0x800E7968 end:0x800E79A0
+
+game/unit_800E7BC0.c:
+	.text       start:0x800E7BC0 end:0x800E7C10
+
+game/unit_800E7D28.c:
+	.text       start:0x800E7D28 end:0x800E7D2C
+
+game/unit_800E7D2C.c:
+	.text       start:0x800E7D2C end:0x800E7D3C
+
+game/unit_800E7D3C.c:
+	.text       start:0x800E7D3C end:0x800E7E24
+
+game/unit_800E7FA4.c:
+	.text       start:0x800E7FA4 end:0x800E800C
+
+game/unit_800E800C.c:
+	.text       start:0x800E800C end:0x800E8024
+
+game/unit_800E8204.c:
+	.text       start:0x800E8204 end:0x800E8278
+
+game/unit_800E8520.c:
+	.text       start:0x800E8520 end:0x800E8554
+
+game/unit_800E85D0.c:
+	.text       start:0x800E85D0 end:0x800E8618
+
+game/unit_800E8678.c:
+	.text       start:0x800E8678 end:0x800E867C
+
+game/unit_800E867C.c:
+	.text       start:0x800E867C end:0x800E8700
+
+game/unit_800E88E4.c:
+	.text       start:0x800E88E4 end:0x800E89D4
+
+game/unit_800E8ABC.c:
+	.text       start:0x800E8ABC end:0x800E8BB8
+
+game/unit_800E8BB8.c:
+	.text       start:0x800E8BB8 end:0x800E8BD0
+
+game/unit_800E8BD0.c:
+	.text       start:0x800E8BD0 end:0x800E8BE0
+
+game/unit_800E8BE0.c:
+	.text       start:0x800E8BE0 end:0x800E8BEC
+
+game/unit_800E8BEC.c:
+	.text       start:0x800E8BEC end:0x800E8C44
+
+game/unit_800E8C44.c:
+	.text       start:0x800E8C44 end:0x800E8C9C
+
+game/unit_800E8C9C.c:
+	.text       start:0x800E8C9C end:0x800E8CDC
+
+game/unit_800E8CDC.c:
+	.text       start:0x800E8CDC end:0x800E8D0C
+
+game/unit_800E8D0C.c:
+	.text       start:0x800E8D0C end:0x800E8D30
+
+game/unit_800E8D30.c:
+	.text       start:0x800E8D30 end:0x800E8D9C
+
+game/unit_800E8D9C.c:
+	.text       start:0x800E8D9C end:0x800E8E34
+
+game/unit_800E8E34.c:
+	.text       start:0x800E8E34 end:0x800E8EDC
+
+game/unit_800E8EDC.c:
+	.text       start:0x800E8EDC end:0x800E8FC4
+
+game/unit_800E91F0.c:
+	.text       start:0x800E91F0 end:0x800E9244
+
+game/unit_800E9244.c:
+	.text       start:0x800E9244 end:0x800E9264
+
+game/unit_800E9424.c:
+	.text       start:0x800E9424 end:0x800E946C
+
+game/unit_800E946C.c:
+	.text       start:0x800E946C end:0x800E9474
+
+game/unit_800E9474.c:
+	.text       start:0x800E9474 end:0x800E947C
+
+game/unit_800E947C.c:
+	.text       start:0x800E947C end:0x800E94CC
+
+game/unit_800E9750.c:
+	.text       start:0x800E9750 end:0x800E9758
+
+game/unit_800E9758.c:
+	.text       start:0x800E9758 end:0x800E976C
+
+game/unit_800E97F0.c:
+	.text       start:0x800E97F0 end:0x800E9810
+
+game/unit_800E9810.c:
+	.text       start:0x800E9810 end:0x800E9824
+
+game/unit_800E9824.c:
+	.text       start:0x800E9824 end:0x800E9834
+
+game/unit_800E9A84.c:
+	.text       start:0x800E9A84 end:0x800E9AA0
+
+game/unit_800E9C90.c:
+	.text       start:0x800E9C90 end:0x800E9CB8
+
+game/unit_800E9CB8.c:
+	.text       start:0x800E9CB8 end:0x800E9D0C
+
+game/unit_800E9D0C.c:
+	.text       start:0x800E9D0C end:0x800E9D78
+
+game/unit_800EA0F0.c:
+	.text       start:0x800EA0F0 end:0x800EA1E0
+
+game/unit_800EB060.c:
+	.text       start:0x800EB060 end:0x800EB074
+
+game/unit_800EB074.c:
+	.text       start:0x800EB074 end:0x800EB164
+
+Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
+	.text       start:0x8018231C end:0x8018238C
+	.ctors      start:0x80253620 end:0x80253624 rename:.ctors$10
+	.dtors      start:0x80253680 end:0x80253684 rename:.dtors$10
+	.dtors      start:0x80253684 end:0x80253688 rename:.dtors$15
+
+Runtime.PPCEABI.H/global_destructor_chain.c:
+	.text       start:0x80182470 end:0x8018251C
