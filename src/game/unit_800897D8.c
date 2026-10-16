@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/stage.h"
 
 typedef struct Unk80301280Sub {
     /* 0x0 */ u32 unk0_0 : 20;
@@ -70,7 +71,7 @@ void fn_8008C07C(Unk800897D8* p, s32 arg1);
 
 void fn_800897D8(Unk800897D8* p) {
     p->unk227C = 3;
-    if (lbl_80261E08[p->unk2] == 14) {
+    if (lbl_80261E08[p->unk2] == STAGE_SPECIAL) {
         p->unk227D = 4;
     } else {
         p->unk227D = 0;

@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 extern u8 lbl_803051D8[];
 
@@ -12,7 +13,7 @@ s32 fn_800B5BF4(u8* obj, s32 d) {
         v = 9;
     }
     if (cur != v) {
-        fn_800D5234(4);
+        fn_800D5234(SE_GET_ITEM);
     }
     lbl_803051D8[0x9] = v;
     return v;

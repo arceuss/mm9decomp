@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 void fn_800D5234(s32 arg);
 
@@ -14,7 +15,7 @@ s32 fn_800B5A38(u8* obj, s32 a, s32 idx) {
     changed = (cur != v);
     *p = v;
     if (changed) {
-        fn_800D5234(6);
+        fn_800D5234(SE_GAGE);
     }
     return 0x1C00 - v;
 }

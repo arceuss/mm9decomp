@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk316C8 {
     /* 0x04 */ u8 unk4;
@@ -18,7 +19,7 @@ void fn_800330D0(u8* obj) {
     if (obj[0x28E] == 1) {
         u8 kind = obj[0x26E];
         if (kind == 2) {
-            fn_800D56A4(7);
+            fn_800D56A4(BGM_PASSWORD);
             fn_800316C8((Unk316C8*)obj, 6);
             fn_8008C07C(lbl_803140C0, 0x300);
         } else if (kind == 3) {

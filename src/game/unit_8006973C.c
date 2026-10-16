@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Vec2i {
     /* 0x0 */ s32 x;
@@ -75,7 +76,7 @@ void fn_8006973C(Unk8006973C* obj) {
         pos.x = obj->unk60 + 0x1100;
         pos.y = obj->unk64 - 0x1800;
         fn_80040AD0(3, &pos, 0, 0);
-        fn_800D5234(0x13);
+        fn_800D5234(SE_EXPLOSION);
         obj->unk16 = 8;
         obj->step++;
     case 1:
@@ -84,7 +85,7 @@ void fn_8006973C(Unk8006973C* obj) {
             pos.x = obj->unk60 - 0x1800;
             pos.y = obj->unk64 - 0x2700;
             fn_80040AD0(3, &pos, 0, 0);
-            fn_800D5234(0x13);
+            fn_800D5234(SE_EXPLOSION);
             obj->flagsA &= ~1;
             fn_800C7C24(obj->unk8, obj->unk9, 0);
             lbl_803051D8.unk3 &= ~8;

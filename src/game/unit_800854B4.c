@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk800854B4 {
     /* 0x0000 */ u8 pad0[0xFF4];
@@ -29,22 +30,22 @@ void fn_800854B4(Unk800854B4* menu) {
             menu->unkFF6 = 1;
         }
         if (menu->unk1010 == 1) {
-            fn_800D5234(3);
+            fn_800D5234(SE_WEAPON_MENU);
             menu->unkFF4 = 1;
         } else {
-            fn_800D5234(1);
+            fn_800D5234(SE_SELECT);
         }
     } else if (trigger & 0x20) {
         if (menu->unkFF6 == 0) {
             if (menu->unk1010 == 0) {
-                fn_800D5234(0);
+                fn_800D5234(SE_CURSOR);
             }
             menu->unk1010 = 1;
         } else {
             menu->unkFF6 = 0;
         }
     } else if (trigger & 0x80) {
-        fn_800D5234(3);
+        fn_800D5234(SE_WEAPON_MENU);
         menu->unkFF4 = 1;
     }
 }

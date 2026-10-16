@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk863BFCC {
     /* 0x000 */ u8 pad000[0x864];
@@ -13,10 +14,10 @@ void fn_8003BFCC(u8* o) {
     u16 st = lbl_80319DA0.unk864;
 
     if (st & 4) {
-        fn_800D5234(0);
+        fn_800D5234(SE_CURSOR);
         o[0x26D] = o[0x26D] - 1;
     } else if (st & 8) {
-        fn_800D5234(0);
+        fn_800D5234(SE_CURSOR);
         o[0x26D] = o[0x26D] + 1;
     }
     if ((s8)o[0x26D] < 0) {

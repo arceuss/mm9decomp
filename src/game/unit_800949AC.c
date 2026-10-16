@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk949AC {
     /* 0x00 */ u8 pad0[3];
@@ -17,7 +18,7 @@ void fn_8008C07C(void*, u32);
 void fn_800949AC(Unk949AC* p) {
     switch (p->unk03) {
     case 0:
-        fn_800D5234(3);
+        fn_800D5234(SE_WEAPON_MENU);
         {
             u8* q = *(u8**)(lbl_80316D78 + 0x3004);
             q[0xD4102B] = 4;

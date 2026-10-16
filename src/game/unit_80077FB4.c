@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk80280390Entry {
     /* 0x0 */ s32 unk0;
@@ -83,7 +84,7 @@ BOOL fn_80077FB4(Unk80077FB4* obj) {
         pos[0] = obj->unk60;
         pos[1] = obj->unk64;
         fn_80040AD0(2, pos, 0, 0);
-        fn_800D5234(0x14);
+        fn_800D5234(SE_HIT);
         return TRUE;
     }
     return FALSE;

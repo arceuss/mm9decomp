@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk33728 {
     /* 0x000 */ u8 pad000[0x864];
@@ -15,10 +16,10 @@ void fn_80033728(u8* o) {
     u16 st = lbl_80319DA0.unk864;
 
     if (st & 1) {
-        fn_800D5234(0);
+        fn_800D5234(SE_CURSOR);
         v--;
     } else if (st & 2) {
-        fn_800D5234(0);
+        fn_800D5234(SE_CURSOR);
         v++;
     }
     if (v < 0) {

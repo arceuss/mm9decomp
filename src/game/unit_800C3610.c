@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk800C3610 {
     /* 0x00 */ u8 pad0[0xA];
@@ -27,7 +28,7 @@ void fn_800E9750(Unk800C3610* obj, u16 arg1);
 void fn_800C3610(Unk800C3610* obj) {
     switch (obj->step) {
     case 0:
-        fn_800D5234(0x15);
+        fn_800D5234(SE_CEMENT_CONGEAL);
         if (obj->unk24 != 0x108) {
             fn_800E9424(obj, 0x108);
         }

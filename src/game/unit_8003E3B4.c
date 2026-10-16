@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 extern u8 lbl_803017A0[];
 
@@ -30,8 +31,8 @@ void fn_8003E3B4(u8* o) {
                 o[0x2B0] = (u8)t - 8;
                 o[0x2AC] = 8;
             }
-            if (fn_800D57BC(7) == 0) {
-                fn_800D5564(7);
+            if (fn_800D57BC(BGM_PASSWORD) == 0) {
+                fn_800D5564(BGM_PASSWORD);
             }
         }
         break;

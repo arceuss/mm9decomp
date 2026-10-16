@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk803051D8 {
     /* 0x00 */ u8 pad0[0xA];
@@ -19,7 +20,7 @@ s32 fn_800B5C54(void* p, s32 n) {
         v = 1;
     }
     if (lbl_803051D8.unkA != v) {
-        fn_800D5234(4);
+        fn_800D5234(SE_GET_ITEM);
     }
     lbl_803051D8.unkA = v;
     return v;

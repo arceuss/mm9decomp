@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk2500 {
     /* 0x0000 */ u8 pad0000[0x2500];
@@ -40,8 +41,8 @@ void fn_80037300(Unk37300* o) {
         } else {
             o->unk5 = 3;
             o->unk287 = 1;
-            if (fn_800D57BC(7) != 0) {
-                fn_800D56A4(7);
+            if (fn_800D57BC(BGM_PASSWORD) != 0) {
+                fn_800D56A4(BGM_PASSWORD);
             }
         }
     }

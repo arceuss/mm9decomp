@@ -25,3 +25,18 @@ Don't rename to semantic names without evidence (strings, SDK signatures, unambi
 - `obj.h`: pooled object from `fn_800E8C44(lbl_804EE738)`, initialised by `fn_80042DA0(obj, type)`.
 - `stateobj.h`: object with `state` at 0x11 and `flags14` at 0x14 used by the per-type update/draw pairs.
 - `work_802BDCC0.h`: the big work area at the start of `.bss`.
+- `sound.h`: `enum SoundEffect`, the 95 sound effect ids `fn_800D5234` accepts, and `enum Music`, the 33 music ids for `fn_800D5564`/`fn_800D56A4`/`fn_800D57BC`. Call sites in `src/game/` use the names.
+- `stage.h`: `enum Stage`, the 15 stage ids, named after the music `lbl_80272E44` assigns each one (Magma Man is 1, Hornet Man 2, ..., Wily 1-4 are 9-0x0C).
+
+## Names from data files
+
+`rockman9.brsar` (Wii WAD content 2; byte-identical to the XBLA copy) is the NW4R sound archive with its `SYMB` table intact: 228 sound labels.
+
+- `fn_800D5234(id)` maps a game sound id through `lbl_80280440` (u16 archive index, channel mask, priority) to an archive sound; that label is the `SoundEffect` name. Sanity check: id 0x13 (`SE_EXPLOSION`) is played right after the explosion effect spawns.
+- `lbl_802805C0` holds four archive sequence numbers per music id, the `_S1`/`_S2`/`_TR`/`_NO` variants of one `SEQ_` label; the `Music` name is that label.
+- `lbl_80272E44[stage]` is the music `fn_80082950` starts for a stage, which is how stage ids get their names. The stage descriptors at 0x80275CF4 and on name `st00.bin`..`st0e.bin` in the same order.
+
+## Other releases
+
+- **XBLA** (`default.xex`, MSVC): stripped. No game symbols, no game RTTI (only `std::bad_alloc`/`std::exception`), only the PDB path `c:\DriveD\rockman9\prog\prog_360\bin\rm9.pdb`. It still carries the Wii save-error strings, so it was ported from the Wii source; useful as a semantic cross-reference, not for matching.
+- **PS3** (`EBOOT.BIN`, decrypted `EBOOT.elf`): stripped too, no symbol table, no source paths.

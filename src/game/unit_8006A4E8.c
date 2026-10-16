@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 typedef struct Unk8006A4E8Pair { /* 0x00 */ s32 unk0; /* 0x04 */ s32 unk4; } Unk8006A4E8Pair;
 typedef struct Unk8006A4E8Obj {
     /* 0x00 */ u8 pad00[8];
@@ -37,7 +38,7 @@ void fn_8006A4E8(Unk8006A4E8* p) {
             if (b->unk08 == 1 || b->unk08 == 3) a->unkC8.bytes[0] = 1;
             else {
                 a->unkC8.bytes[0] = 2;
-                if (a->unk68 > 0 && ++a->unkC8.bytes[1] < 3) fn_800D5234(0x3E);
+                if (a->unk68 > 0 && ++a->unkC8.bytes[1] < 3) fn_800D5234(SE_REFLECT);
             }
         }
         if (p->unk14 & 4) {

@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 void fn_800D5234(s32 arg);
 
@@ -10,7 +11,7 @@ s32 fn_800B5AF4(u8* obj, s32 d) {
         v = 9;
     }
     if (cur != v) {
-        fn_800D5234(4);
+        fn_800D5234(SE_GET_ITEM);
     }
     obj[0x14C] = v;
     return v;

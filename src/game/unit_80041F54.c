@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk80280390Entry {
     /* 0x0 */ s32 unk0;
@@ -66,7 +67,7 @@ void fn_80041F54(Unk80041F54* obj) {
     obj->unk16 = 0;
     obj->unk17 = 0x17;
     if (fn_800B58F8(lbl_804EE984, 2)) {
-        fn_800D5234(8);
+        fn_800D5234(SE_BLUES);
         if (VIGetTvFormat() == 1) {
             obj->unk17 = 0x1B;
         } else {

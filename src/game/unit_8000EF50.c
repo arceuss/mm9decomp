@@ -11,9 +11,9 @@ extern void* lbl_804EE664;
 extern u8 lbl_804EE661;
 extern u8 lbl_804EE660;
 
-void fn_800E8ABC(void* pool, s32 arg1, void* objs, s32 size, s32 count);
+void fn_800E8ABC(void* pool, s8 id, void* buf, s16 stride, s16 count);
 
-void fn_8000EF50(void* pool, Unk8000EF50* objs, s32 count) {
+void fn_8000EF50(void* pool, Unk8000EF50* objs, s16 count) {
     s16 i;
 
     fn_800E8ABC(pool, 5, objs, sizeof(Unk8000EF50), count);

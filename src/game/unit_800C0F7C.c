@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk800C0F7C {
     /* 0x00 */ u8 pad0[0x12];
@@ -21,7 +22,7 @@ void fn_800C0F7C(Unk800C0F7C* work) {
     if (work->unk12 == 0) {
         s32 v;
         s32 scale = 0x480;
-        fn_800D5234(0x3E);
+        fn_800D5234(SE_REFLECT);
         if (work->unkCB & 2) {
             v = scale * (((work->unkCC & 1) << 1) - 1);
         } else {

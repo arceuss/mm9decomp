@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk2C89C {
     /* 0x000 */ u8 pad000[0x26C];
@@ -21,7 +22,7 @@ void fn_8002C89C(Unk2C89C* o) {
     u32 v = lbl_80319DA0.unk860;
 
     if (v & 0x50) {
-        fn_800D5234(1);
+        fn_800D5234(SE_SELECT);
         if (o->unk272 == 1) {
             o->unk272 = 0;
         } else {
@@ -33,7 +34,7 @@ void fn_8002C89C(Unk2C89C* o) {
     } else if (v & 0x20) {
         if (o->unk272 == 0) {
             if ((s8)o->unk273 == 0) {
-                fn_800D5234(0);
+                fn_800D5234(SE_CURSOR);
             }
             o->unk273 = 1;
         } else {

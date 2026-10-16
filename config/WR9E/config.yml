@@ -28,6 +28,7 @@ force_active:
 - fn_8000EECC
 - fn_8000EEFC
 - fn_8000EF20
+- fn_8000EF50
 - fn_8000F0C8
 - fn_8000F19C
 - fn_8000F324
@@ -1585,6 +1586,7 @@ force_active:
 - fn_800D37D8
 - fn_800D3A3C
 - fn_800D3B0C
+- fn_800D3B44
 - fn_800D3C80
 - fn_800D3D2C
 - fn_800D3E1C
@@ -1615,6 +1617,7 @@ force_active:
 - fn_800D5C38
 - fn_800D5D08
 - fn_800D5D8C
+- fn_800D606C
 - fn_800D6184
 - fn_800D61C8
 - fn_800D6254

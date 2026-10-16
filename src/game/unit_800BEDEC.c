@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct UnkB8skip {
     /* 0x00 */ u8 pad0[0x60];
@@ -32,7 +33,7 @@ void fn_800BF8A4(void);
 void fn_800BEDEC(UnkBEDEC* rec) {
     UnkB8skip* f = rec->unk34;
     s32 i;
-    fn_800D5234(0x2A);
+    fn_800D5234(SE_J_SATELLITE);
     rec->unk60 = f->unk60;
     rec->unk64 = f->unk64 - 0xA00;
     fn_800E91F0(rec, lbl_8027EFE0, 0);

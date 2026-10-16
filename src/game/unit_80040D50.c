@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk80280390Entry {
     /* 0x0 */ s32 unk0;
@@ -68,7 +69,7 @@ Unk80040D50* fn_80040D50(Vec2i* pos) {
     s32 angle;
     s32 speed;
 
-    fn_800D5564(3);
+    fn_800D5564(BGM_SE_OUT);
     for (i = 0; i < 16; i++) {
         obj = fn_800E8C44(lbl_804EE730);
         if (obj != NULL) {

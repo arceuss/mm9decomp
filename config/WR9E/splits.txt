@@ -4972,6 +4972,9 @@ game/unit_800CC374.c:
 game/unit_800CC414.c:
 	.text       start:0x800CC414 end:0x800CC474
 
+game/unit_800CC9D4.c:
+	.text       start:0x800CC9D4 end:0x800CCB04
+
 game/unit_800CCB04.c:
 	.text       start:0x800CCB04 end:0x800CCBB4
 
@@ -5146,6 +5149,9 @@ game/unit_800D3A3C.c:
 game/unit_800D3B0C.c:
 	.text       start:0x800D3B0C end:0x800D3B44
 
+game/unit_800D3B44.c:
+	.text       start:0x800D3B44 end:0x800D3C80
+
 game/unit_800D3C80.c:
 	.text       start:0x800D3C80 end:0x800D3D2C
 
@@ -5241,6 +5247,9 @@ game/unit_800D5D08.c:
 
 game/unit_800D5D8C.c:
 	.text       start:0x800D5D8C end:0x800D5E50
+
+game/unit_800D606C.c:
+	.text       start:0x800D606C end:0x800D6184
 
 game/unit_800D6184.c:
 	.text       start:0x800D6184 end:0x800D61C8

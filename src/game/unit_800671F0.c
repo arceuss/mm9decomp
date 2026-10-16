@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 typedef struct Unk800671F0 {
     /* 0x00 */ u8 pad00[0x12];
     /* 0x12 */ u8 unk12;
@@ -53,7 +54,7 @@ void fn_800671F0(Unk800671F0* p) {
             q->unk64 = b;
             q->unk14 = 1;
         }
-        fn_800D5234(0x3F);
+        fn_800D5234(SE_EM_CANNON);
         p->unk16 = 30;
         p->unk12++;
     case 5:

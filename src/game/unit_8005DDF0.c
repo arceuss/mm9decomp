@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk80280390Entry {
     /* 0x0 */ s32 unk0;
@@ -61,6 +62,6 @@ void fn_8005DDF0(Unk8005DDF0* obj) {
     pos[1] = obj->unk64 - 0x1600;
     fn_800406E4(0, pos);
     fn_80040AD0(3, pos, 0, 0);
-    fn_800D5234(0x13);
+    fn_800D5234(SE_EXPLOSION);
     fn_80042CF8(obj, 4);
 }

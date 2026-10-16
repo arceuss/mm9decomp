@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk90764 {
     /* 0x0000 */ u8 pad0[2];
@@ -22,7 +23,7 @@ void fn_800D5234(s32);
 
 void fn_80090764(Unk90764* p) {
     if ((lbl_80319DA0.unk860 & 0x10) || (lbl_80319DA0.unk860 & 0x40)) {
-        fn_800D5234(1);
+        fn_800D5234(SE_SELECT);
         if (p->unkFF6 == 0) {
             p->unkFFB = 2;
             p->unk02 = 6;
@@ -31,10 +32,10 @@ void fn_80090764(Unk90764* p) {
             p->unk03++;
         }
     } else if (lbl_80319DA0.unk864 & 4) {
-        fn_800D5234(0);
+        fn_800D5234(SE_CURSOR);
         p->unkFF6 = p->unkFF6 != 1;
     } else if (lbl_80319DA0.unk864 & 8) {
-        fn_800D5234(0);
+        fn_800D5234(SE_CURSOR);
         p->unkFF6 = p->unkFF6 != 1;
     }
 }

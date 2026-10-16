@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 typedef struct Unk80072ECC {
     /* 0x00 */ u8 pad00[0x12];
     /* 0x12 */ u8 unk12;
@@ -20,7 +21,7 @@ extern void fn_800D5234(s32);
 void fn_80072ECC(Unk80072ECC* p) {
     fn_800E9750(p, 0xFFFF);
     if ((p->unkA0 & 0x1000) && p->unk12 == 0) {
-        fn_800D5234(0x3E);
+        fn_800D5234(SE_REFLECT);
         fn_800E91F0(p, lbl_8026FAB0 + 0x30, 0);
         p->unk12 = 1;
         p->unkAC = fn_80072CB4;

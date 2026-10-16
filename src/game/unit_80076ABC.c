@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Vec2i {
     /* 0x0 */ s32 x;
@@ -86,7 +87,7 @@ void fn_80076ABC(Unk80076ABC* obj) {
         obj->flagsA &= ~1;
         if (obj->state != 1) {
             if (obj->state != 2) {
-                fn_800D5234(0x14);
+                fn_800D5234(SE_HIT);
             }
             fn_80040AD0(2, &pos, 0, 0);
         }

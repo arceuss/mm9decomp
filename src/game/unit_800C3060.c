@@ -1,4 +1,5 @@
 #include "types.h"
+#include "game/sound.h"
 
 typedef struct Unk800C3060 {
     /* 0x00 */ u8 pad0[0x9];
@@ -77,7 +78,7 @@ void fn_800C3060(Unk800C3060* obj) {
     parent = obj->unk34;
     obj->unkA |= 3;
     idx = obj->unk17;
-    fn_800D5234(0x2E);
+    fn_800D5234(SE_CEMENTSHOT);
     fn_800E91F0(obj, base + 0x30, 0);
     obj->unk21 = obj->unk20;
     obj->unkB &= 0xDF;
