@@ -136,8 +136,11 @@ game/unsplit_8001009C.c:
 game/unit_8001039C.c:
 	.text       start:0x8001039C end:0x800103A0
 
-game/unsplit_800103A0.c:
-	.text       start:0x800103A0 end:0x80010754
+game/unit_800103A0.c:
+	.text       start:0x800103A0 end:0x80010578
+
+game/unit_80010578.c:
+	.text       start:0x80010578 end:0x80010754
 
 game/unit_80010754.c:
 	.text       start:0x80010754 end:0x800109DC
@@ -181,7 +184,7 @@ game/unit_800114B0.c:
 game/unit_80011558.c:
 	.text       start:0x80011558 end:0x800115EC
 
-game/unsplit_800115EC.c:
+game/unit_800115EC.c:
 	.text       start:0x800115EC end:0x800117B0
 
 game/unit_800117B0.c:
@@ -322,8 +325,11 @@ game/unit_80016798.c:
 	.text       start:0x80016798 end:0x80016A18
 	.data       start:0x80262750 end:0x80262778
 
-game/unsplit_80016A18.c:
-	.text       start:0x80016A18 end:0x80017FF4
+game/unit_80016A18.c:
+	.text       start:0x80016A18 end:0x80016BEC
+
+game/unsplit_80016BEC.c:
+	.text       start:0x80016BEC end:0x80017FF4
 
 game/unit_80017FF4.c:
 	.text       start:0x80017FF4 end:0x80018008
@@ -377,7 +383,7 @@ game/unit_8001A4B8.c:
 game/unit_8001A530.c:
 	.text       start:0x8001A530 end:0x8001A638
 
-game/unsplit_8001A638.c:
+game/unit_8001A638.c:
 	.text       start:0x8001A638 end:0x8001A820
 
 game/unit_8001A820.c:
@@ -436,7 +442,7 @@ game/unit_8001E174.c:
 game/unit_8001E188.c:
 	.text       start:0x8001E188 end:0x8001E250
 
-game/unsplit_8001E250.c:
+game/unit_8001E250.c:
 	.text       start:0x8001E250 end:0x8001E474
 
 game/unit_8001E474.c:
@@ -449,8 +455,11 @@ game/unit_8001E490.c:
 	.text       start:0x8001E490 end:0x8001E7B8
 	.data       start:0x802630F0 end:0x80263110
 
-game/unsplit_8001E7B8.c:
-	.text       start:0x8001E7B8 end:0x8001EBD4
+game/unit_8001E7B8.c:
+	.text       start:0x8001E7B8 end:0x8001E9E0
+
+game/unsplit_8001E9E0.c:
+	.text       start:0x8001E9E0 end:0x8001EBD4
 
 game/unit_8001EBD4.c:
 	.text       start:0x8001EBD4 end:0x8001ED70
@@ -734,7 +743,7 @@ game/unit_80025D28.c:
 game/unit_80025E10.c:
 	.text       start:0x80025E10 end:0x80025E54
 
-game/unsplit_80025E54.c:
+game/unit_80025E54.c:
 	.text       start:0x80025E54 end:0x8002609C
 
 game/unit_8002609C.c:
@@ -767,7 +776,7 @@ game/unit_800267F0.c:
 game/unit_80026874.c:
 	.text       start:0x80026874 end:0x80026908
 
-game/unsplit_80026908.c:
+game/unit_80026908.c:
 	.text       start:0x80026908 end:0x80026BC8
 
 game/unit_80026BC8.c:
@@ -812,7 +821,7 @@ game/unit_800271CC.c:
 game/unit_80027234.c:
 	.text       start:0x80027234 end:0x80027394
 
-game/unsplit_80027394.c:
+game/unit_80027394.c:
 	.text       start:0x80027394 end:0x800275B4
 
 game/unit_800275B4.c:
@@ -854,7 +863,7 @@ game/unsplit_800289E8.c:
 game/unit_80028E00.c:
 	.text       start:0x80028E00 end:0x80028F44
 
-game/unsplit_80028F44.c:
+game/unit_80028F44.c:
 	.text       start:0x80028F44 end:0x80029170
 
 game/unit_80029170.c:
@@ -923,7 +932,7 @@ game/unit_80029EA8.c:
 game/unit_80029EF8.c:
 	.text       start:0x80029EF8 end:0x80029F58
 
-game/unsplit_80029F58.c:
+game/unit_80029F58.c:
 	.text       start:0x80029F58 end:0x8002A1E8
 
 game/unit_8002A1E8.c:
@@ -1035,7 +1044,10 @@ game/unit_8002BDA4.c:
 	.text       start:0x8002BDA4 end:0x8002BDC0
 
 game/unsplit_8002BDC0.c:
-	.text       start:0x8002BDC0 end:0x8002C660
+	.text       start:0x8002BDC0 end:0x8002C3CC
+
+game/unit_8002C3CC.c:
+	.text       start:0x8002C3CC end:0x8002C660
 
 game/unit_8002C660.c:
 	.text       start:0x8002C660 end:0x8002C69C
@@ -1056,7 +1068,7 @@ game/unit_8002CA84.c:
 game/unit_8002CB44.c:
 	.text       start:0x8002CB44 end:0x8002CC04
 
-game/unsplit_8002CC04.c:
+game/unit_8002CC04.c:
 	.text       start:0x8002CC04 end:0x8002CDB0
 
 game/unit_8002CDB0.c:
@@ -1075,7 +1087,13 @@ game/unit_8002D194.c:
 	.text       start:0x8002D194 end:0x8002D198
 
 game/unsplit_8002D198.c:
-	.text       start:0x8002D198 end:0x80031044
+	.text       start:0x8002D198 end:0x800301C4
+
+game/unit_800301C4.c:
+	.text       start:0x800301C4 end:0x8003037C
+
+game/unsplit_8003037C.c:
+	.text       start:0x8003037C end:0x80031044
 
 game/unit_80031044.c:
 	.text       start:0x80031044 end:0x8003107C
