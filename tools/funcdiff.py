@@ -1,20 +1,25 @@
 #!/usr/bin/env python3
 
 ###
-# Compile one source file with the game cflags and diff a function against the
-# original, without touching splits.txt, configure.py or the ninja build.
+# Compile one source file with a library's cflags (the game's by default) and diff
+# functions against the original, without touching splits.txt, configure.py or the
+# ninja build.
 #
 # Usage:
 #   python tools/funcdiff.py src/game/unit_8004DCBC.c fn_8004DCBC [fn_... ...]
+#   python tools/funcdiff.py --lib RVL_SDK src/revolution/OS/OSArena.c OSGetArenaHi ...
 #
 # Requires a configured and split build (`python configure.py && ninja`) plus the
 # capstone and pyelftools Python packages.
 # Two independent checks run per function:
-#  1. objdiff against the dtk split object whose start address is the closest one
-#     at or below the function (works for functions not in any unit yet).
+#  1. objdiff against the dtk split object that covers the function (the named split
+#     from splits.txt if there is one, otherwise the auto split whose start address is
+#     the closest one at or below it).
 #  2. a link check: relocations are applied with the original symbol addresses and
 #     the bytes must equal the DOL exactly; capstone disassembles any mismatch.
-# Exit status is 0 only if every requested function passes both.
+# With --lib, named data the object defines (.data/.sdata/.bss/.sbss statics) must
+# also sit at a unique original address with the original size and initial bytes.
+# Exit status is 0 only if every requested function passes.
 ###
 
 import argparse
@@ -34,17 +39,18 @@ OBJDIFF = ROOT / "build" / "tools" / "objdiff-cli.exe"
 SYMBOLS = ROOT / "config" / VERSION / "symbols.txt"
 
 
-def game_cflags() -> Tuple[str, List[str]]:
-    # Take mw_version/cflags from the first game unit edge in build.ninja so the
-    # flags can't drift from configure.py.
+def lib_cflags(lib: str = "game") -> Tuple[str, List[str]]:
+    # Take mw_version/cflags from the library's first source edge in build.ninja so
+    # the flags can't drift from configure.py. Only objects with source get an edge.
     text = (ROOT / "build.ninja").read_text().replace("$\n", "")
     m = re.search(
-        r"# game/\S+: game \(linked \w+\)\nbuild [^\n]*\n"
+        rf"# \S+: {re.escape(lib)} \(linked \w+\)\nbuild [^\n]*\n"
         r"\s+mw_version = (\S+)\n\s+cflags = ([^\n]*)\n",
         text,
     )
     if not m:
-        sys.exit("funcdiff: no game unit in build.ninja; run `python configure.py` first.")
+        sys.exit(f"funcdiff: no {lib} source object in build.ninja; add one to configure.py "
+                 "and run `python configure.py` first.")
     flags = re.findall(r'"[^"]*"|\S+', m.group(2))
     return m.group(1).replace("\\", "/"), [f.strip('"') for f in flags]
 
@@ -57,8 +63,23 @@ def symbol_address(name: str) -> Tuple[int, int]:
     return int(m.group(1), 16), int(m.group(2), 16)
 
 
+def named_split_object(addr: int) -> Optional[Path]:
+    # A unit from splits.txt whose .text covers addr; dtk writes its original object
+    # to obj/<unit path without extension>.o.
+    text = (ROOT / "config" / VERSION / "splits.txt").read_text()
+    for m in re.finditer(r"^(\S[^\n]*):\n((?:\t[^\n]*\n)*)", text, re.M):
+        t = re.search(r"^\t\.text\s+start:0x([0-9A-F]+) end:0x([0-9A-F]+)", m.group(2), re.M)
+        if t and int(t.group(1), 16) <= addr < int(t.group(2), 16):
+            obj = BUILD / "obj" / Path(m.group(1)).with_suffix(".o")
+            return obj if obj.exists() else None
+    return None
+
+
 def target_object(addr: int) -> Path:
-    # Split objects are named by start address: auto_03_XXXXXXXX_text.o, game/unit_XXXXXXXX.o
+    named = named_split_object(addr)
+    if named is not None:
+        return named
+    # Auto split objects are named by start address: auto_03_XXXXXXXX_text.o
     best: Optional[Tuple[int, Path]] = None
     for p in (BUILD / "obj").rglob("*.o"):
         m = re.search(r"(?:auto_03_([0-9A-F]{8})_text|unit_([0-9A-F]{8}))\.o$", p.name)
@@ -72,10 +93,12 @@ def target_object(addr: int) -> Path:
     return best[1]
 
 
-def compile_source(src: Path, mw_override: Optional[str] = None) -> Path:
-    mw_version, cflags = game_cflags()
+def compile_source(src: Path, mw_override: Optional[str] = None, lib: str = "game",
+                   extra: Optional[List[str]] = None) -> Path:
+    mw_version, cflags = lib_cflags(lib)
     if mw_override:
         mw_version = mw_override
+    cflags = cflags + (extra or [])
     SCRATCH.mkdir(parents=True, exist_ok=True)
     # keyed by compiler too, so comparing compilers in parallel can't clobber objects
     out = SCRATCH / f"{src.stem}.{mw_version.replace('/', '_')}.o"
@@ -230,7 +253,7 @@ def apply_relocs(buf: bytearray, base: int, relocs: List[Tuple[int, int, int]],
     return applied
 
 
-def link_check(obj: Path, name: str, addr: int, size: int) -> bool:
+def link_check(obj: Path, name: str, addr: int, size: int, own_data: bool = False) -> bool:
     # Independent of objdiff: apply every relocation of the compiled function (and of
     # its jump tables) the way the linker would, using the original symbol addresses,
     # and require the result to equal the DOL bytes exactly. Capstone disassembles
@@ -300,7 +323,7 @@ def link_check(obj: Path, name: str, addr: int, size: int) -> bool:
         data_ok = bytes(data) == dol_bytes(data_base, data_size)
         if not data_ok:
             problems.append(f"jump table bytes differ from the DOL at 0x{data_base:08X}")
-    elif len(data):
+    elif len(data) and not own_data:
         problems.append(f"object has 0x{len(data):X} bytes of .data that no unit split owns")
 
     if bytes(code) == orig and data_ok and not problems:
@@ -320,18 +343,75 @@ def link_check(obj: Path, name: str, addr: int, size: int) -> bool:
     return False
 
 
+def symbol_sizes() -> Dict[str, Tuple[int, int]]:
+    # name -> (address, size) for every symbols.txt entry that records a size
+    out: Dict[str, Tuple[int, int]] = {}
+    for m in re.finditer(r"^(\S+) = \.\w+:0x([0-9A-F]+); // \S*.*?size:0x([0-9A-F]+)",
+                         SYMBOLS.read_text(), re.M):
+        out[m.group(1)] = (int(m.group(2), 16), int(m.group(3), 16))
+    return out
+
+
+def data_check(obj: Path) -> bool:
+    # A library TU owns its statics. Every named object in .data/.sdata/.bss/.sbss
+    # must exist in symbols.txt at one address with the same size, and initialized
+    # ones must start out with the DOL's bytes (relocated data isn't handled yet).
+    from elftools.elf.elffile import ELFFile
+
+    known = symbol_addresses()
+    sizes = symbol_sizes()
+    ok = True
+    checked = 0
+    with open(obj, "rb") as f:
+        elf = ELFFile(f)
+        symtab = elf.get_section_by_name(".symtab")
+        for s in symtab.iter_symbols():
+            if s["st_info"]["type"] != "STT_OBJECT" or not isinstance(s["st_shndx"], int):
+                continue
+            sec = elf.get_section(s["st_shndx"])
+            if sec.name not in (".data", ".sdata", ".bss", ".sbss") or s.name.startswith("@"):
+                continue
+            where = known.get(s.name, [])
+            if len(where) != 1:
+                print(f"  data check: {s.name} ({sec.name}) has {len(where)} original addresses")
+                ok = False
+                continue
+            want = sizes.get(s.name, (where[0], None))[1]
+            if want is not None and want != s["st_size"]:
+                print(f"  data check: {s.name} is 0x{s['st_size']:X} bytes, original 0x{want:X}")
+                ok = False
+            if sec.name in (".data", ".sdata"):
+                rela = elf.get_section_by_name(".rela" + sec.name)
+                lo, hi = s["st_value"], s["st_value"] + s["st_size"]
+                if rela and any(lo <= r["r_offset"] < hi for r in rela.iter_relocations()):
+                    print(f"  data check: {s.name} has relocations; compare it by hand")
+                    ok = False
+                elif sec.data()[lo:hi] != dol_bytes(where[0], s["st_size"]):
+                    print(f"  data check: {s.name} initial bytes differ from the DOL at 0x{where[0]:08X}")
+                    ok = False
+            checked += 1
+    if ok:
+        print(f"  data check OK: {checked} static(s) at their original addresses and sizes")
+    return ok
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("source", type=Path)
     parser.add_argument("functions", nargs="+")
-    parser.add_argument("--mw-version", help="compiler dir under compilers/ to use instead of the game's (e.g. Wii/1.0RC1)")
+    parser.add_argument("--lib", default="game",
+                        help="configure.py lib whose mw_version/cflags to compile with (default: game)")
+    parser.add_argument("--mw-version", help="compiler dir under compilers/ to use instead of the lib's (e.g. GC/3.0a5)")
+    parser.add_argument("--extra-cflags", default="",
+                        help="flags appended after the lib's, for compiler/flag experiments")
     args = parser.parse_args()
-    obj = compile_source(args.source.resolve(), args.mw_version)
-    ok = True
+    lib_mode = args.lib != "game"
+    obj = compile_source(args.source.resolve(), args.mw_version, args.lib, args.extra_cflags.split())
+    ok = data_check(obj) if lib_mode else True
     for name in args.functions:
         addr, size = symbol_address(name)
         exact = diff(target_object(addr), obj, name)
-        linked = link_check(obj, name, addr, size)
+        linked = link_check(obj, name, addr, size, own_data=lib_mode)
         if not exact and linked and jumptables_of(name):
             # objdiff compares the jump table reloc by name (jumptable_X vs mwcc's @N)
             # until the unit owns the table; the link check verified table and code.

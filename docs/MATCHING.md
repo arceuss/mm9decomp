@@ -31,6 +31,8 @@ Park a non-matching best attempt as `build/<you>/nonmatching/unit_XXXXXXXX.c`; t
 
 Files that compile but don't match yet stay in `src/game/` and `sync_units.py` registers them as `Object(NonMatching, ...)`, the same way ogws does it: dtk links the original split object in their place, so the DOL check is unaffected, and objdiff scores them for the fuzzy progress number that shows up on bytematch.dev. Files that don't compile are skipped. When an attempt in `build/<you>/nonmatching/` beats the one in `src/game/`, copy it over.
 
+Game code that no unit covers yet sits in `game/unsplit_XXXXXXXX.c` gap splits, which `sync_units.py` regenerates on every run. They have no source and link the original bytes; they exist so the `Game Code` progress category covers all game functions, not just registered units. Library code is categorized the same way, see `docs/SDK.md`.
+
 ## Twins
 
 `python tools/twins.py` matches functions whose dtk disassembly is identical to an already matched one once symbol names are abstracted. It copies the twin's source with the names swapped, keeps it only if `funcdiff.py` passes, and leaves registration to `sync_units.py`. Run it after every batch of new matches: the game has a lot of copy-pasted per-object code (the first run turned 148 matches into 262). The idea comes from decomp.wtf's "autopilot".

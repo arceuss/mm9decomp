@@ -41,16 +41,17 @@ Tracked on [bytematch.dev](https://bytematch.dev/), which reads the `WR9E_report
 |---|---|
 | `config/WR9E/` | dtk config, `symbols.txt`, `splits.txt`, expected SHA-1 |
 | `src/game/` | matched game functions, one `unit_<addr>.c` per function for now |
-| `include/` | `types.h`, shared partial structs in `include/game/` |
+| `src/revolution/` | Revolution SDK sources imported from doldecomp/ogws (CC0); see `docs/SDK.md` |
+| `include/` | `types.h`, shared partial structs in `include/game/`, minimal SDK headers |
 | `tools/funcdiff.py` | compile one file, diff a function with objdiff and a capstone-backed link check |
 | `tools/sync_units.py` | register every exactly-matching unit with the build |
 | `tools/twins.py` | match copies of already matched functions |
 | `tools/permute.py` | retry parked near misses with declaration/statement reorders |
 | `tools/webui.py` | progress dashboard |
-| `docs/` | `STATUS.md`, `COMPILER.md`, `MATCHING.md`, `SYMBOLS.md`; `docs/dtk/` is dtk-template's reference |
+| `docs/` | `STATUS.md`, `COMPILER.md`, `MATCHING.md`, `SYMBOLS.md`, `SDK.md` (library ranges, progress categories, library source); `docs/dtk/` is dtk-template's reference |
 
 ## Limitations
 
 - Original translation units aren't recovered yet, so source is split per function. See `docs/MATCHING.md`.
 - No symbols or map exist for the game code; names are addresses until proven otherwise.
-- Only game code is being decompiled. NW4R, the RVL SDK, MSL and MetroTRK stay as original objects for now.
+- Almost all library code (NW4R, the RVL SDK, MSL, MetroTRK, HOME Button, network) is still original objects. Progress is reported per library; some ranges are still `Unclassified`. See `docs/SDK.md`.

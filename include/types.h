@@ -17,6 +17,8 @@ typedef int BOOL;
 #define TRUE 1
 #define FALSE 0
 
+typedef unsigned long size_t;
+
 #ifndef NULL
 #define NULL 0
 #endif

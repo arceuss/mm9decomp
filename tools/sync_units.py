@@ -13,7 +13,8 @@
 # in their place, and objdiff scores them for the fuzzy progress number. Files
 # that don't compile are listed and left out. Both blocks are regenerated in
 # address order. Run `python configure.py && ninja` afterwards; the SHA-1 check
-# proves the linked result.
+# proves the linked result. Game .text not covered by any unit is emitted as
+# game/unsplit_XXXXXXXX.c gap splits so it stays in the game progress category.
 ###
 
 import argparse
@@ -33,6 +34,8 @@ CONFIG_YML = ROOT / "config" / "WR9E" / "config.yml"
 SYMBOLS = ROOT / "config" / "WR9E" / "symbols.txt"
 CONFIGURE = ROOT / "configure.py"
 SRC_GAME = ROOT / "src" / "game"
+# game code: first game function up to the first Revolution SDK function (EXI)
+GAME_TEXT = (0x8000BF80, 0x800EB1CC)
 
 
 def function_sizes() -> Dict[str, Tuple[int, int]]:
@@ -90,7 +93,22 @@ def main() -> None:
             lines += f"\t.data       start:0x{lo:08X} end:0x{hi:08X}\n"
         return lines + "\n"
 
-    split_block = "".join(split_entry(u) for u in units)
+    # Game .text that no unit covers yet goes into game/unsplit_<ADDR>.c gap splits
+    # (original code, no source) so it still counts toward the game progress category
+    # instead of falling into dtk's uncategorized auto splits.
+    spans = sorted((int(u[5:], 16), sum(sizes["fn_" + u[5:]]), u) for u in units)
+    gaps: List[Tuple[int, int]] = []
+    cur = GAME_TEXT[0]
+    for lo, hi, _ in spans:
+        if lo > cur:
+            gaps.append((cur, lo))
+        cur = max(cur, hi)
+    if cur < GAME_TEXT[1]:
+        gaps.append((cur, GAME_TEXT[1]))
+    entries = [(lo, split_entry(u)) for lo, _, u in spans]
+    entries += [(lo, f"game/unsplit_{lo:08X}.c:\n\t.text       start:0x{lo:08X} end:0x{hi:08X}\n\n")
+                for lo, hi in gaps]
+    split_block = "".join(e for _, e in sorted(entries))
     text = SPLITS.read_text()
     # game units sit between the Sections header and the first non-game split
     m = re.match(r"(Sections:\n(?:\t[^\n]*\n)*\n)((?:game/[^\n]*\n(?:\t[^\n]*\n)*\n)*)(.*)", text, re.S)
@@ -107,7 +125,8 @@ def main() -> None:
 
     objs = "".join(
         f'            Object({"Matching" if linkable(u) else "NonMatching"}, "game/{u}.c"),\n'
-        for u in units
+        if u.startswith("unit_") else f'            Object(NonMatching, "game/{u}.c"),\n'
+        for u in sorted(units + [f"unsplit_{lo:08X}" for lo, _ in gaps], key=lambda u: u[-8:])
     )
     cfg = CONFIGURE.read_text()
     new_cfg, n = re.subn(
