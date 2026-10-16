@@ -64,4 +64,4 @@ All non-game code and every unmatched game function still comes from the origina
 - Blocked on TU reconstruction: per-boss update functions that address several static state tables from one base register, functions passing string literals, and functions using `.sdata2`/`.rodata` float or table initializers (local `@N` symbols). See MATCHING.md.
 - Jump-table units at 4-mod-8 table addresses stay unlinked (`NonMatching` in configure.py, matched in the report).
 - Compiler build: the Wii 4.2 builds 140 and 142 (and `Wii/0x4201_127`) produce identical code for all ~990 units tested; GameCube 4.2 builds don't. The exact Wii build is still open. See COMPILER.md.
-- Register-allocation near misses: `fn_8008BF48`, `fn_8009B6FC`, `fn_800A5148` (99.8%), `fn_800856C4` and `fn_80054B40` are parked a few instructions short. Near misses are in `build/*/nonmatching/` (not tracked).
+- Register-allocation near misses: `fn_8008BF48`, `fn_8009B6FC`, `fn_800A5148` (99.8%), `fn_800856C4` and `fn_80054B40` are a few instructions short. Every compiling near miss is in `src/game/` as a `NonMatching` unit and counts toward the fuzzy number.

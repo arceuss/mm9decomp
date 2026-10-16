@@ -31,7 +31,7 @@ ninja progress
 python tools/webui.py      # dashboard at http://127.0.0.1:8099/
 ```
 
-The dashboard shows game-code progress, a per-function map (one clickable cell per function, optionally scaled by size), a filterable function list, near misses parked under `build/*/nonmatching/` with their best match %, per-function diffs with source, and worker logs from `build/opencode/`. Its build button runs `tools/twins.py`, `tools/sync_units.py`, `configure.py` and `ninja`.
+The dashboard shows game-code progress, a per-function map (one clickable cell per function, optionally scaled by size), a filterable function list, near misses with their best match %, per-function diffs with source, and worker logs from `build/opencode/`. Its build button runs `tools/twins.py`, `tools/sync_units.py`, `configure.py` and `ninja`. Compiling near misses live in `src/game/` as `NonMatching` units, so the report's fuzzy % counts partial work.
 
 Tracked on [bytematch.dev](https://bytematch.dev/), which reads the `WR9E_report` artifact from CI on `main`. CI (`.github/workflows/build.yml`) builds and checks the DOL inside a private container that holds the retail DOL and the Wii/1.0 compiler, so the report updates on every push.
 

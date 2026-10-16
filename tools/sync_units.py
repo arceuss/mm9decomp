@@ -8,9 +8,12 @@
 #
 # Every src/game/unit_XXXXXXXX.c is checked with tools/funcdiff.py. Files that
 # match exactly get a split in config/WR9E/splits.txt and an Object(Matching, ...)
-# entry in configure.py; both blocks are regenerated in address order. Files that
-# don't match are listed and left out of the build. Run `python configure.py && ninja`
-# afterwards; the SHA-1 check proves the linked result.
+# entry in configure.py. Files that compile but don't match yet get the same
+# split and an Object(NonMatching, ...) entry: dtk links the original split object
+# in their place, and objdiff scores them for the fuzzy progress number. Files
+# that don't compile are listed and left out. Both blocks are regenerated in
+# address order. Run `python configure.py && ninja` afterwards; the SHA-1 check
+# proves the linked result.
 ###
 
 import argparse
@@ -59,13 +62,20 @@ def main() -> None:
         results = list(pool.map(check, files))
 
     matched: List[str] = []
+    partial: List[str] = []
     for path, ok, msg in results:
         fn = "fn_" + path.stem[len("unit_"):]
-        if ok and fn in sizes:
+        if fn not in sizes:
+            print(f"skipped {path.name}: {fn} isn't a known function")
+        elif ok:
             matched.append(path.stem)
+        elif "% (mismatch)" in msg:
+            # compiled and diffed, just not exact
+            partial.append(path.stem)
         else:
             print(f"skipped {path.name}: {msg}")
-    matched.sort()
+    units = sorted(matched + partial)
+    partial_set = set(partial)
 
     # a unit owns its function's jump tables; funcdiff's link check already proved
     # they're contiguous and byte-identical
@@ -80,7 +90,7 @@ def main() -> None:
             lines += f"\t.data       start:0x{lo:08X} end:0x{hi:08X}\n"
         return lines + "\n"
 
-    split_block = "".join(split_entry(u) for u in matched)
+    split_block = "".join(split_entry(u) for u in units)
     text = SPLITS.read_text()
     # game units sit between the Sections header and the first non-game split
     m = re.match(r"(Sections:\n(?:\t[^\n]*\n)*\n)((?:game/[^\n]*\n(?:\t[^\n]*\n)*\n)*)(.*)", text, re.S)
@@ -93,11 +103,11 @@ def main() -> None:
     # count as matched but stay unlinked until their real TU's data is reconstructed.
     def linkable(u: str) -> bool:
         fn = "fn_" + u[5:]
-        return fn not in tables or tables[fn][0][0] % 8 == 0
+        return u not in partial_set and (fn not in tables or tables[fn][0][0] % 8 == 0)
 
     objs = "".join(
         f'            Object({"Matching" if linkable(u) else "NonMatching"}, "game/{u}.c"),\n'
-        for u in matched
+        for u in units
     )
     cfg = CONFIGURE.read_text()
     new_cfg, n = re.subn(
@@ -118,7 +128,9 @@ def main() -> None:
     cfg_yml = cfg_yml.rstrip("\n") + "\n# sync_units: begin\nforce_active:\n" + block + "# sync_units: end\n"
     CONFIG_YML.write_text(cfg_yml, newline="\n")
     unlinked = sum(not linkable(u) for u in matched)
-    print(f"{len(matched)} matching units registered ({unlinked} unlinked), {len(files) - len(matched)} skipped")
+    print(f"{len(matched)} matching units registered ({unlinked} unlinked), "
+          f"{len(partial)} non-matching units registered, "
+          f"{len(files) - len(matched) - len(partial)} skipped")
 
 
 if __name__ == "__main__":

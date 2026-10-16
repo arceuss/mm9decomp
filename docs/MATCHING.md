@@ -29,7 +29,7 @@ If `ninja` fails with "a file with a user-mapped section open" while workers are
 
 Park a non-matching best attempt as `build/<you>/nonmatching/unit_XXXXXXXX.c`; the dashboard lists them with their match %. `python tools/permute.py --all [--write]` retries every parked attempt with declaration reorders and adjacent simple-statement swaps (the decomp-permuter idea, limited to rewrites that keep the source plausible) and writes matches to `src/game/` with `--write`. Read what it changed: swapping two stores through possibly-aliasing pointers isn't always behaviour-preserving.
 
-Files that don't match stay out of the build: `sync_units.py` skips them. Keep work-in-progress attempts outside `src/game/` (e.g. `build/<you>/nonmatching/`) so the dashboard's "not in build yet" number stays meaningful.
+Files that compile but don't match yet stay in `src/game/` and `sync_units.py` registers them as `Object(NonMatching, ...)`, the same way ogws does it: dtk links the original split object in their place, so the DOL check is unaffected, and objdiff scores them for the fuzzy progress number that shows up on bytematch.dev. Files that don't compile are skipped. When an attempt in `build/<you>/nonmatching/` beats the one in `src/game/`, copy it over.
 
 ## Twins
 
