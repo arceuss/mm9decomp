@@ -19,7 +19,6 @@ BOOL fn_800629C0(Unk800629C0* obj) {
     s32 y;
     s32 d;
     s32 r;
-    u8 t;
 
     if (obj->unkC9 == 3) {
         x = obj->unk60 - 0x500;
@@ -40,9 +39,8 @@ BOOL fn_800629C0(Unk800629C0* obj) {
             if (r > 0) {
                 obj->unk60 += r - 0x500;
             }
-            t = obj->unkC9;
+            obj->unkC8 = 2 + (obj->unkC9 == 3);
             obj->unkC9 = 1;
-            obj->unkC8 = 2 + (t == 3);
         } else {
             if (obj->unkC9 == 3) {
                 d = 0x500;
@@ -53,9 +51,8 @@ BOOL fn_800629C0(Unk800629C0* obj) {
             if (r < 0) {
                 obj->unk60 += r + 0x500;
             }
-            t = obj->unkC9;
+            obj->unkC8 = 2 + (obj->unkC9 == 3);
             obj->unkC9 = 0;
-            obj->unkC8 = 2 + (t == 3);
         }
         return TRUE;
     }
