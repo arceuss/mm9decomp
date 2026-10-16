@@ -1,0 +1,106 @@
+#include "types.h"
+
+typedef struct Unk800B3970 {
+    /* 0x000 */ u8 pad0[0x9];
+    /* 0x009 */ u8 kind;
+    /* 0x00A */ u8 flagsA;
+    /* 0x00B */ u8 padB[0x10 - 0xB];
+    /* 0x010 */ u8 unk10;
+    /* 0x011 */ u8 state;
+    /* 0x012 */ u8 step;
+    /* 0x013 */ u8 unk13;
+    /* 0x014 */ u8 pad14[0x18 - 0x14];
+    /* 0x018 */ void* unk18;
+    /* 0x01C */ u8 pad1C[0x60 - 0x1C];
+    /* 0x060 */ s32 x;
+    /* 0x064 */ s32 y;
+    /* 0x068 */ u8 pad68[0xC8 - 0x68];
+    /* 0x0C8 */ s32 unkC8;
+    /* 0x0CC */ s32 unkCC;
+    /* 0x0D0 */ s32 unkD0;
+    /* 0x0D4 */ s32 unkD4;
+    /* 0x0D8 */ u8 padD8[0xEC - 0xD8];
+    /* 0x0EC */ u8 unkEC;
+    /* 0x0ED */ u8 unkED;
+    /* 0x0EE */ u8 unkEE;
+    /* 0x0EF */ u8 unkEF;
+    /* 0x0F0 */ u8 unkF0;
+    /* 0x0F1 */ u8 unkF1;
+    /* 0x0F2 */ u8 unkF2;
+    /* 0x0F3 */ u8 unkF3;
+    /* 0x0F4 */ u8 unkF4;
+    /* 0x0F5 */ u8 unkF5;
+    /* 0x0F6 */ u8 padF6[0xFC - 0xF6];
+    /* 0x0FC */ u8 unkFC;
+    /* 0x0FD */ u8 padFD[0x104 - 0xFD];
+    /* 0x104 */ s32 unk104;
+    /* 0x108 */ u8 pad108[0x120 - 0x108];
+    /* 0x120 */ u8 unk120;
+    /* 0x121 */ u8 unk121;
+    /* 0x122 */ u8 unk122;
+    /* 0x123 */ u8 unk123;
+    /* 0x124 */ u8 pad124[0x134 - 0x124];
+    /* 0x134 */ s16 unk134;
+    /* 0x136 */ s16 unk136;
+    /* 0x138 */ u8 pad138[0x19C - 0x138];
+    /* 0x19C */ s32 unk19C;
+    /* 0x1A0 */ s32 unk1A0;
+    /* 0x1A4 */ s32 unk1A4;
+    /* 0x1A8 */ u8 pad1A8[0x1F4 - 0x1A8];
+    /* 0x1F4 */ u8 unk1F4;
+    /* 0x1F5 */ u8 unk1F5;
+} Unk800B3970;
+
+extern void** lbl_8027EB98[];
+extern void** lbl_8027EB60[];
+
+void fn_800B6790(Unk800B3970* p);
+void fn_800B7980(s32* arg0);
+void fn_800B7388(Unk800B3970* p);
+void fn_800B5684(Unk800B3970* p);
+void fn_800B3AB8(Unk800B3970* p);
+void fn_800B9F74(Unk800B3970* p, void* arg1);
+u8 fn_800B9458(s32* pos, Unk800B3970* p, s32 arg2);
+
+void fn_800B3970(Unk800B3970* p) {
+    s32* q;
+
+    p->unk18 = lbl_8027EB98[p->kind][1];
+    p->unk10 = 1;
+    p->unkEC = 9;
+    p->state = 9;
+    p->unkED = 0;
+    p->step = 0;
+    p->unkEE = 0;
+    p->unk13 = 0;
+    p->unkF2 = 0;
+    p->unkEF = 0;
+    p->unkF3 = 0;
+    p->unkF0 = 0;
+    p->unkF4 = 0;
+    p->unkF1 = 0;
+    p->unkF5 = 9;
+    p->unk104 = 0;
+    fn_800B6790(p);
+    q = &p->unk19C;
+    fn_800B7980(q);
+    p->flagsA |= 2;
+    fn_800B7388(p);
+    fn_800B5684(p);
+    fn_800B3AB8(p);
+    p->unkC8 = p->x;
+    p->unkCC = p->y;
+    p->unkD0 = p->x;
+    p->unkD4 = p->y;
+    p->unkFC = 0;
+    fn_800B9F74(p, lbl_8027EB60[p->kind][0]);
+    p->unk1A0 = *q;
+    p->unk1A4 = *q;
+    p->unk134 = 0;
+    p->unk136 = 0;
+    p->unk120 = 0;
+    p->unk122 = 100;
+    p->unk123 = 100;
+    p->unk121 = 0;
+    p->unk1F4 = p->unk1F5 = fn_800B9458(&p->x, p, 0);
+}
