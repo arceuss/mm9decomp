@@ -1,0 +1,40 @@
+name: progress
+
+# bytematch.dev reads the WR9E_report artifact from successful push runs on
+# main. CI can't build the report itself: that needs the retail DOL and the
+# CodeWarrior installs, and neither can go in a public repo. So the report is
+# generated locally by `ninja` (build/WR9E/report.json), committed as
+# progress/WR9E_report.json, and this job just validates and publishes it.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: progress-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  report:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      # Comparing the report with itself only checks that objdiff can parse it.
+      # Pinned to the objdiff version configure.py uses.
+      - name: Validate report
+        run: |
+          mkdir -p out
+          cp progress/WR9E_report.json out/report.json
+          curl -sSfL -o objdiff-cli https://github.com/encounter/objdiff/releases/download/v3.6.1/objdiff-cli-linux-x86_64
+          echo "72688707d5a7f30daebf5a4f65f74c6dab17ee6e09a230a187e327900345eecf  objdiff-cli" | sha256sum -c -
+          chmod +x objdiff-cli
+          ./objdiff-cli report changes out/report.json out/report.json -o /dev/null
+
+      - name: Upload progress report
+        uses: actions/upload-artifact@v4
+        with:
+          name: WR9E_report
+          path: out/report.json

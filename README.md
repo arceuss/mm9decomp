@@ -33,6 +33,13 @@ python tools/webui.py      # dashboard at http://127.0.0.1:8099/
 
 The dashboard shows game-code progress, a per-function map (one clickable cell per function, optionally scaled by size), a filterable function list, near misses parked under `build/*/nonmatching/` with their best match %, per-function diffs with source, and worker logs from `build/opencode/`. Its build button runs `tools/twins.py`, `tools/sync_units.py`, `configure.py` and `ninja`.
 
+Tracked on [bytematch.dev](https://bytematch.dev), which reads the `WR9E_report` artifact from CI on `main`. CI can't build without the DOL and compilers, so it publishes the committed `progress/WR9E_report.json`. Refresh it after a build:
+
+```
+ninja
+cp build/WR9E/report.json progress/WR9E_report.json
+```
+
 ## Layout
 
 | Path | |
