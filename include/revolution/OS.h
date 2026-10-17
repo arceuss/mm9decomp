@@ -5,4 +5,7 @@
 #include "types.h"
 #include "macros.h"
 #include "revolution/OS/OSArena.h"
+#include "revolution/OS/OSInterrupt.h"
+#include "revolution/OS/OSMessage.h"
+#include "revolution/OS/OSThread.h"
 #endif
