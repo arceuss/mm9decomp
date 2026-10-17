@@ -32,7 +32,8 @@ void fn_8009996C(void* arg0, void* arg1);
 void fn_800E9750(Unk8004D410* obj, u16 arg1);
 
 static inline u8 Rand10(void) {
-    u32 rnd = lbl_804EE988 * 0x343FD + 0x269EC3;
+    u32 rnd = lbl_804EE988 * 0x343FD;
+    rnd += 0x269EC3;
 
     lbl_804EE988 = rnd & 0x7FFFFFFF;
     return ((rnd >> 16) & 0x7FFF) % 10;

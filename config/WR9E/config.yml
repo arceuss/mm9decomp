@@ -68,6 +68,7 @@ force_active:
 - fn_80012C64
 - fn_80012C7C
 - fn_80012C80
+- fn_80012EB8
 - fn_800131F4
 - fn_800132EC
 - fn_80013300
@@ -354,6 +355,7 @@ force_active:
 - fn_8003C6E4
 - fn_8003C964
 - fn_8003E3B4
+- fn_8003E594
 - fn_8003EFAC
 - fn_8003F64C
 - fn_8003FB88
@@ -663,6 +665,7 @@ force_active:
 - fn_80057448
 - fn_80057790
 - fn_800577EC
+- fn_800577F0
 - fn_80057B10
 - fn_80057C5C
 - fn_80057DB8
@@ -774,6 +777,7 @@ force_active:
 - fn_80060C7C
 - fn_80060DD4
 - fn_8006112C
+- fn_80061350
 - fn_80061650
 - fn_8006181C
 - fn_800618F8
@@ -876,6 +880,7 @@ force_active:
 - fn_8006AA14
 - fn_8006AA2C
 - fn_8006AA30
+- fn_8006AB84
 - fn_8006AE48
 - fn_8006C78C
 - fn_8006C8B4
@@ -984,6 +989,7 @@ force_active:
 - fn_800753BC
 - fn_800753F8
 - fn_800754A8
+- fn_800755A8
 - fn_80075884
 - fn_800759F4
 - fn_80075B88
@@ -1129,6 +1135,7 @@ force_active:
 - fn_80080584
 - fn_80080BA4
 - fn_80080BDC
+- fn_80080E34
 - fn_80080FE0
 - fn_800810FC
 - fn_8008123C
@@ -1188,6 +1195,10 @@ force_active:
 - fn_80085920
 - fn_80085A08
 - fn_80085B30
+- fn_80085C34
+- fn_800863A4
+- fn_80086834
+- fn_80086CDC
 - fn_800891A0
 - fn_80089370
 - fn_8008938C
@@ -1196,7 +1207,9 @@ force_active:
 - fn_800896F8
 - fn_80089904
 - fn_80089C3C
+- fn_8008A7FC
 - fn_8008A9CC
+- fn_8008AAE8
 - fn_8008B05C
 - fn_8008B12C
 - fn_8008B414
@@ -1233,6 +1246,8 @@ force_active:
 - fn_800948EC
 - fn_80094964
 - fn_800949AC
+- fn_80095B2C
+- fn_80095E40
 - fn_8009618C
 - fn_800963D8
 - fn_80096A20
@@ -1268,6 +1283,7 @@ force_active:
 - fn_8009C29C
 - fn_8009C308
 - fn_8009C408
+- fn_8009C4E4
 - fn_8009CE40
 - fn_8009CEAC
 - fn_8009CED8
@@ -1291,6 +1307,7 @@ force_active:
 - fn_8009E8E4
 - fn_8009EF24
 - fn_8009F0A0
+- fn_8009F1A8
 - fn_8009F3C8
 - fn_8009FEF8
 - fn_8009FFC4
@@ -1553,6 +1570,7 @@ force_active:
 - fn_800B4ECC
 - fn_800B5024
 - fn_800B5064
+- fn_800B50A8
 - fn_800B543C
 - fn_800B5684
 - fn_800B56A4
@@ -1870,6 +1888,7 @@ force_active:
 - fn_800CC1CC
 - fn_800CC374
 - fn_800CC414
+- fn_800CC474
 - fn_800CC868
 - fn_800CCB04
 - fn_800CCEC4
@@ -1889,6 +1908,8 @@ force_active:
 - fn_800CF710
 - fn_800CF814
 - fn_800CF830
+- fn_800CF890
+- fn_800CFC6C
 - fn_800D0080
 - fn_800D02D8
 - fn_800D044C
@@ -2057,6 +2078,7 @@ force_active:
 - fn_800DC028
 - fn_800DC044
 - fn_800DC060
+- fn_800DC2A4
 - fn_800DC634
 - fn_800DCA4C
 - fn_800DCB7C
@@ -2069,6 +2091,7 @@ force_active:
 - fn_800DE8DC
 - fn_800DEBF4
 - fn_800DEDE8
+- fn_800DF174
 - fn_800E0154
 - fn_800E03C4
 - fn_800E191C

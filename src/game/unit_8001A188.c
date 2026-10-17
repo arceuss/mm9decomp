@@ -48,7 +48,8 @@ void fn_8001A188(Unk8001A188* obj) {
     case 2:
         fn_800E946C(obj, 2);
         obj->unk50 |= 3;
-        rnd = lbl_804EE988 * 0x343FD + 0x269EC3;
+        rnd = lbl_804EE988 * 0x343FD;
+        rnd += 0x269EC3;
         lbl_804EE988 = rnd & 0x7FFFFFFF;
         rnd = ((rnd >> 16) & 0x7FFF) % 7 + 1;
         obj->targetX = lbl_80304B90.unk25C - 0x10000 + lbl_80262A48[(u8)rnd] + 0x7000;
