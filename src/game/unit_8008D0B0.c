@@ -35,8 +35,8 @@ void fn_8008D0B0(Unk8008D0B0* obj) {
         if (obj->unkFF4 == 0 || obj->unk8 != 0) {
             R = *(u32*)(lbl_80316D78 + 0x3004) + 0xCD5000;
             a = *(u32*)(R + 0x14) >> 1;
-            b = *(u32*)(R + 0x18) >> 1;
-            fn_800BB4E8(0, 0, R + a + *(u32*)(R + a), R + b + *(u32*)(R + b), 0x20, 0, R + b, R + a);
+            b = (*(u32*)(R + 0x18) >> 1) + R;
+            fn_800BB4E8(0, 0, a + R + *(u32*)(a + R), b + *(u32*)b, 0x20, 0, b, a + R);
         }
         obj->unkFF7 = 1;
         obj->unk4 = 0;
@@ -62,8 +62,8 @@ void fn_8008D0B0(Unk8008D0B0* obj) {
         if ((u8)(obj->cursor + 0xFE) <= 1) {
             R = *(u32*)(lbl_80316D78 + 0x3004) + 0xCD5000;
             a = *(u32*)(R + 0x14) >> 1;
-            b = *(u32*)(R + 0x18) >> 1;
-            fn_800BB4E8(1, 1, R + a + *(u32*)(R + a), R + b + *(u32*)(R + b), 0x20, 0, R + b, R + a);
+            b = (*(u32*)(R + 0x18) >> 1) + R;
+            fn_800BB4E8(1, 1, a + R + *(u32*)(a + R), b + *(u32*)b, 0x20, 0, b, a + R);
         }
         obj->unkFF7 = 0;
         obj->step++;

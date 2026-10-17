@@ -49,10 +49,12 @@ void fn_800335C0(Unk800325F8* obj);
 void fn_800D5234(s32 se);
 
 static inline void SetFlag(Unk800325F8* obj) {
-    if ((u8)(obj->stage + 0xFD) <= 2 || obj->stage <= 1) {
+    if ((u8)(obj->stage + 0xFD) > 2 && obj->stage > 1) {
+        if (obj->stage == 2) {
+            obj->unk28F = 1;
+        }
+    } else {
         obj->unk28F = 0;
-    } else if (obj->stage == 2) {
-        obj->unk28F = 1;
     }
     obj->unk28E = 0;
 }
@@ -69,8 +71,8 @@ void fn_800325F8(Unk800325F8* obj) {
         obj->unk283 = 3;
         R = *(u32*)(lbl_80316D78 + 0x3004) + 0xC29000;
         a = *(u32*)(R + 0x10) >> 1;
-        b = *(u32*)(R + 0x14) >> 1;
-        fn_800BB4E8(0, 0, R + a + *(u32*)(R + a), R + b + *(u32*)(R + b), 0x20, 0, R + b, R + a);
+        b = (*(u32*)(R + 0x14) >> 1) + R;
+        fn_800BB4E8(0, 0, a + R + *(u32*)(a + R), b + *(u32*)b, 0x20, 0, b, a + R);
         fn_80034D90(obj, 0);
         SetFlag(obj);
     } else {
@@ -81,40 +83,47 @@ void fn_800325F8(Unk800325F8* obj) {
     fn_800BB6C8(0);
     if (obj->leaving == 1) {
         if (obj->unk286 == 1) {
-            if ((u8)fn_800BB6C8(1) != 3) {
-                return;
+            if ((u8)fn_800BB6C8(1) == 3) {
+                fn_80034D90(obj, 1);
+                obj->leaving = 0;
+                fn_800BB7B8(1);
+                obj->unk286 = 0;
+                obj->next = obj->choice + 0x11;
             }
-            fn_80034D90(obj, 1);
+        } else {
+            obj->leaving = 0;
+            fn_800BB7B8(1);
+            obj->unk286 = 0;
+            obj->next = obj->choice + 0x11;
         }
-        obj->leaving = 0;
-        fn_800BB7B8(1);
-        obj->unk286 = 0;
-        obj->next = obj->choice + 0x11;
         return;
     }
     if ((u8)fn_800BB6C8(0) == 3) {
         fn_800335C0(obj);
     }
-    if ((u8)fn_800BB6C8(0) != 3 || obj->leaving == 1) {
-        return;
-    }
-    obj->unk285 = 1;
-    if (lbl_80319DA0.trig & 0x50) {
-        fn_800D5234(1);
-        obj->unk285 = 0;
-        fn_800BB7B8(0);
-        if (obj->choice == 3) {
-            R = *(u32*)(lbl_80316D78 + 0x3004) + 0xC29000;
-            a = *(u32*)(R + 0x10) >> 1;
-            b = *(u32*)(R + 0x14) >> 1;
-            fn_800BB4E8(1, 1, R + a + *(u32*)(R + a), R + b + *(u32*)(R + b), 0x20, 0, R + b, R + a);
-            obj->unk286 = 1;
+    if ((u8)fn_800BB6C8(0) == 3 && obj->leaving != 1) {
+        obj->unk285 = 1;
+        if (!(lbl_80319DA0.trig & 0x50)) {
+            if (lbl_80319DA0.trig & 0x20) {
+                if (obj->choice != 3) {
+                    fn_800D5234(0);
+                }
+                obj->choice = 3;
+            } else {
+                return;
+            }
+        } else {
+            fn_800D5234(1);
+            obj->unk285 = 0;
+            fn_800BB7B8(0);
+            if (obj->choice == 3) {
+                R = *(u32*)(lbl_80316D78 + 0x3004) + 0xC29000;
+                a = *(u32*)(R + 0x10) >> 1;
+                b = (*(u32*)(R + 0x14) >> 1) + R;
+                fn_800BB4E8(1, 1, a + R + *(u32*)(a + R), b + *(u32*)b, 0x20, 0, b, a + R);
+                obj->unk286 = 1;
+            }
+            obj->leaving = 1;
         }
-        obj->leaving = 1;
-    } else if (lbl_80319DA0.trig & 0x20) {
-        if (obj->choice != 3) {
-            fn_800D5234(0);
-        }
-        obj->choice = 3;
     }
 }
