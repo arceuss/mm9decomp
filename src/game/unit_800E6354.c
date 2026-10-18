@@ -24,8 +24,8 @@ typedef struct Unk8038E7C0 {
 
 extern Unk8038E7C0 lbl_8038E7C0;
 
-void fn_800F6428(void* arg0);
-void fn_800F6124(void* arg0);
+void OSInitCond(void* arg0);
+void OSInitMutex(void* arg0);
 void OSInitThreadQueue(OSThreadQueue* queue);
 
 void fn_800E6354(s32 arg0) {
@@ -39,7 +39,7 @@ void fn_800E6354(s32 arg0) {
         entry->unk4321 = 1;
         entry++;
     }
-    fn_800F6428(lbl_8038E7C0.unkC9A0);
-    fn_800F6124(lbl_8038E7C0.unkC9A8);
+    OSInitCond(lbl_8038E7C0.unkC9A0);
+    OSInitMutex(lbl_8038E7C0.unkC9A8);
     OSInitThreadQueue(&lbl_8038E7C0.queue);
 }

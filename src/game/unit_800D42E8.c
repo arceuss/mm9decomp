@@ -14,13 +14,13 @@ typedef struct Unk8038DD8C {
 
 extern Unk8038DD8C lbl_8038DD8C;
 
-void fn_800F615C(void* mutex);
-void fn_800F6238(void* mutex);
+void OSLockMutex(void* mutex);
+void OSUnlockMutex(void* mutex);
 
 void fn_80197824(void* player);
 
 void fn_800D42E8(void) {
-    fn_800F615C(lbl_8038DD8C.mutex);
+    OSLockMutex(lbl_8038DD8C.mutex);
     fn_80197824(lbl_8038DD8C.player);
-    fn_800F6238(lbl_8038DD8C.mutex);
+    OSUnlockMutex(lbl_8038DD8C.mutex);
 }

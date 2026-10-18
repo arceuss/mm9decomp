@@ -13,18 +13,18 @@ typedef struct Unk8038E038 {
 
 extern Unk8038E038 lbl_8038E038;
 
-void fn_800F615C(void* mutex);
-void fn_800F6238(void* mutex);
+void OSLockMutex(void* mutex);
+void OSUnlockMutex(void* mutex);
 
 void fn_800D5C38(s32 list, Unk8038E038Item* item, u8 value) {
     u32 n;
 
-    fn_800F615C(lbl_8038E038.mutex);
+    OSLockMutex(lbl_8038E038.mutex);
     n = lbl_8038E038.counts[list];
     if (n + 1 <= 4) {
         item->unk38 = value;
         lbl_8038E038.lists[list][n] = item;
         lbl_8038E038.counts[list] = n + 1;
     }
-    fn_800F6238(lbl_8038E038.mutex);
+    OSUnlockMutex(lbl_8038E038.mutex);
 }

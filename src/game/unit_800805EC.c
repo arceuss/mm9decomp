@@ -40,6 +40,21 @@ static inline void Follow(s32* cur, s32 n, s32 v, s32 d) {
     }
 }
 
+static inline void Move(s32* cur, s32 n, s32 adj, s32* v) {
+    s32 d;
+
+    if (adj != 0) {
+        d = n - *cur;
+        if (adj * d >= 0) {
+            *cur = n;
+        } else {
+            Follow(cur, n, *v, d);
+        }
+    } else {
+        Follow(cur, n, *v, n - *cur);
+    }
+}
+
 void fn_800805EC(Unk800805EC* c) {
     Unk800805ECPos adj;
     Unk800805ECPos pos;
@@ -120,26 +135,8 @@ void fn_800805EC(Unk800805EC* c) {
             c->vx = 0;
             c->vy = 0;
         }
-        if (adj.x != 0) {
-            d = nx - c->x;
-            if (adj.x * d >= 0) {
-                c->x = nx;
-            } else {
-                Follow(&c->x, nx, c->vx, d);
-            }
-        } else {
-            Follow(&c->x, nx, c->vx, nx - c->x);
-        }
-        if (adj.y != 0) {
-            d = ny - c->y;
-            if (adj.y * d >= 0) {
-                c->y = ny;
-            } else {
-                Follow(&c->y, ny, c->vy, d);
-            }
-        } else {
-            Follow(&c->y, ny, c->vy, ny - c->y);
-        }
+        Move(&c->x, nx, adj.x, &c->vx);
+        Move(&c->y, ny, adj.y, &c->vy);
     }
     c->vx = nx - c->x;
     c->vy = ny - c->y;

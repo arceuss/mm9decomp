@@ -181,11 +181,6 @@ force_active:
 - fn_800252F4
 - fn_8002533C
 - fn_80025358
-- fn_800253B0
-- fn_8002541C
-- fn_80025470
-- fn_80025484
-- fn_80025498
 - fn_800254AC
 - fn_800255D8
 - fn_80025C34
@@ -201,18 +196,14 @@ force_active:
 - fn_800267F0
 - fn_80026874
 - fn_80026BC8
-- fn_80026EDC
 - fn_80027090
 - fn_800270E0
 - fn_80027130
 - fn_8002713C
 - fn_80027144
 - fn_80027148
-- fn_8002714C
-- fn_800271CC
 - fn_80027234
 - fn_800275B4
-- fn_800276F8
 - fn_80027DD0
 - fn_80027F4C
 - fn_80027FFC
@@ -220,7 +211,6 @@ force_active:
 - fn_8002867C
 - fn_80028818
 - fn_80028E00
-- fn_80028F44
 - fn_80029170
 - fn_800292BC
 - fn_8002968C
@@ -235,10 +225,6 @@ force_active:
 - fn_80029B14
 - fn_80029B30
 - fn_80029B4C
-- fn_80029BCC
-- fn_80029C78
-- fn_80029C98
-- fn_80029D5C
 - fn_80029EA8
 - fn_80029EF8
 - fn_80029F58
@@ -1156,6 +1142,7 @@ force_active:
 - fn_8008053C
 - fn_80080540
 - fn_80080584
+- fn_800805EC
 - fn_80080BA4
 - fn_80080BDC
 - fn_80080E34
@@ -1340,6 +1327,7 @@ force_active:
 - fn_8009F0A0
 - fn_8009F1A8
 - fn_8009F3C8
+- fn_8009FC6C
 - fn_8009FEF8
 - fn_8009FFC4
 - fn_8009FFC8
@@ -1805,6 +1793,7 @@ force_active:
 - fn_800C3354
 - fn_800C33E8
 - fn_800C33EC
+- fn_800C341C
 - fn_800C3610
 - fn_800C36E0
 - fn_800C3B24
@@ -2000,16 +1989,8 @@ force_active:
 - fn_800D3E1C
 - fn_800D3E34
 - fn_800D3E6C
-- fn_800D42E8
-- fn_800D432C
-- fn_800D43B4
 - fn_800D455C
 - fn_800D4568
-- fn_800D45BC
-- fn_800D486C
-- fn_800D49F8
-- fn_800D4E0C
-- fn_800D4E98
 - fn_800D4FB8
 - fn_800D5050
 - fn_800D5088
@@ -2021,11 +2002,6 @@ force_active:
 - fn_800D5798
 - fn_800D57BC
 - fn_800D5838
-- fn_800D58B0
-- fn_800D5918
-- fn_800D5970
-- fn_800D5B90
-- fn_800D5C38
 - fn_800D5D08
 - fn_800D5D8C
 - fn_800D606C
@@ -2177,8 +2153,6 @@ force_active:
 - fn_800E6534
 - fn_800E6578
 - fn_800E65B0
-- fn_800E65E8
-- fn_800E65FC
 - fn_800E6610
 - fn_800E6654
 - fn_800E666C
@@ -2246,6 +2220,7 @@ force_active:
 - fn_800EA0F0
 - fn_800EA1E0
 - fn_800EA8DC
+- fn_800EABC0
 - fn_800EB060
 - fn_800EB074
 # sync_units: end

@@ -24,10 +24,10 @@ extern u8 lbl_804ED3F8[3];
 s32 fn_800F8130(void* t, void* (*func)(void*), void* param, void* stack, u32 size, s32 prio, u16 attr);
 s32 fn_800F8798(void* t);
 void OSWakeupThread(void* q);
-void fn_800F615C(void* m);
-void fn_800F6238(void* m);
-void fn_800F642C(void* c, void* m);
-void fn_800F6508(void* c);
+void OSLockMutex(void* m);
+void OSUnlockMutex(void* m);
+void OSWaitCond(void* c, void* m);
+void OSSignalCond(void* c);
 void fn_8009DCB8(void);
 
 static inline void Start(s32 i, void* (*func)(void*), u8 prio) {
@@ -59,7 +59,7 @@ void fn_800E63D0(void) {
             }
         }
         OSWakeupThread(lbl_8038E7C0.queue);
-        fn_800F615C(lbl_8038E7C0.mutex);
+        OSLockMutex(lbl_8038E7C0.mutex);
         do {
             busy = 0;
             for (i = 0; i < 3; i++) {
@@ -68,11 +68,11 @@ void fn_800E63D0(void) {
                 }
             }
             if (busy) {
-                fn_800F642C(lbl_8038E7C0.cond, lbl_8038E7C0.mutex);
+                OSWaitCond(lbl_8038E7C0.cond, lbl_8038E7C0.mutex);
             }
         } while (busy);
         fn_8009DCB8();
-        fn_800F6238(lbl_8038E7C0.mutex);
-        fn_800F6508(lbl_8038E7C0.cond);
+        OSUnlockMutex(lbl_8038E7C0.mutex);
+        OSSignalCond(lbl_8038E7C0.cond);
     } while (lbl_8038E7C0.run != 0);
 }

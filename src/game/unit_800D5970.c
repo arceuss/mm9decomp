@@ -12,13 +12,13 @@ typedef struct Unk8038E038 {
 
 extern Unk8038E038 lbl_8038E038;
 
-void fn_800F6124(Unk8038E038Mutex* mutex);
-void fn_800F615C(Unk8038E038Mutex* mutex);
-void fn_800F6238(Unk8038E038Mutex* mutex);
+void OSInitMutex(Unk8038E038Mutex* mutex);
+void OSLockMutex(Unk8038E038Mutex* mutex);
+void OSUnlockMutex(Unk8038E038Mutex* mutex);
 
 void fn_800D5970(void) {
     lbl_8038E038.unk30[0] = 0;
     lbl_8038E038.unk30[1] = 0;
     lbl_8038E038.unk30[2] = 0;
-    fn_800F6124(&lbl_8038E038.unk3C);
+    OSInitMutex(&lbl_8038E038.unk3C);
 }

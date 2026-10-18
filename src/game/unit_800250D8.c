@@ -33,7 +33,7 @@ extern Unk802639E0 lbl_802639E0[3];
 void fn_80029B30(Unk80301320Slot* slot);
 void* fn_80029B4C(Unk80301320Slot* slot, u32 size, u32 align);
 void* fn_80115EA8(void* start, u32 size, s32 arg2);
-void fn_800F6124(void* arg0);
+void OSInitMutex(void* arg0);
 void fn_80029BCC(void* arg0, void* arg1, void* arg2);
 void fn_80029B14(Unk80301320Slot* slot, void* buf, u32 size);
 
@@ -60,7 +60,7 @@ void fn_800250D8(u32 flags, void* arg) {
     lbl_80301320.state = 2;
     a = fn_80029B4C(&lbl_80301320.slots[lbl_80301320.slot], lbl_802639E0[mode].heapSize, 0x20);
     lbl_80301320.heap = fn_80115EA8(a, lbl_802639E0[mode].heapSize, 1);
-    fn_800F6124(lbl_80301320.unk3C);
+    OSInitMutex(lbl_80301320.unk3C);
     lbl_80301320.unk38 = fn_80029B4C(&lbl_80301320.slots[lbl_80301320.slot], 0x388, 0x20);
     a = fn_80029B4C(&lbl_80301320.slots[lbl_80301320.slot], 0x2000, 0x20);
     fn_80029BCC(lbl_80301320.unk38, a, fn_80029B4C(&lbl_80301320.slots[lbl_80301320.slot], 0x160, 0x20));

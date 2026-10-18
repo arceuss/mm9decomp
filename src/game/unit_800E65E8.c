@@ -23,8 +23,8 @@ typedef struct Unk8038E7C0 {
 
 extern Unk8038E7C0 lbl_8038E7C0;
 
-void fn_800F615C(void* mutex);
+void OSLockMutex(void* mutex);
 
 void fn_800E65E8(void) {
-    fn_800F615C(lbl_8038E7C0.mutex);
+    OSLockMutex(lbl_8038E7C0.mutex);
 }

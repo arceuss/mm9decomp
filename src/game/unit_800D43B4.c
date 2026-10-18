@@ -16,17 +16,17 @@ typedef struct Unk8038DD8C {
 
 extern Unk8038DD8C lbl_8038DD8C;
 
-void fn_800F615C(void* mutex);
-void fn_800F6238(void* mutex);
+void OSLockMutex(void* mutex);
+void OSUnlockMutex(void* mutex);
 
 void fn_8019B5EC(void* starter, void* handle, u32 id, s32 arg3);
 
 void fn_800D43B4(u32 id) {
-    fn_800F615C(lbl_8038DD8C.mutex);
+    OSLockMutex(lbl_8038DD8C.mutex);
     if (!(lbl_8038DD8C.flags & 1) && id != 0xFFFF) {
-        fn_800F615C(lbl_8038DD8C.mutex);
+        OSLockMutex(lbl_8038DD8C.mutex);
         fn_8019B5EC(lbl_8038DD8C.unk160, lbl_8038DD8C.unk26C, id, 0);
-        fn_800F6238(lbl_8038DD8C.mutex);
+        OSUnlockMutex(lbl_8038DD8C.mutex);
     }
-    fn_800F6238(lbl_8038DD8C.mutex);
+    OSUnlockMutex(lbl_8038DD8C.mutex);
 }

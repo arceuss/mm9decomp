@@ -17,9 +17,9 @@ typedef struct Unk80301388 {
 extern Unk80301388 lbl_80301388;
 
 void* memcpy(void* dst, const void* src, u32 n);
-void fn_800F615C(void* mutex);
+void OSLockMutex(void* mutex);
 void fn_80116038(void* heap, void* block);
-void fn_800F6238(void* mutex);
+void OSUnlockMutex(void* mutex);
 void fn_8002541C(void* block);
 void* fn_80115F88(void* heap, u32 size, u32 align);
 void* fn_800253B0(u32 size, u32 align);
@@ -37,9 +37,9 @@ int fn_800276F8(u8* src, s32 count) {
     block = lbl_80301388.unk20;
     if (block != 0) {
         if (!(lbl_80301388.flags & 1)) {
-            fn_800F615C(&lbl_80301388);
+            OSLockMutex(&lbl_80301388);
             fn_80116038(lbl_80301388.heap, block);
-            fn_800F6238(&lbl_80301388);
+            OSUnlockMutex(&lbl_80301388);
         } else {
             fn_8002541C(block);
         }
@@ -50,9 +50,9 @@ int fn_800276F8(u8* src, s32 count) {
         return 0;
     }
     if (!(lbl_80301388.flags & 1)) {
-        fn_800F615C(&lbl_80301388);
+        OSLockMutex(&lbl_80301388);
         out = fn_80115F88(lbl_80301388.heap, count * 0x18, 0x20);
-        fn_800F6238(&lbl_80301388);
+        OSUnlockMutex(&lbl_80301388);
     } else {
         out = fn_800253B0(count * 0x18, 0x20);
     }
@@ -63,18 +63,18 @@ int fn_800276F8(u8* src, s32 count) {
     }
     size = n * 0x18;
     if (!(lbl_80301388.flags & 1)) {
-        fn_800F615C(&lbl_80301388);
+        OSLockMutex(&lbl_80301388);
         table = fn_80115F88(lbl_80301388.heap, size, 0x20);
-        fn_800F6238(&lbl_80301388);
+        OSUnlockMutex(&lbl_80301388);
     } else {
         table = fn_800253B0(size, 0x20);
     }
     if (table == 0) {
         block = lbl_80301388.unk20;
         if (!(lbl_80301388.flags & 1)) {
-            fn_800F615C(&lbl_80301388);
+            OSLockMutex(&lbl_80301388);
             fn_80116038(lbl_80301388.heap, block);
-            fn_800F6238(&lbl_80301388);
+            OSUnlockMutex(&lbl_80301388);
         } else {
             fn_8002541C(block);
         }
@@ -84,17 +84,17 @@ int fn_800276F8(u8* src, s32 count) {
     }
     if (fn_8024CC30(table, &n) < 0) {
         if (!(lbl_80301388.flags & 1)) {
-            fn_800F615C(&lbl_80301388);
+            OSLockMutex(&lbl_80301388);
             fn_80116038(lbl_80301388.heap, table);
-            fn_800F6238(&lbl_80301388);
+            OSUnlockMutex(&lbl_80301388);
         } else {
             fn_8002541C(table);
         }
         block = lbl_80301388.unk20;
         if (!(lbl_80301388.flags & 1)) {
-            fn_800F615C(&lbl_80301388);
+            OSLockMutex(&lbl_80301388);
             fn_80116038(lbl_80301388.heap, block);
-            fn_800F6238(&lbl_80301388);
+            OSUnlockMutex(&lbl_80301388);
         } else {
             fn_8002541C(block);
         }
@@ -111,9 +111,9 @@ int fn_800276F8(u8* src, s32 count) {
         }
     }
     if (!(lbl_80301388.flags & 1)) {
-        fn_800F615C(&lbl_80301388);
+        OSLockMutex(&lbl_80301388);
         fn_80116038(lbl_80301388.heap, table);
-        fn_800F6238(&lbl_80301388);
+        OSUnlockMutex(&lbl_80301388);
     } else {
         fn_8002541C(table);
     }

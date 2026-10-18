@@ -14,8 +14,8 @@ typedef struct Unk8038DD8C {
 
 extern Unk8038DD8C lbl_8038DD8C;
 
-void fn_800F615C(void* mutex);
-void fn_800F6238(void* mutex);
+void OSLockMutex(void* mutex);
+void OSUnlockMutex(void* mutex);
 
 extern u8 lbl_804EE928;
 
@@ -37,9 +37,9 @@ void fn_800D4230(void) {
         id = &lbl_804EE928;
         mutex = snd->mutex240;
         need = fn_80199D50(snd->player, *id);
-        fn_800F615C(mutex);
+        OSLockMutex(mutex);
         free = fn_8018D3E8(snd->unk258);
-        fn_800F6238(mutex);
+        OSUnlockMutex(mutex);
         if (free >= need) {
             fn_80199B08(snd->player, *id, snd->unk23C, 0);
         }

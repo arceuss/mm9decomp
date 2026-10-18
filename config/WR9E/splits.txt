@@ -4745,8 +4745,11 @@ game/unit_80096A20.c:
 game/unit_80096B74.c:
 	.text       start:0x80096B74 end:0x80096C38
 
-game/unsplit_80096C38.c:
-	.text       start:0x80096C38 end:0x80097724
+game/unit_80096C38.c:
+	.text       start:0x80096C38 end:0x80096ED0
+
+game/unsplit_80096ED0.c:
+	.text       start:0x80096ED0 end:0x80097724
 
 game/unit_80097724.c:
 	.text       start:0x80097724 end:0x80097864
@@ -4998,7 +5001,7 @@ game/unsplit_8009F5B8.c:
 game/unit_8009FB64.c:
 	.text       start:0x8009FB64 end:0x8009FC6C
 
-game/unsplit_8009FC6C.c:
+game/unit_8009FC6C.c:
 	.text       start:0x8009FC6C end:0x8009FEF8
 
 game/unit_8009FEF8.c:
@@ -5439,7 +5442,7 @@ game/unit_800A80F8.c:
 game/unit_800A82DC.c:
 	.text       start:0x800A82DC end:0x800A8784
 
-game/unsplit_800A8784.c:
+game/unit_800A8784.c:
 	.text       start:0x800A8784 end:0x800A89F4
 
 game/unit_800A89F4.c:
@@ -6816,7 +6819,7 @@ game/unit_800C33E8.c:
 game/unit_800C33EC.c:
 	.text       start:0x800C33EC end:0x800C341C
 
-game/unsplit_800C341C.c:
+game/unit_800C341C.c:
 	.text       start:0x800C341C end:0x800C3610
 
 game/unit_800C3610.c:
@@ -8487,8 +8490,12 @@ game/unit_800EA8DC.c:
 	.text       start:0x800EA8DC end:0x800EABC0
 	.data       start:0x80281F90 end:0x80281FB4
 
-game/unsplit_800EABC0.c:
-	.text       start:0x800EABC0 end:0x800EB060
+game/unit_800EABC0.c:
+	.text       start:0x800EABC0 end:0x800EAE24
+	.data       start:0x80281FB4 end:0x80281FE0
+
+game/unsplit_800EAE24.c:
+	.text       start:0x800EAE24 end:0x800EB060
 
 game/unit_800EB060.c:
 	.text       start:0x800EB060 end:0x800EB074
@@ -8517,7 +8524,13 @@ revolution/OS/OSMessage.c:
 	.text       start:0x800F563C end:0x800F5910
 
 revolution/unsplit_800F5910.c:
-	.text       start:0x800F5910 end:0x80168BCC
+	.text       start:0x800F5910 end:0x800F6124
+
+revolution/OS/OSMutex.c:
+	.text       start:0x800F6124 end:0x800F650C
+
+revolution/unsplit_800F650C.c:
+	.text       start:0x800F650C end:0x80168BCC
 
 MetroTRK/unsplit_80168BCC.c:
 	.text       start:0x80168BCC end:0x8016DA58

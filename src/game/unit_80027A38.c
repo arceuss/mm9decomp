@@ -12,8 +12,8 @@ typedef struct Unk80301388 {
 
 extern Unk80301388 lbl_80301388;
 
-void fn_800F615C(void* mutex);
-void fn_800F6238(void* mutex);
+void OSLockMutex(void* mutex);
+void OSUnlockMutex(void* mutex);
 void fn_80116038(void* heap, void* p);
 void* fn_80115F88(void* heap, u32 size, s32 align);
 void fn_8002541C(void* p);
@@ -22,9 +22,9 @@ s32 fn_8024D424(void* arg0, void* arg1, void* buf, u32* count);
 
 static inline void Free(void* p) {
     if (!(lbl_80301388.flags & 1)) {
-        fn_800F615C(&lbl_80301388);
+        OSLockMutex(&lbl_80301388);
         fn_80116038(lbl_80301388.heap, p);
-        fn_800F6238(&lbl_80301388);
+        OSUnlockMutex(&lbl_80301388);
     } else {
         fn_8002541C(p);
     }
@@ -34,9 +34,9 @@ static inline void* Alloc(u32 size) {
     void* p;
 
     if (!(lbl_80301388.flags & 1)) {
-        fn_800F615C(&lbl_80301388);
+        OSLockMutex(&lbl_80301388);
         p = fn_80115F88(lbl_80301388.heap, size, 0x20);
-        fn_800F6238(&lbl_80301388);
+        OSUnlockMutex(&lbl_80301388);
     } else {
         p = fn_800253B0(size, 0x20);
     }

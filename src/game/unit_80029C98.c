@@ -15,9 +15,9 @@ typedef struct Unk80029C98 {
     /* 0x382 */ u16 flags;
 } Unk80029C98;
 
-void fn_800F615C(void* mutex);
-void fn_800F6238(void* mutex);
-void fn_800F6508(void* cond);
+void OSLockMutex(void* mutex);
+void OSUnlockMutex(void* mutex);
+void OSSignalCond(void* cond);
 Unk80029C98Msg* fn_80029A70(void* slot);
 void* memcpy(void* dst, const void* src, u32 n);
 
@@ -28,7 +28,7 @@ void fn_80029C98(Unk80029C98* q, s32 type, void* data, u32 size) {
     if (q->flags & 1) {
         return;
     }
-    fn_800F615C(q->mutex);
+    OSLockMutex(q->mutex);
     index = q->head + 1;
     if (index >= 2) {
         index = 0;
@@ -38,6 +38,6 @@ void fn_80029C98(Unk80029C98* q, s32 type, void* data, u32 size) {
     if (data != NULL && size != 0 && size < 0x20) {
         memcpy(msg->data, data, size);
     }
-    fn_800F6238(q->mutex);
-    fn_800F6508(q->cond);
+    OSUnlockMutex(q->mutex);
+    OSSignalCond(q->cond);
 }

@@ -23,9 +23,9 @@ typedef struct Unk80029D5C {
 } Unk80029D5C;
 
 void fn_80029AB8(Unk80029D5CQueue* queue, Unk80029D5CNode* node);
-void fn_800F615C(void* mutex);
-void fn_800F6238(void* mutex);
-void fn_800F642C(void* cond, void* mutex);
+void OSLockMutex(void* mutex);
+void OSUnlockMutex(void* mutex);
+void OSWaitCond(void* cond, void* mutex);
 
 s32 fn_80029D5C(Unk80029D5C* p) {
     Unk80029D5CQueue* queue;
@@ -44,18 +44,18 @@ s32 fn_80029D5C(Unk80029D5C* p) {
             next = 0;
         }
         queue = &p->queues[next];
-        fn_800F615C(p->mutex);
+        OSLockMutex(p->mutex);
         if (queue->head == NULL) {
             p->flags &= ~2;
             if (p->flags & 1) {
-                fn_800F6238(p->mutex);
+                OSUnlockMutex(p->mutex);
                 break;
             }
-            fn_800F642C(p->cond, p->mutex);
+            OSWaitCond(p->cond, p->mutex);
             p->flags |= 2;
         }
         p->cur = next;
-        fn_800F6238(p->mutex);
+        OSUnlockMutex(p->mutex);
     }
     return 0;
 }

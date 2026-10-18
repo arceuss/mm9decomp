@@ -17,8 +17,8 @@ typedef struct Unk8038DD8C {
 
 extern Unk8038DD8C lbl_8038DD8C;
 
-void fn_800F615C(void* mutex);
-void fn_800F6238(void* mutex);
+void OSLockMutex(void* mutex);
+void OSUnlockMutex(void* mutex);
 
 void fn_801820DC(void* array, void* dtor, u32 size, u32 count);
 void fn_80196D14(void* player, s32 flags);

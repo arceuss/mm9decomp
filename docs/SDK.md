@@ -90,6 +90,8 @@ sources are imported; nothing leaked.
 | `include/revolution/OS.h`, `include/revolution/OS/OSArena.h`, `include/macros.h` | trimmed from the same ogws revision | CC0-1.0 | headers |
 | `src/revolution/OS/OSMessage.c` | doldecomp/ogws `src/revolution/OS/OSMessage.c` @ 4f8b3383, unchanged | CC0-1.0 | Matching, linked from source. `.text` 0x800F563C..0x800F5910, no data; byte-identical with GC/3.0a5 + `cflags_rvl` |
 | `include/revolution/OS/OSMessage.h`, `OSThread.h`, `OSInterrupt.h` | trimmed from the same ogws revision | CC0-1.0 | headers |
+| `src/revolution/OS/OSMutex.c` | doldecomp/ogws `src/revolution/OS/OSMutex.c` @ 4f8b3383, plus `OSInitCond`/`OSWaitCond`/`OSSignalCond` written for this SDK build (ogws doesn't have them) | CC0-1.0 (ogws part) | Matching, linked from source. `.text` 0x800F6124..0x800F650C |
+| `include/revolution/OS/OSMutex.h`, `OSThread` struct in `OSThread.h` | trimmed from the same ogws revision; `OSContext` kept opaque | CC0-1.0 | headers |
 
 ### OSArena
 

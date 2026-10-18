@@ -14,8 +14,8 @@ typedef struct Unk8038DD8C {
 
 extern Unk8038DD8C lbl_8038DD8C;
 
-void fn_800F615C(void* mutex);
-void fn_800F6238(void* mutex);
+void OSLockMutex(void* mutex);
+void OSUnlockMutex(void* mutex);
 
 BOOL fn_80196DCC(void* player);
 void* fn_80197F90(void* player, u32 index);
@@ -24,11 +24,11 @@ void fn_8019A714(void* sound, s32 arg1, s32 arg2);
 void fn_800D4E98(void) {
     u32 i;
 
-    fn_800F615C(lbl_8038DD8C.mutex);
+    OSLockMutex(lbl_8038DD8C.mutex);
     if (fn_80196DCC(lbl_8038DD8C.player)) {
         for (i = 0; i < lbl_8038DD8C.count; i++) {
             fn_8019A714(fn_80197F90(lbl_8038DD8C.player, i), 0, 0);
         }
     }
-    fn_800F6238(lbl_8038DD8C.mutex);
+    OSUnlockMutex(lbl_8038DD8C.mutex);
 }
