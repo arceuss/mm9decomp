@@ -1409,9 +1409,13 @@ force_active:
 - fn_800A32EC
 - fn_800A32F0
 - fn_800A3458
+- fn_800A3500
 - fn_800A36F8
+- fn_800A37F4
 - fn_800A39F0
+- fn_800A3AE0
 - fn_800A3CD4
+- fn_800A3DBC
 - fn_800A3FAC
 - fn_800A43B4
 - fn_800A502C
