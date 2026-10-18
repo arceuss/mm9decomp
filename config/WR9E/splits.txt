@@ -8458,7 +8458,13 @@ revolution/OS/OSArena.c:
 	.sbss       start:0x804EEA20 end:0x804EEA28
 
 revolution/unsplit_800F0010.c:
-	.text       start:0x800F0010 end:0x80168BCC
+	.text       start:0x800F0010 end:0x800F563C
+
+revolution/OS/OSMessage.c:
+	.text       start:0x800F563C end:0x800F5910
+
+revolution/unsplit_800F5910.c:
+	.text       start:0x800F5910 end:0x80168BCC
 
 MetroTRK/unsplit_80168BCC.c:
 	.text       start:0x80168BCC end:0x8016DA58

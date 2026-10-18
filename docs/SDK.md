@@ -88,6 +88,8 @@ sources are imported; nothing leaked.
 |---|---|---|---|
 | `src/revolution/OS/OSArena.c` | doldecomp/ogws `src/revolution/OS/OSArena.c` @ 4f8b3383, unchanged | CC0-1.0 | Matching, linked from source |
 | `include/revolution/OS.h`, `include/revolution/OS/OSArena.h`, `include/macros.h` | trimmed from the same ogws revision | CC0-1.0 | headers |
+| `src/revolution/OS/OSMessage.c` | doldecomp/ogws `src/revolution/OS/OSMessage.c` @ 4f8b3383, unchanged | CC0-1.0 | Matching, linked from source. `.text` 0x800F563C..0x800F5910, no data; byte-identical with GC/3.0a5 + `cflags_rvl` |
+| `include/revolution/OS/OSMessage.h`, `OSThread.h`, `OSInterrupt.h` | trimmed from the same ogws revision | CC0-1.0 | headers |
 
 ### OSArena
 

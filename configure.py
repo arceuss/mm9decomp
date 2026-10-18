@@ -3086,6 +3086,8 @@ config.libs = [
             Object(NonMatching, "revolution/unsplit_800EB1CC.c"),
             Object(Matching, "revolution/OS/OSArena.c"),
             Object(NonMatching, "revolution/unsplit_800F0010.c"),
+            Object(Matching, "revolution/OS/OSMessage.c"),
+            Object(NonMatching, "revolution/unsplit_800F5910.c"),
             Object(NonMatching, "revolution/unsplit_80225738.c"),
             Object(NonMatching, "revolution/unsplit_8022FB4C.c"),
         ],
