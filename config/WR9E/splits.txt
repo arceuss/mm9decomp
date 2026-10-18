@@ -312,7 +312,7 @@ game/unsplit_80015060.c:
 game/unit_80016100.c:
 	.text       start:0x80016100 end:0x800161E8
 
-game/unsplit_800161E8.c:
+game/unit_800161E8.c:
 	.text       start:0x800161E8 end:0x800164C0
 
 game/unit_800164C0.c:
@@ -1450,7 +1450,7 @@ game/unsplit_8003E880.c:
 game/unit_8003EAEC.c:
 	.text       start:0x8003EAEC end:0x8003ED48
 
-game/unsplit_8003ED48.c:
+game/unit_8003ED48.c:
 	.text       start:0x8003ED48 end:0x8003EFAC
 
 game/unit_8003EFAC.c:
@@ -3461,7 +3461,7 @@ game/unit_8006E9C8.c:
 game/unit_8006EA30.c:
 	.text       start:0x8006EA30 end:0x8006EAC4
 
-game/unsplit_8006EAC4.c:
+game/unit_8006EAC4.c:
 	.text       start:0x8006EAC4 end:0x8006ED68
 
 game/unit_8006ED68.c:
@@ -6630,8 +6630,11 @@ game/unit_800BEE90.c:
 game/unit_800BEEF8.c:
 	.text       start:0x800BEEF8 end:0x800BEEFC
 
-game/unsplit_800BEEFC.c:
-	.text       start:0x800BEEFC end:0x800BF470
+game/unit_800BEEFC.c:
+	.text       start:0x800BEEFC end:0x800BF23C
+
+game/unsplit_800BF23C.c:
+	.text       start:0x800BF23C end:0x800BF470
 
 game/unit_800BF470.c:
 	.text       start:0x800BF470 end:0x800BF490
@@ -6729,7 +6732,7 @@ game/unit_800C0C18.c:
 game/unit_800C0C1C.c:
 	.text       start:0x800C0C1C end:0x800C0C74
 
-game/unsplit_800C0C74.c:
+game/unit_800C0C74.c:
 	.text       start:0x800C0C74 end:0x800C0F7C
 
 game/unit_800C0F7C.c:
@@ -6912,8 +6915,11 @@ game/unsplit_800C688C.c:
 game/unit_800C6ED4.c:
 	.text       start:0x800C6ED4 end:0x800C6F8C
 
-game/unsplit_800C6F8C.c:
-	.text       start:0x800C6F8C end:0x800C7594
+game/unit_800C6F8C.c:
+	.text       start:0x800C6F8C end:0x800C71F8
+
+game/unsplit_800C71F8.c:
+	.text       start:0x800C71F8 end:0x800C7594
 
 game/unit_800C7594.c:
 	.text       start:0x800C7594 end:0x800C75D0
@@ -7257,7 +7263,7 @@ game/unit_800CC9D4.c:
 game/unit_800CCB04.c:
 	.text       start:0x800CCB04 end:0x800CCBB4
 
-game/unsplit_800CCBB4.c:
+game/unit_800CCBB4.c:
 	.text       start:0x800CCBB4 end:0x800CCEC4
 
 game/unit_800CCEC4.c:
@@ -7509,7 +7515,7 @@ game/unit_800D3E34.c:
 game/unit_800D3E6C.c:
 	.text       start:0x800D3E6C end:0x800D3FC0
 
-game/unsplit_800D3FC0.c:
+game/unit_800D3FC0.c:
 	.text       start:0x800D3FC0 end:0x800D4230
 
 game/unit_800D4230.c:
@@ -8171,7 +8177,7 @@ game/unit_800E5910.c:
 game/unit_800E59F8.c:
 	.text       start:0x800E59F8 end:0x800E5AEC
 
-game/unsplit_800E5AEC.c:
+game/unit_800E5AEC.c:
 	.text       start:0x800E5AEC end:0x800E5CD0
 
 game/unit_800E5CD0.c:
@@ -8285,7 +8291,7 @@ game/unit_800E75D8.c:
 game/unit_800E766C.c:
 	.text       start:0x800E766C end:0x800E76EC
 
-game/unsplit_800E76EC.c:
+game/unit_800E76EC.c:
 	.text       start:0x800E76EC end:0x800E7960
 
 game/unit_800E7960.c:
